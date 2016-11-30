@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/LightSeaGreen" >
+
+        <Button
+            android:id="@+id/pickhead_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_arrowback_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/set_head"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/choice_photo"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:background="@drawable/button_headphoto_shape1"
+            android:text="@string/take_photos" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/choice_load"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:background="@drawable/button_headphoto_shape1"
+            android:text="@string/select_locale" />
+    </LinearLayout>
+
+</LinearLayout>
