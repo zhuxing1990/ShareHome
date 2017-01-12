@@ -199,14 +199,14 @@ public class Encrypt3DES {
 		/*
 		 * try { String test = "asDDF554$%123456";
 		 *//*
-			 * System.out.println("加密前的字符：a1acqso2ht" + test); String encrypt =
+			 * WorkLog.a("加密前的字符：a1acqso2ht" + test); String encrypt =
 			 * Encrypt3DES.getInstance().encrypt(test);
-			 * System.out.println("加密后的字符：" + encrypt);
+			 * WorkLog.a("加密后的字符：" + encrypt);
 			 *//*
-				 * System.out.println("解密后的字符：" +
+				 * WorkLog.a("解密后的字符：" +
 				 * Encrypt3DES.getInstance().decrypt
 				 * ("9b87f1360a1358af4834eb6ab4a01b15"));
-				 * //System.out.println("解密后的字符：" +
+				 * //WorkLog.a("解密后的字符：" +
 				 * "45bb7c8a9a699cd7a1c1a39336ce6bf746f72e6520d3cf5d3adb375bc88de01d413fab86e8c69580cc7448be05d937a6"
 				 * .length()); } catch (Exception e) { e.printStackTrace(); }
 				 */

@@ -60,7 +60,7 @@ public class AppTVStoreUpdateManager {
 	// + "AppTVStore" + File.separator + "download" + File.separator;
 	private static final String mSavePath = "/sdcard/ShareHomeDownload";
 	// APk下载链接，等服务器信息修改后改成mAppUpdateInfos.get(0).get....(待修改！)
-	private String mAppDownLoadURL = UrlClient.AppDownLoadURL;
+//	private String mAppDownLoadURL = UrlClient.AppDownLoadURL;
 	// 上下文信息
 	private Context mContext;
 	/* 更新进度条 */
@@ -147,11 +147,11 @@ public class AppTVStoreUpdateManager {
 		int versionCode = getAppTVStoreVersionCode(mContext);
 		// 判断更新信息是否为空
 		if (!(mAppUpdateInfos.isEmpty())) {
-			WorkLog.e("UpdateManager", "服务器版本:"
+			WorkLog.i("UpdateManager", "服务器版本:"
 					+ mAppUpdateInfos.get(0).getVersion() + "\n当前版本:"
 					+ versionCode);
 			if (mAppUpdateInfos.get(0).getVersion() == versionCode) {
-				WorkLog.e("UpdateManager", "当前为最新版本");
+				WorkLog.i("UpdateManager", "当前为最新版本");
 				return;
 			}
 			// 判断服务器应用版本是否高于本地版本
@@ -319,11 +319,11 @@ public class AppTVStoreUpdateManager {
 					// 获取文件大小
 					long length = conn.getContentLength();
 					if ((sd_freeSpace / 1024) > (length / 1024)) {
-						// System.out.println("SD卡内存"+sd_freeSpace);
-						// System.out.println("下载大小"+length/1024);
+						// WorkLog.a("SD卡内存"+sd_freeSpace);
+						// WorkLog.a("下载大小"+length/1024);
 					} else {
-						// System.out.println("SD卡内存"+sd_freeSpace);
-						// System.out.println("下载大小"+length/1024);
+						// WorkLog.a("SD卡内存"+sd_freeSpace);
+						// WorkLog.a("下载大小"+length/1024);
 						mHandler.sendEmptyMessage(NotFreeSpace);
 						return;
 					}
@@ -509,13 +509,13 @@ public class AppTVStoreUpdateManager {
 		this.mHandler = mHandler;
 	}
 
-	public String getmAppDownLoadURL() {
-		return mAppDownLoadURL;
-	}
-
-	public void setmAppDownLoadURL(String mAppDownLoadURL) {
-		this.mAppDownLoadURL = mAppDownLoadURL;
-	}
+//	public String getmAppDownLoadURL() {
+//		return mAppDownLoadURL;
+//	}
+//
+//	public void setmAppDownLoadURL(String mAppDownLoadURL) {
+//		this.mAppDownLoadURL = mAppDownLoadURL;
+//	}
 
 	private void showToast(String string) {
 		Toast.makeText(mContext, string, Toast.LENGTH_SHORT).show();

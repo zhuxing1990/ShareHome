@@ -16,7 +16,7 @@ public class VideoSql extends SQLiteOpenHelper {
 
 	@Override
 	public void onCreate(SQLiteDatabase db) {
-		db.execSQL("create table video (_id integer not null primary key autoincrement,user_name varchar,url varchar,create_time varchar");
+		db.execSQL("create table video (_id integer not null primary key autoincrement,user_name varchar,url varchar,create_time varchar)");
 	}
 
 	@Override

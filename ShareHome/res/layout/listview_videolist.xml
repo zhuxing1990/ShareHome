@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+
+        <ImageView
+            android:id="@+id/videolist_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pictures_no" />
+
+        <Button
+            android:id="@+id/videolist_playvideo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/play_video" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_28"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/videolist_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/videolist_videotime"
+            android:src="@drawable/video_time" />
+
+        <TextView
+            android:id="@+id/videolist_videotime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:ems="3"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</LinearLayout>

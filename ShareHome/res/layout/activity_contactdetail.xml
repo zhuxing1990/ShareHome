@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="@color/backgroup_back" >
 
-    <com.vunke.sharehome.utils.MyScrollView
+    <com.vunke.sharehome.view.MyScrollView
         android:id="@+id/myScrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
@@ -114,7 +114,7 @@
                 android:textColor="@color/black"
                 android:textSize="18dp" />
         </LinearLayout>
-    </com.vunke.sharehome.utils.MyScrollView>
+    </com.vunke.sharehome.view.MyScrollView>
 
     <LinearLayout
         android:id="@+id/search01"

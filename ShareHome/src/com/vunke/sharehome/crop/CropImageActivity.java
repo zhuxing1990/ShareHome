@@ -42,6 +42,7 @@ import android.view.Window;
 import android.widget.Toast;
 
 import com.vunke.sharehome.R;
+import com.vunke.sharehome.utils.WorkLog;
 
 /*
  * Modified from original in AOSP.
@@ -552,7 +553,7 @@ public class CropImageActivity extends MonitoredActivity {
 	}
 
 	private Bitmap cropCircleView(Bitmap scaledSrcBmp) {
-		System.out.println(" cropCircleView !!! ");
+		WorkLog.a(" cropCircleView !!! ");
 
 		return GraphicsUtil.getCircleBitmap(scaledSrcBmp);
 		// return GraphicsUtil.getOvalBitmap( scaledSrcBmp);

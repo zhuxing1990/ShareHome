@@ -23,7 +23,7 @@ public class VideoSqlite extends ContentProvider {
 	private static final String USER_NAME = "user_name";
 	private static final String CREATE_TIME = "create_time";
 	private static final String _ID = "_id";
-
+	
 	@Override
 	public boolean onCreate() {
 		sql = new VideoSql(getContext());

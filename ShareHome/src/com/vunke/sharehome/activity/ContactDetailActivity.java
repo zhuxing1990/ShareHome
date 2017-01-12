@@ -33,11 +33,11 @@ import com.vunke.sharehome.R;
 import com.vunke.sharehome.Call.CallOut_Activity;
 import com.vunke.sharehome.adapter.DialogListViewAdapter;
 import com.vunke.sharehome.base.BaseActivity;
-import com.vunke.sharehome.utils.ActionSheetDialog;
 import com.vunke.sharehome.utils.NetUtils;
 import com.vunke.sharehome.utils.UiUtils;
-import com.vunke.sharehome.utils.ActionSheetDialog.OnSheetItemClickListener;
 import com.vunke.sharehome.utils.WorkLog;
+import com.vunke.sharehome.view.ActionSheetDialog;
+import com.vunke.sharehome.view.ActionSheetDialog.OnSheetItemClickListener;
 
 /**
  * 联系人详情
@@ -80,7 +80,7 @@ public class ContactDetailActivity extends BaseActivity {
 	private void getExtra() {
 		Intent intent = getIntent();
 		contactid = getIntent().getLongExtra("id", -1);// 联系人ID
-		// WorkLog.e("ContactDetailActivity", "getcontactId>>>"+contactid);
+		// WorkLog.i("ContactDetailActivity", "getcontactId>>>"+contactid);
 	}
 
 	@Override
@@ -183,7 +183,7 @@ public class ContactDetailActivity extends BaseActivity {
 		}
 		for (String number : list) {
 			if (list.size() == 1) {
-				if (isCameraCanUse()) {
+				if (UiUtils.isCameraCanUse()) {
 					if (NetUtils.isNetConnected(mcontext)) {
 						/*
 						 * intent = new Intent(mcontext,
@@ -236,7 +236,7 @@ public class ContactDetailActivity extends BaseActivity {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
-				if (isCameraCanUse()) {
+				if (UiUtils.isCameraCanUse()) {
 					if (NetUtils.isNetConnected(mcontext)) {
 						/*
 						 * intent = new Intent(mcontext,
@@ -260,7 +260,7 @@ public class ContactDetailActivity extends BaseActivity {
 	}
 
 	private void Call(final String number) {
-		// WorkLog.e("ContactDetailActivity", "CallNumber:"+number);
+		// WorkLog.i("ContactDetailActivity", "CallNumber:"+number);
 		new ActionSheetDialog(mcontext)
 				.builder()
 				.setCancelable(true)

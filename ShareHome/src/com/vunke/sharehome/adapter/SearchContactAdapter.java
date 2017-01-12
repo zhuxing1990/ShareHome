@@ -17,6 +17,7 @@ import com.vunke.sharehome.Config;
 import com.vunke.sharehome.R;
 import com.vunke.sharehome.activity.ContactDetailActivity;
 import com.vunke.sharehome.utils.UiUtils;
+import com.vunke.sharehome.utils.WorkLog;
 /**
  * 拨号键盘搜索设配器
  * @author Administrator
@@ -66,12 +67,12 @@ public class SearchContactAdapter extends BaseAdapter {
 		} else {
 			holder = (ViewHolder) view.getTag();
 		}
-//		System.out.println("搜索匹配号码"+contact.get(position).getSearchMatchContent().toString());
-//		System.out.println("匹配关键字"+contact.get(position).getSortkey().toString());
-//		System.out.println("显示姓名"+contact.get(position).getDisplayName().toString());
-//		System.out.println("状态"+contact.get(position).getStatus());
-//		System.out.println("联系人Id"+contact.get(position).getContactId());
-//		System.out.println("头像"+contact.get(position).getPhotoId());
+//		WorkLog.a("搜索匹配号码"+contact.get(position).getSearchMatchContent().toString());
+//		WorkLog.a("匹配关键字"+contact.get(position).getSortkey().toString());
+//		WorkLog.a("显示姓名"+contact.get(position).getDisplayName().toString());
+//		WorkLog.a("状态"+contact.get(position).getStatus());
+//		WorkLog.a("联系人Id"+contact.get(position).getContactId());
+//		WorkLog.a("头像"+contact.get(position).getPhotoId());
 		try {  //这地方都报错，我就百思不得其解了      数组越界
 			if (contact.size() == 0 ) {
 				return view;

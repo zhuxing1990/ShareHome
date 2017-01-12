@@ -10,6 +10,11 @@ import android.os.Environment;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 
+/**
+ * 获取文件路径
+ * @author zhuxi
+ *
+ */
 public class GetPathFromUri4kitkat {
 	/**
 	 * 专为Android4.4设计的从Uri获取文件绝对路径，以前的方法已不好使

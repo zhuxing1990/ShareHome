@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <com.vunke.sharehome.utils.CircularProgress
+    <com.vunke.sharehome.view.CircularProgress
         android:id="@+id/dialog_circularprogress"
         android:layout_width="60dp"
         android:layout_height="60dp"

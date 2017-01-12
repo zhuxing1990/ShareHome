@@ -10,6 +10,7 @@ import com.huawei.rcs.login.LoginApi;
 import com.huawei.rcs.login.LoginCfg;
 import com.huawei.rcs.login.UserInfo;
 import com.vunke.sharehome.Config;
+import com.vunke.sharehome.utils.Encrypt3DES;
 import com.vunke.sharehome.utils.WorkLog;
 
 public class NetConnectService extends Service {
@@ -22,12 +23,18 @@ public class NetConnectService extends Service {
 	public void onCreate() {
 		super.onCreate();
 	}
-
+	private long startTime = 0;
 	@Override
 	public int onStartCommand(Intent intent, int flags, int startId) {
-//		 WorkLog.e("NetConnectService",
-//		 "---------------onStartCommand-------------");
-		initSDK();
+		// WorkLog.i("NetConnectService",
+		// "---------------onStartCommand-------------");
+		if (System.currentTimeMillis() - startTime >2000) {
+			initSDK();
+			startTime = System.currentTimeMillis();
+		}else {
+			WorkLog.e("NetConnectService", "Cannot repeat login ");
+			
+		}
 		return super.onStartCommand(intent, flags, startId);
 	}
 
@@ -37,7 +44,7 @@ public class NetConnectService extends Service {
 	}
 
 	private void initSDK() {
-		
+
 		// 来电广播
 		// LocalBroadcastManager.getInstance(getApplicationContext())
 		// .registerReceiver(callInvitationReceiver,
@@ -48,10 +55,17 @@ public class NetConnectService extends Service {
 	}
 
 	private void initLoginInfo(String countryCode, String userName) {
-		// WorkLog.e("NetConnectService", countryCode+";userName:"+userName);
+		// WorkLog.i("NetConnectService", countryCode+";userName:"+userName);
 		SharedPreferences sp = getSharedPreferences(Config.SP_NAME,
 				MODE_PRIVATE);
 		String login_password = sp.getString(Config.LOGIN_PASSWORD, "");
+		if (TextUtils.isEmpty(userName)) {
+			userName = sp.getString(Config.LOGIN_USER_NAME, "");
+			if (TextUtils.isEmpty(userName)) {
+				WorkLog.e("NetConnectService", "username is null");
+				return;
+			}
+		}
 		if (!TextUtils.isEmpty(login_password)) {
 			UserInfo userInfo = new UserInfo();
 			if (countryCode.matches("([+]|[0-9])\\d{0,4}")) {// 保存国家区号
@@ -59,7 +73,12 @@ public class NetConnectService extends Service {
 			}
 
 			userInfo.username = countryCode + Config.CALL_BEFORE + userName;
-			userInfo.password = login_password;
+			try {
+				userInfo.password = Encrypt3DES.getInstance().decrypt(
+						login_password);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 			LoginCfg loginCfg = new LoginCfg();
 			loginCfg.isAutoLogin = true;
 			loginCfg.isVerified = false;
@@ -68,11 +87,13 @@ public class NetConnectService extends Service {
 		}
 
 	}
+
 	private UserInfo mLastUserInfo;
+
 	private void getData() {
 		mLastUserInfo = LoginApi.getUserInfo(LoginApi.getLastUserName());
-
 	}
+
 	/*
 	 * // 查询用户的配置数据 mLoginCfg = LoginApi.getLoginCfg(mLastUserInfo.username);
 	 */
@@ -108,6 +129,9 @@ public class NetConnectService extends Service {
 				}
 
 			}
+		} else {
+			WorkLog.e("NetConnectService", "get SDK userinfo is null");
+			initLoginInfo("", "");
 		}
 
 	}
@@ -122,9 +146,9 @@ public class NetConnectService extends Service {
 	// return;
 	// }
 	// if (session.getType() == CallSession.TYPE_AUDIO) {
-	// WorkLog.e("NetConnectService", "语音");
+	// WorkLog.i("NetConnectService", "语音");
 	// } else if (session.getType() == CallSession.TYPE_VIDEO) {
-	// WorkLog.e("NetConnectService", "视频");
+	// WorkLog.i("NetConnectService", "视频");
 	// }
 	// Intent newIntent = new Intent(context, CallIn_Activity.class);
 	// newIntent.putExtra("session_id", session.getSessionId());
@@ -133,18 +157,17 @@ public class NetConnectService extends Service {
 	// }
 	// };
 
-
-//	public void setDM() {
-//		String sip = "222.246.189.244";
-//		String sport = "443";
-//		if (TextUtils.isEmpty(sip) || TextUtils.isEmpty(sport)) {
-//			// WorkLog.e("NetConnectService", "DM地址错误");
-//		} else {
-//			LoginApi.setConfig(LoginApi.CONFIG_MAJOR_TYPE_DM_IP,
-//					LoginApi.CONFIG_MINOR_TYPE_DEFAULT, sip);
-//			LoginApi.setConfig(LoginApi.CONFIG_MAJOR_TYPE_DM_PORT,
-//					LoginApi.CONFIG_MINOR_TYPE_DEFAULT, sport);
-//		}
-//	}
+	// public void setDM() {
+	// String sip = "222.246.189.244";
+	// String sport = "443";
+	// if (TextUtils.isEmpty(sip) || TextUtils.isEmpty(sport)) {
+	// // WorkLog.i("NetConnectService", "DM地址错误");
+	// } else {
+	// LoginApi.setConfig(LoginApi.CONFIG_MAJOR_TYPE_DM_IP,
+	// LoginApi.CONFIG_MINOR_TYPE_DEFAULT, sip);
+	// LoginApi.setConfig(LoginApi.CONFIG_MAJOR_TYPE_DM_PORT,
+	// LoginApi.CONFIG_MINOR_TYPE_DEFAULT, sport);
+	// }
+	// }
 
 }

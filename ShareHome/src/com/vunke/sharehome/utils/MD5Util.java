@@ -136,9 +136,9 @@ public class MD5Util {
     }
 	/*public static void main(String[] args) {
 		long startTime = System.currentTimeMillis();
-		System.out.println(MD5Util.encryptByMD5("11111111111111111111111111",
+		WorkLog.a(MD5Util.encryptByMD5("11111111111111111111111111",
 				"100127BC9F987F649C853EE84122F99644F824766E881A21"));
 		long endTime = System.currentTimeMillis();
-		System.out.println(endTime - startTime);
+		WorkLog.a(endTime - startTime);
 	}*/
 }

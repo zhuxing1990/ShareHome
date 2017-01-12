@@ -61,12 +61,22 @@ public class PictureUtil {
   
         return BitmapFactory.decodeFile(filePath, options);  
     }  
+    /**
+     * 删除文件
+     * @param path
+     */
     public static void deleteTempFile(String path) {  
         File file = new File(path);  
         if (file.exists()) {  
             file.delete();  
         }  
     }  
+    /**
+     * 启动MediaScanner服务，扫描媒体文件：
+     * 程序通过发送下面的Intent启动MediaScanner服务扫描指定的文件或目录：
+     * @param context
+     * @param path
+     */
     public static void galleryAddPic(Context context, String path) {  
         Intent mediaScanIntent = new Intent(  
                 Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);  

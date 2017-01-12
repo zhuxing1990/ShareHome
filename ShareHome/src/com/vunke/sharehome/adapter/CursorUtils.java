@@ -11,25 +11,26 @@ import android.provider.ContactsContract.PhoneLookup;
 import android.text.format.Time;
 
 import com.vunke.sharehome.utils.UiUtils;
+import com.vunke.sharehome.utils.WorkLog;
 
 public class CursorUtils {
 	public static void printCursor(Cursor cursor) {
 		if (cursor == null) {
-//			System.out.println("cursor==null");
+//			WorkLog.a("cursor==null");
 			return;
 		}
 		if (cursor.getCount() == 0) {
-//			System.out.println("cursor.getCount()==0");
+//			WorkLog.a("cursor.getCount()==0");
 			return;
 		}
 
 		int count = cursor.getColumnCount();
 		while (cursor.moveToNext()) {
-//			System.out.println("这是第几行---------------:" + cursor.getPosition());
+//			WorkLog.a("这是第几行---------------:" + cursor.getPosition());
 			for (int i = 0; i < count; i++) {
 				String value = cursor.getString(i);
 				String name = cursor.getColumnName(i);
-//				System.out.println(name + ":" + value);
+//				WorkLog.a(name + ":" + value);
 			}
 		}
 		

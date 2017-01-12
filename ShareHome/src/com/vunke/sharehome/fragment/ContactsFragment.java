@@ -67,10 +67,10 @@ import com.vunke.sharehome.rx.RxBus;
 import com.vunke.sharehome.service.UpdateContactService;
 import com.vunke.sharehome.url.UrlClient;
 import com.vunke.sharehome.utils.NetUtils;
-import com.vunke.sharehome.utils.QuickIndexBar;
-import com.vunke.sharehome.utils.QuickIndexBar.OnLetterUpdateListener;
 import com.vunke.sharehome.utils.UiUtils;
 import com.vunke.sharehome.utils.WorkLog;
+import com.vunke.sharehome.view.QuickIndexBar;
+import com.vunke.sharehome.view.QuickIndexBar.OnLetterUpdateListener;
 
 /**
  * 联系人界面
@@ -311,13 +311,13 @@ public class ContactsFragment extends BaseFragment {
 		}
 		JSONObject params = new JSONObject();
 		try {
-			params.put("userName", UiUtils.GetUserName().substring(1));
+			params.put("userName", UiUtils.GetUserName(getActivity()).substring(1));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-//		 WorkLog.e("ContactsFragment", "请求链接:"+UrlClient.HttpUrl +
+//		 WorkLog.i("ContactsFragment", "请求链接:"+UrlClient.HttpUrl +
 //		 UrlClient.queryContactAll);
-		 WorkLog.e("ContactsFragment", "Request data"+params.toString());
+		 WorkLog.i("ContactsFragment", "Request data"+params.toString());
 		OkHttpUtils.post(UrlClient.HttpUrl + UrlClient.GetAllContacts)
 				.tag(this).params("json", params.toString())
 				.execute(new StringCallback() {
@@ -325,7 +325,7 @@ public class ContactsFragment extends BaseFragment {
 					@Override
 					public void onResponse(boolean isFromCache, String t,
 							Request request, @Nullable Response response) {
-						 WorkLog.e("ContactsFragment","data:"+t);
+						 WorkLog.i("ContactsFragment","data:"+t);
 						try {
 							JSONObject getResponse = new JSONObject(t);
 							if (getResponse.has("code")) {
@@ -335,7 +335,7 @@ public class ContactsFragment extends BaseFragment {
 									Gson gson = new Gson();
 									ShareHomeContact SHcontact = gson.fromJson(
 											t, ShareHomeContact.class);
-									// WorkLog.e("ContactsFragment",
+									// WorkLog.i("ContactsFragment",
 									// SHcontact.toString());
 									if (SHcontact.getContacts() != null
 											&& SHcontact.getContacts().size() != 0) {
@@ -367,7 +367,7 @@ public class ContactsFragment extends BaseFragment {
 					public void onError(boolean isFromCache, Call call,
 							@Nullable Response response, @Nullable Exception e) {
 						super.onError(isFromCache, call, response, e);
-						WorkLog.e("UpdateContactService", "获取失败,请求错误,网络发送异常");
+						WorkLog.i("UpdateContactService", "获取失败,请求错误,网络发送异常");
 					}
 
 					@Override
@@ -580,7 +580,7 @@ public class ContactsFragment extends BaseFragment {
 		// 通过 UserId来查询手机看家
 		Long pid = sp.getLong(Config.LOOKHOME, -1);
 		if (!TextUtils.isEmpty(pid + "") && pid != -1) {// 判断 UserId是否存在
-			WorkLog.e("ContactsFragment", "pid:" + pid); // UserId存在
+			WorkLog.i("ContactsFragment", "pid:" + pid); // UserId存在
 			List<Contact> getContact = UiUtils.SearchContact(pid);
 			if (null != getContact && 0 != getContact.size()) {// 判断查询数据库的数据是否为空
 				for (int i = 0; i < getContact.size(); i++) {
@@ -595,12 +595,12 @@ public class ContactsFragment extends BaseFragment {
 					startActivity(Config.intent);
 				}
 			} else {
-				WorkLog.e("ContactsFragment", "通过UserId查询数据库失败，,重新添加手机看家");
+				WorkLog.i("ContactsFragment", "通过UserId查询数据库失败，,重新添加手机看家");
 			}
 		} else {// UserId不存在
-			WorkLog.e("ContactsFragment", "pid不正确,通过号码查询数据库");
+			WorkLog.i("ContactsFragment", "pid不正确,通过号码查询数据库");
 			List<Contact> getContact = UiUtils.SearchContact(UiUtils
-					.GetUserName().substring(1));
+					.GetUserName(getActivity()).substring(1));
 			if (null != getContact && 0 != getContact.size()) {// 判断查询数据库的数据是否为空
 				if (getContact.size() > 1) {// 判断数据库中是否有重复
 					for (int i = 0; i < getContact.size(); i++) {
@@ -623,7 +623,7 @@ public class ContactsFragment extends BaseFragment {
 					startActivity(Config.intent);
 				}
 			} else {
-				WorkLog.e("ContactsFragment", "通过查询数据库失败,重新添加手机看家");
+				WorkLog.i("ContactsFragment", "通过查询数据库失败,重新添加手机看家");
 			}
 		}
 	}

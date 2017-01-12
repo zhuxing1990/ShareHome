@@ -60,11 +60,11 @@ import com.vunke.sharehome.updata.AppTVStoreUpdateManager;
 import com.vunke.sharehome.url.UrlClient;
 import com.vunke.sharehome.utils.CommonUtil;
 import com.vunke.sharehome.utils.Encrypt3DES;
-import com.vunke.sharehome.utils.InputDataDialog;
 import com.vunke.sharehome.utils.NetUtils;
 import com.vunke.sharehome.utils.SharedPreferencesUtils;
 import com.vunke.sharehome.utils.UiUtils;
 import com.vunke.sharehome.utils.WorkLog;
+import com.vunke.sharehome.view.InputDataDialog;
 
 /**
  * 登录
@@ -82,6 +82,7 @@ public class LoginActivity2 extends BaseActivity {
 	private String username, code;// 帐号 验证码
 	private ProgressDialog mypDialog;// 弹窗
 	private String password;// 密码
+	private String encodePass;//密钥
 	private TextView app_title;
 	/**
 	 * 查询用户的配置数据
@@ -239,15 +240,15 @@ public class LoginActivity2 extends BaseActivity {
 		}
 		mLastUserInfo = LoginApi.getUserInfo(LoginApi.getLastUserName());
 		if (mLastUserInfo != null) {
-			if (TextUtils.isEmpty(UiUtils.GetUserName())) {
+			if (TextUtils.isEmpty(UiUtils.GetUserName(mcontext))) {
 				return;
 			}
-			login2_userName.setText(UiUtils.GetUserName().substring(1));
+			login2_userName.setText(UiUtils.GetUserName(mcontext).substring(1));
 			if (!TextUtils.isEmpty(mLastUserInfo.countryCode)) {// 自动写入帐号
 				countryCode = mLastUserInfo.countryCode;
 			}
 			if (!TextUtils.isEmpty(mLastUserInfo.password)) {// 自动写入密码
-				login2_verificationCode.setText(mLastUserInfo.password);
+//				login2_verificationCode.setText(mLastUserInfo.password);
 			}
 			// 查询用户的配置数据
 			mLoginCfg = LoginApi.getLoginCfg(mLastUserInfo.username);
@@ -279,8 +280,8 @@ public class LoginActivity2 extends BaseActivity {
 			Login();
 			break;
 		case R.id.longin_versionName:
-//			Config.intent = new Intent(mcontext, MainActivity.class);
-//			startActivity(Config.intent);
+			Config.intent = new Intent(mcontext, VideoListActivity.class);
+			startActivity(Config.intent);
 			break;
 		default:
 			break;
@@ -351,7 +352,7 @@ public class LoginActivity2 extends BaseActivity {
 					@Override
 					public void onNext(Long aLong) {
 						if (aLong != 0) {
-							// WorkLog.e("LoginActivity2", aLong + "");
+							// WorkLog.i("LoginActivity2", aLong + "");
 							login2_getcode.setText("请等待" + aLong + "秒");
 						} else {
 							this.unsubscribe();
@@ -371,7 +372,7 @@ public class LoginActivity2 extends BaseActivity {
 	 *            JSONObect.toString 的数据
 	 */
 	private void getUrlRequest(String url, String json) {
-		 WorkLog.e("LoginActivity2", "获取验证码" + json);
+		 WorkLog.i("LoginActivity2", "获取验证码" + json);
 		if (!NetUtils.isNetConnected(mcontext)) {
 			showToast("咦，貌似网络出了点问题");
 			return;
@@ -382,7 +383,7 @@ public class LoginActivity2 extends BaseActivity {
 					@Override
 					public void onResponse(boolean isFromCache, String t,
 							Request request, @Nullable Response response) {
-						WorkLog.e("LoginActivity2", "data:" + t);
+						WorkLog.i("LoginActivity2", "data:" + t);
 						try {
 							JSONObject jsonObject = new JSONObject(t);
 							int Code = jsonObject.getInt("code");
@@ -410,7 +411,7 @@ public class LoginActivity2 extends BaseActivity {
 							@Nullable Response response, @Nullable Exception e) {
 						super.onError(isFromCache, call, response, e);
 						showToast("请求错误,网络发送异常");
-						WorkLog.e("LoginActivity2", "获取短信验证码发生异常");
+						WorkLog.i("LoginActivity2", "获取短信验证码发生异常");
 					}
 				});
 
@@ -436,7 +437,7 @@ public class LoginActivity2 extends BaseActivity {
 			showToast("请输入正确的手机号码");
 			return;
 		}
-		dialog1("连接服务器。。。");
+		dialog1("连接服务器...");
 		JSONObject jsonObject = new JSONObject();
 		try {
 			jsonObject.put("username", username);
@@ -460,7 +461,7 @@ public class LoginActivity2 extends BaseActivity {
 	 * @param jsonObject
 	 */
 	private void IsSmsCode(String url, String jsonObject) {
-		// WorkLog.e("LoginActivity2", "请求地址:" + url + "\n发送数据" + jsonObject);
+		// WorkLog.i("LoginActivity2", "请求地址:" + url + "\n发送数据" + jsonObject);
 
 		if (!NetUtils.isNetConnected(mcontext)) {
 			showToast("咦，貌似网络出了点问题");
@@ -472,7 +473,7 @@ public class LoginActivity2 extends BaseActivity {
 					@Override
 					public void onResponse(boolean isFromCache, String t,
 							Request request, @Nullable Response response) {
-						WorkLog.e("LoginActivity2", "data:" + t);
+						WorkLog.i("LoginActivity2", "data:" + t);
 						try {
 							JSONObject json = new JSONObject(t);
 							int Code = json.getInt("code");
@@ -507,7 +508,7 @@ public class LoginActivity2 extends BaseActivity {
 							@Nullable Response response, @Nullable Exception e) {
 						super.onError(isFromCache, call, response, e);
 						showToast("请求错误,网络发送异常");
-						WorkLog.e("LoginActivity2", "登录失败，发生异常");
+						WorkLog.i("LoginActivity2", "登录失败，发生异常");
 						ClearDialog();
 					}
 				});
@@ -521,12 +522,12 @@ public class LoginActivity2 extends BaseActivity {
 	 * @throws Exception
 	 */
 	private void LoginSuccess(JSONObject json) throws JSONException, Exception {
-		String encodePass = json.getString("encodePass");
+		encodePass = json.getString("encodePass");
 
-		// WorkLog.e("LoginActivity2", "拿到密钥" +
+		// WorkLog.i("LoginActivity2", "拿到密钥" +
 		password = Encrypt3DES.getInstance().decrypt(encodePass);
 		if (!TextUtils.isEmpty(password)) {
-			// WorkLog.e("LoginActivity2", "解析密码" +
+			// WorkLog.i("LoginActivity2", "解析密码" +
 			// password);
 			UserInfo userInfo = new UserInfo();
 			if (countryCode.matches("([+]|[0-9])\\d{0,4}")) {
@@ -593,7 +594,7 @@ public class LoginActivity2 extends BaseActivity {
 							return;
 						}
 						try {
-							String getCalledName = UiUtils.GetUserName();
+							String getCalledName = UiUtils.GetUserName(mcontext);
 							JSONObject jsonObject = new JSONObject();
 							jsonObject.put("username", username);
 							if (getCalledName.startsWith("8")) {
@@ -615,24 +616,24 @@ public class LoginActivity2 extends BaseActivity {
 
 	private void getUrlRequest2(final String url, final String json,
 			final UserInfo userInfo, final LoginCfg loginCfg) {
-		WorkLog.e("LongActivity2", "请求推荐人" + json);
+		WorkLog.i("LongActivity2", "请求推荐人" + json);
 		OkHttpUtils.post(url).tag(this).params("json", json)
 				.execute(new StringCallback() {
 
 					@Override
 					public void onResponse(boolean isFromCache, String t,
 							Request request, @Nullable Response response) {
-						WorkLog.e("LoginActivity2", "data:" + t);
+						WorkLog.i("LoginActivity2", "data:" + t);
 						try {
 							JSONObject jsonObject = new JSONObject(t);
 							int Code = jsonObject.getInt("code");
 							switch (Code) {
 							case 200:
-								WorkLog.e("RefereeActivity", "成功");
+								WorkLog.i("RefereeActivity", "成功");
 								// finish();
 								break;
 							case 400:
-								WorkLog.e("RefereeActivity", "400");
+								WorkLog.i("RefereeActivity", "400");
 								break;
 							case 500:
 								showToast("连接服务器失败");
@@ -680,7 +681,7 @@ public class LoginActivity2 extends BaseActivity {
 				// String address = cursor.getString(cursor
 				// .getColumnIndex("address"));
 				String body = cursor.getString(cursor.getColumnIndex("body"));
-				// WorkLog.e("LoginActivity2", address + ";" + body);
+				// WorkLog.i("LoginActivity2", address + ";" + body);
 				// if (address.length() != 12) { // 判断发送验证码的号码，去除其它应用的验证码影响
 				// return;
 				// }
@@ -691,7 +692,7 @@ public class LoginActivity2 extends BaseActivity {
 					String code = matcher.group(0);// 获取匹配的数字
 					login2_verificationCode.setText(code);
 					// verification_code2 = code;
-					// WorkLog.e("LoginActivity2","设置短信验证"+verification_code2);
+					// WorkLog.i("LoginActivity2","设置短信验证"+verification_code2);
 				}
 			}
 			cursor.close();
@@ -742,7 +743,10 @@ public class LoginActivity2 extends BaseActivity {
 				if (Config.login_count == 0) {
 					startActivity(intent);
 				}
-				sp.edit().putString(Config.LOGIN_PASSWORD, password).commit();
+				
+				sp.edit()
+				.putString(Config.LOGIN_USER_NAME, username)
+				.putString(Config.LOGIN_PASSWORD, encodePass).commit();
 				if (isfirst == true) {
 					GetLuckyMoney();
 				}
@@ -755,11 +759,11 @@ public class LoginActivity2 extends BaseActivity {
 					}
 				}
 
-				WorkLog.e("LoginActivity", mapReasonStringtoReasonCode(reason)
+				WorkLog.i("LoginActivity", mapReasonStringtoReasonCode(reason)
 						+ "");
 				break;
 			case LoginApi.STATUS_DISCONNECTED:// 断开连接
-				WorkLog.e("LoginActivity", mapReasonStringtoReasonCode(reason)
+				WorkLog.i("LoginActivity", mapReasonStringtoReasonCode(reason)
 						+ "");
 				if (mypDialog != null) {
 					mypDialog.setMessage("登录失败");
@@ -797,7 +801,7 @@ public class LoginActivity2 extends BaseActivity {
 							public void onResponse(boolean isFromCache,
 									String t, Request request,
 									@Nullable Response response) {
-								WorkLog.e("LoinActivity2", "获取数据" + t);
+								WorkLog.i("LoinActivity2", "获取数据" + t);
 								try {
 									JSONObject jsonobject = new JSONObject(t);
 									if (jsonobject.has("code")) {
@@ -855,7 +859,7 @@ public class LoginActivity2 extends BaseActivity {
 							@Override
 							public void onError(boolean isFromCache, Call call,
 									Response response, Exception e) {
-								WorkLog.e("LoinActivity2", "OnError");
+								WorkLog.i("LoinActivity2", "OnError");
 							};
 						});
 			} catch (Exception e) {
@@ -940,7 +944,7 @@ public class LoginActivity2 extends BaseActivity {
 			json.put("appVesionName", appVesionName);
 			json.put("appVesionCode", appVesionCode);
 			json.put("appMotifyTime", Config.appMotifyTime);
-			 WorkLog.e("LoginActivity2", "上传登录数据" + json.toString());
+			 WorkLog.i("LoginActivity2", "上传登录数据" + json.toString());
 			if (!NetUtils.isNetConnected(mcontext)) {
 				showToast("咦，貌似网络出了点问题");
 				return;
@@ -953,20 +957,20 @@ public class LoginActivity2 extends BaseActivity {
 						public void onResponse(boolean isFromCache, String t,
 								Request request, @Nullable Response response) {
 							try {
-								WorkLog.e("LoginActivity2", "data:" + t);
+								WorkLog.i("LoginActivity2", "data:" + t);
 								JSONObject jsonObject = new JSONObject(t);
 								String message = jsonObject
 										.getString("message");
 								int code = jsonObject.getInt("code");
 								switch (code) {
 								case 200:
-									WorkLog.e("LoginActivity2", "登录上传成功");
+									WorkLog.i("LoginActivity2", "登录上传成功");
 									break;
 								case 400:
-									WorkLog.e("LoginActivity2", "网络发送失败");
+									WorkLog.i("LoginActivity2", "网络发送失败");
 									break;
 								case 500:
-									WorkLog.e("LoginActivity2", "网络发送异常");
+									WorkLog.i("LoginActivity2", "网络发送异常");
 									break;
 
 								default:
@@ -982,7 +986,7 @@ public class LoginActivity2 extends BaseActivity {
 								@Nullable Response response,
 								@Nullable Exception e) {
 							super.onError(isFromCache, call, response, e);
-							WorkLog.e("LoginActivity2", "登录数据没有上传,网络发送异常");
+							WorkLog.i("LoginActivity2", "登录数据没有上传,网络发送异常");
 						}
 					});
 		} catch (Exception e) {
@@ -1035,6 +1039,7 @@ public class LoginActivity2 extends BaseActivity {
 	}
 
 	private long exitTime = 0;
+
 
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event) {

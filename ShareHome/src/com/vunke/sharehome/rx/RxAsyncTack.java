@@ -1,6 +1,5 @@
 package com.vunke.sharehome.rx;
 
-import com.vunke.sharehome.asynctask.LuckyMoney;
 
 import rx.Observable;
 import rx.Observable.OnSubscribe;

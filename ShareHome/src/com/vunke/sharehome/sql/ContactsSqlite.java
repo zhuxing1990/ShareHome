@@ -39,10 +39,10 @@ public class ContactsSqlite extends Activity {
 				activity.finish();
 			} else {
 				if (TextUtils.isEmpty(name)) {
-//					WorkLog.e("ContactsSqlite", "name为空");
+//					WorkLog.i("ContactsSqlite", "name为空");
 				}
 				if (TextUtils.isEmpty(number)) {
-//					WorkLog.e("ContactsSqlite", "number为空");
+//					WorkLog.i("ContactsSqlite", "number为空");
 				}
 				Toast.makeText(context, "添加失败", Toast.LENGTH_LONG).show();
 			}
@@ -96,7 +96,7 @@ public class ContactsSqlite extends Activity {
 				String Number = cursor.getString(cursor.getColumnIndex("number"));
 				String pid = cursor.getString(cursor.getColumnIndex("pid"));
 				map.put("name", Name);
-//				WorkLog.e("ContactsSqlite", "查询的名字"+Name);
+//				WorkLog.i("ContactsSqlite", "查询的名字"+Name);
 				map.put("number", Number);
 				map.put("pid", pid);
 				list.add(map);

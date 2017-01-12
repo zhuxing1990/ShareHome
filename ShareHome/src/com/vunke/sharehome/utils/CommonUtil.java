@@ -15,46 +15,6 @@ import android.net.NetworkInfo;
 public class CommonUtil {
 
 	/**
-	 * 判断当前网络是否连接
-	 * 
-	 * @param context
-	 * @return
-	 */
-	public static boolean isNetConnected(Context context) {
-		ConnectivityManager connectivityManager = (ConnectivityManager) context
-				.getSystemService(Context.CONNECTIVITY_SERVICE);
-		NetworkInfo info = connectivityManager.getActiveNetworkInfo();
-		if (info != null && info.isConnected()) {
-			return true;
-		}
-		return false;
-	}
-
-	/**
-	 * dip 转 px
-	 * 
-	 * @param context
-	 * @param dipValue
-	 * @return
-	 */
-	public static int dip2px(Context context, float dipValue) {
-		final float scale = context.getResources().getDisplayMetrics().density;
-		return (int) (dipValue * scale + 0.5f);
-	}
-
-	/**
-	 * px 转 dip
-	 * 
-	 * @param context
-	 * @param pxValue
-	 * @return
-	 */
-	public static int px2dip(Context context, float pxValue) {
-		final float scale = context.getResources().getDisplayMetrics().density;
-		return (int) (pxValue / scale + 0.5f);
-	}
-
-	/**
 	 * 判断服务是否运行
 	 * 
 	 * @param context
@@ -79,6 +39,11 @@ public class CommonUtil {
 
 
 
+	/**
+	 *  long 转时间
+	 * @param time
+	 * @return
+	 */
 	public static String getDateFormat(long time) {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		return sdf.format(new Date(time));
@@ -89,7 +54,7 @@ public class CommonUtil {
 		try {
 			md5 = MessageDigest.getInstance("MD5");
 		} catch (Exception e) {
-//			System.out.println(e.toString());
+//			WorkLog.a(e.toString());
 			e.printStackTrace();
 			return "";
 		}

@@ -156,7 +156,7 @@ public class ModifyContactActivity extends BaseActivity {
 
 			}
 		});
-		if (TextUtils.isEmpty(UiUtils.GetUserName())) {
+		if (TextUtils.isEmpty(UiUtils.GetUserName(mcontext))) {
 			return;
 		}
 		SharedPreferences sp = getSharedPreferences(Config.UserName, MODE_PRIVATE);
@@ -245,14 +245,14 @@ public class ModifyContactActivity extends BaseActivity {
 
 			@Override
 			public void onSuccess(boolean b, String string, Request request, @Nullable Response response) {
-				WorkLog.e("ModifyContact", "response:" + string);
+				WorkLog.i("ModifyContact", "response:" + string);
 				RxBus.getInstance().post(Config.Update_Contact);
 				finish();
 			}
 
 			@Override
 			public void onFail(boolean isFromCache, Call call, @Nullable Response response, @Nullable Exception e) {
-				WorkLog.e("ModifyContact", "onError");
+				WorkLog.i("ModifyContact", "onError");
 			}
 		});
 
@@ -275,9 +275,9 @@ public class ModifyContactActivity extends BaseActivity {
 		JSONObject json = new JSONObject();
 		try {
 			jsArray.put(pid);
-			json.put("userName", UiUtils.GetUserName().substring(1));
+			json.put("userName", UiUtils.GetUserName(mcontext).substring(1));
 			json.put("userIds", jsArray);
-			WorkLog.e("ModifyContact", "request" + json.toString());
+			WorkLog.i("ModifyContact", "request" + json.toString());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -287,7 +287,7 @@ public class ModifyContactActivity extends BaseActivity {
 					@Override
 					public void onResponse(boolean b, String string, Request request, @Nullable Response response) {
 						try {
-							WorkLog.e("ModifyContact", "response:" + string);
+							WorkLog.i("ModifyContact", "response:" + string);
 							JSONObject getresponse = new JSONObject(string);
 							if (getresponse.has("code")) {
 								int code = getresponse.getInt("code");
@@ -315,7 +315,7 @@ public class ModifyContactActivity extends BaseActivity {
 					public void onError(boolean isFromCache, Call call, @Nullable Response response,
 							@Nullable Exception e) {
 						super.onError(isFromCache, call, response, e);
-						WorkLog.e("ModifyContact", "OnEror:请求失败");
+						WorkLog.i("ModifyContact", "OnEror:请求失败");
 					}
 
 					@Override

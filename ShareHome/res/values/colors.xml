@@ -98,6 +98,7 @@
     <color name="color_25">#FAFAFA</color>
     <color name="color_26">#80CBCFD5</color>
     <color name="color_27">#FBFBFC</color>
+    <color name="color_28">#353535</color>
     <color name="crop__button_bar">#f3f3f3</color>
     <color name="crop__button_text">#666666</color>
     <color name="crop__selector_pressed">#1a000000</color>

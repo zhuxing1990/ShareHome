@@ -20,9 +20,9 @@ import com.vunke.sharehome.model.Newfriendsbean;
 import com.vunke.sharehome.model.Newfriendsbean.Data;
 import com.vunke.sharehome.rx.RxBus;
 import com.vunke.sharehome.service.UpdateContactService;
-import com.vunke.sharehome.utils.CircularProgress;
 import com.vunke.sharehome.utils.NetUtils;
 import com.vunke.sharehome.utils.WorkLog;
+import com.vunke.sharehome.view.CircularProgress;
 
 /**
  * 新的朋友
@@ -99,7 +99,7 @@ public class NewFriends extends BaseActivity {
 			public void onFail(int code) {
 				// UiUtils.showToast(""+code);
 				stopProgress();
-				WorkLog.e("NewFriends", "" + code);
+				WorkLog.i("NewFriends", "" + code);
 				not_friends.setVisibility(View.VISIBLE);
 			}
 		});
@@ -115,6 +115,7 @@ public class NewFriends extends BaseActivity {
 			@Override
 			public void run() {
 				newfriends_progress.setVisibility(View.GONE);
+				newfriends_progress.stop();
 			}
 		}, 500);
 	}

@@ -24,6 +24,8 @@ import com.vunke.sharehome.R;
 import com.vunke.sharehome.base.BaseActivity;
 import com.vunke.sharehome.listener.MyWebViewDownLoadListener;
 import com.vunke.sharehome.url.UrlClient;
+import com.vunke.sharehome.utils.WorkLog;
+import com.vunke.sharehome.view.CircularProgress;
 
 /**
  * 更多精彩
@@ -60,7 +62,6 @@ public class MoreSurprisActivity extends BaseActivity {
 
 	static final String mimeType = "text/html"; // "surpris/html"
 
-	private Handler handler = new Handler();
 
 	@Override
 	public void OnCreate() {
@@ -118,30 +119,22 @@ public class MoreSurprisActivity extends BaseActivity {
 			@Override
 			public void onPageStarted(WebView view, String url, Bitmap favicon) {
 				super.onPageStarted(view, url, favicon);
+				WorkLog.i("MoreSurprisActivity", "webView is started");
 			}
 
 			@Override
 			public void onPageFinished(WebView view, String url) {
-
 				super.onPageFinished(view, url);
+				ClearDialog();
+				WorkLog.i("MoreSurprisActivity", "webView is finished");
 			}
 		});
 		moresurpris_webView.setWebChromeClient(new WebChromeClient() {
 
 			@Override
 			public void onProgressChanged(WebView view, int newProgress) {
-				if (newProgress == 100) { // 网页加载完成
-					ClearDialog();
-				} else if (newProgress < 1) { // 加载中
+				if (newProgress < 1) { // 加载中
 					showPopupWindow();
-					handler.postDelayed(new Runnable() {
-
-						@Override
-						public void run() {
-							ClearDialog();
-						}
-					}, 1500);
-
 				}
 				super.onProgressChanged(view, newProgress);
 			}
@@ -222,10 +215,10 @@ public class MoreSurprisActivity extends BaseActivity {
 		super.onDestroy();
 		ClearDialog();
 	}
-
+	private CircularProgress dialog_circularprogress;
 	private void showPopupWindow() {
 		View view = View.inflate(mcontext, R.layout.dialog_progress, null);
-
+		dialog_circularprogress = (CircularProgress) view.findViewById(R.id.dialog_circularprogress);
 		popupWindow = new PopupWindow(view, LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT, true);
 		popupWindow.setTouchable(true); // 设置PopupWindow可触摸
 		popupWindow.setOutsideTouchable(true); // 设置非PopupWindow区域可触摸
@@ -273,8 +266,10 @@ public class MoreSurprisActivity extends BaseActivity {
 
 		@Override
 		public void onDismiss() {
-			// Log.v("List_noteTypeActivity:", "我是关闭事件");
 			backgroundAlpha(1f);
+			if (dialog_circularprogress.isRunning()) {
+				dialog_circularprogress.stop();
+			}
 		}
 
 	}

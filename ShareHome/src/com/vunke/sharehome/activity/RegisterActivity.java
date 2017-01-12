@@ -373,7 +373,7 @@ public class RegisterActivity extends BaseActivity {
 					@Override
 					public void onNext(Long aLong) {
 						if (aLong != 0) {
-//							 WorkLog.e("RegisterActivity", aLong + "");
+//							 WorkLog.i("RegisterActivity", aLong + "");
 							getcode.setText("请等待" + aLong + "秒");
 						} else {
 							this.unsubscribe();
@@ -386,16 +386,16 @@ public class RegisterActivity extends BaseActivity {
 	}
 
 	public void commit() {
-		// WorkLog.e("RegisterActivity", "username"+username);
-		// WorkLog.e("RegisterActivity","username_code"+username_code);
-		// WorkLog.e("RegisterActivity", "password"+password);
-		// WorkLog.e("RegisterActivity", "confirm_password"+confirm_password);
-		// WorkLog.e("RegisterActivity", "verification_code"+verification_code);
-		// WorkLog.e("RegisterActivity", "verification_code2"+verification_code2);
+		// WorkLog.i("RegisterActivity", "username"+username);
+		// WorkLog.i("RegisterActivity","username_code"+username_code);
+		// WorkLog.i("RegisterActivity", "password"+password);
+		// WorkLog.i("RegisterActivity", "confirm_password"+confirm_password);
+		// WorkLog.i("RegisterActivity", "verification_code"+verification_code);
+		// WorkLog.i("RegisterActivity", "verification_code2"+verification_code2);
 		// 如果当前帐号的验证不存在并且当前帐号的验证和当前帐号不匹配
 		// if (!TextUtils.isEmpty(username_code)&&
 		// username_code.equals(username)) {
-		if (NetUtils.isNetConnected(mcontext) == false) {
+		if (!NetUtils.isNetConnected(mcontext)) {
 			showToast("请检查您的网络");
 			return;
 		}
@@ -430,7 +430,7 @@ public class RegisterActivity extends BaseActivity {
 	 * @param string
 	 */
 	private void getUrlRequest2(String url2, String string) {
-		//WorkLog.e("RegisterActivity", "请求数据"+string);
+		//WorkLog.i("RegisterActivity", "请求数据"+string);
 		if (!NetUtils.isNetConnected(mcontext)) {
 			showToast("咦，貌似网络出了点问题");
 			return;
@@ -442,9 +442,9 @@ public class RegisterActivity extends BaseActivity {
 					public void onResponse(boolean isFromCache, String t,
 							Request request, @Nullable Response response) {
 						try {
-							WorkLog.e("RegisterActivity", "data:" + t);
+							WorkLog.i("RegisterActivity", "data:" + t);
 							JSONObject jsonObject = new JSONObject(t);
-//							WorkLog.e("RegisterActivity", "解析" + t.toString());
+//							WorkLog.i("RegisterActivity", "解析" + t.toString());
 							int code = jsonObject.getInt("code");
 							switch (code) {
 							case 200:
@@ -509,7 +509,7 @@ public class RegisterActivity extends BaseActivity {
 							@Nullable Response response, @Nullable Exception e) {
 						super.onError(isFromCache, call, response, e);
 						showToast("请求错误,网络发送异常");
-						WorkLog.e("RegisterActivity", "注册失败，发生异常");
+						WorkLog.i("RegisterActivity", "注册失败，发生异常");
 						if (popupWindow != null) {
 							popupWindow.dismiss();
 							popupWindow = null;
@@ -553,7 +553,7 @@ public class RegisterActivity extends BaseActivity {
 	 */
 	private void getUrlRequest(String url, String json) {
 		// username_code = username;
-		// WorkLog.e("RegisterActivity", "设置帐号验证"+username_code);
+		// WorkLog.i("RegisterActivity", "设置帐号验证"+username_code);
 		if (!NetUtils.isNetConnected(mcontext)) {
 			showToast("咦，貌似网络出了点问题");
 			return;
@@ -565,7 +565,7 @@ public class RegisterActivity extends BaseActivity {
 					public void onResponse(boolean isFromCache, String t,
 							Request request, @Nullable Response response) {
 						try {
-							WorkLog.e("RegisterActivity", "data:" + t);
+							WorkLog.i("RegisterActivity", "data:" + t);
 							JSONObject jsonObject = new JSONObject(t);
 							int Code = jsonObject.getInt("code");
 							switch (Code) {
@@ -602,7 +602,7 @@ public class RegisterActivity extends BaseActivity {
 							@Nullable Response response, @Nullable Exception e) {
 						super.onError(isFromCache, call, response, e);
 						showToast("请求错误,网络发送异常");
-						WorkLog.e("RegisterActivity", "获取短信验证码失败,发生异常");
+						WorkLog.i("RegisterActivity", "获取短信验证码失败,发生异常");
 					}
 				});
 	}
@@ -613,7 +613,7 @@ public class RegisterActivity extends BaseActivity {
 	 * @param jsonObject
 	 */
 	private void getUrlRequest3(String url, String jsonObject) {
-		//WorkLog.e("RegisterActivity", "请求数据" + jsonObject);
+		//WorkLog.i("RegisterActivity", "请求数据" + jsonObject);
 		if (!NetUtils.isNetConnected(mcontext)) {
 			showToast("咦，貌似网络出了点问题");
 			return;
@@ -625,7 +625,7 @@ public class RegisterActivity extends BaseActivity {
 					public void onResponse(boolean isFromCache, String t,
 							Request request, @Nullable Response response) {
 						try {
-							WorkLog.e("RegisterActivity", "data:" + t);
+							WorkLog.i("RegisterActivity", "data:" + t);
 							JSONObject json = new JSONObject(t);
 							int Code = json.getInt("code");
 							String message = json.getString("message");
@@ -728,7 +728,7 @@ public class RegisterActivity extends BaseActivity {
 							@Nullable Response response, @Nullable Exception e) {
 						super.onError(isFromCache, call, response, e);
 						showToast("请求错误,网络发送异常");
-						WorkLog.e("RegisterActivity", "验证短信验证码失败，发生异常");
+						WorkLog.i("RegisterActivity", "验证短信验证码失败，发生异常");
 						if (popupWindow != null) {
 							popupWindow.dismiss();
 							popupWindow = null;
@@ -816,7 +816,7 @@ public class RegisterActivity extends BaseActivity {
 				// String address = cursor.getString(cursor
 				// .getColumnIndex("address"));
 				String body = cursor.getString(cursor.getColumnIndex("body"));
-				// WorkLog.e("RegisterActivity", address + ";" + body);
+				// WorkLog.i("RegisterActivity", address + ";" + body);
 				// if (address.length() != 12) { // 判断发送验证码的号码，去除其它应用的验证码影响
 				// return;
 				// }
@@ -827,7 +827,7 @@ public class RegisterActivity extends BaseActivity {
 					String code = matcher.group(0);// 获取匹配的数字
 					verificationCode.setText(code);
 					// verification_code2 = code;
-					//WorkLog.e("RegisterActivity", "设置短信验证"+verification_code2);
+					//WorkLog.i("RegisterActivity", "设置短信验证"+verification_code2);
 				}
 			}
 			cursor.close();

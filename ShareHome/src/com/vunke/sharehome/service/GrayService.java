@@ -1,8 +1,5 @@
 package com.vunke.sharehome.service;
 
-import com.vunke.sharehome.receiver.WakeReceiver;
-import com.vunke.sharehome.utils.WorkLog;
-
 import android.app.AlarmManager;
 import android.app.Notification;
 import android.app.PendingIntent;
@@ -11,7 +8,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.IBinder;
-import android.util.Log;
+
+import com.vunke.sharehome.receiver.WakeReceiver;
+import com.vunke.sharehome.utils.WorkLog;
 
 /**
  * 灰色保活手法创建的Service进程
@@ -31,12 +30,13 @@ public class GrayService extends Service {
 	private final static int GRAY_SERVICE_ID = -1001;
 	@Override
 	public void onCreate() {
-//		WorkLog.e(TAG, "GrayService->onCreate");
+		WorkLog.i(TAG, "GrayService->onCreate");
 		super.onCreate();
 	}
 
 	@Override
 	public int onStartCommand(Intent intent, int flags, int startId) {
+		WorkLog.i(TAG, "GrayService->onStartCommand");
 		if (Build.VERSION.SDK_INT < 18) {
 			startForeground(GRAY_SERVICE_ID, new Notification());// API < 18
 																	// ，此方法能有效隐藏Notification上的图标
@@ -66,7 +66,7 @@ public class GrayService extends Service {
 
 	@Override
 	public void onDestroy() {
-//		WorkLog.e(TAG, "GrayService->onDestroy");
+		WorkLog.i(TAG, "GrayService->onDestroy");
 		super.onDestroy();
 	}
 
@@ -77,13 +77,13 @@ public class GrayService extends Service {
 
 		@Override
 		public void onCreate() {
-//			WorkLog.e(TAG, "InnerService -> onCreate");
+			WorkLog.i(TAG, "InnerService -> onCreate");
 			super.onCreate();
 		}
 
 		@Override
 		public int onStartCommand(Intent intent, int flags, int startId) {
-//			WorkLog.e(TAG, "InnerService -> onStartCommand");
+			WorkLog.i(TAG, "InnerService -> onStartCommand");
 			startForeground(GRAY_SERVICE_ID, new Notification());
 			// stopForeground(true);
 			stopSelf();
@@ -98,7 +98,7 @@ public class GrayService extends Service {
 
 		@Override
 		public void onDestroy() {
-//			WorkLog.e(TAG, "InnerService -> onDestroy");
+			WorkLog.i(TAG, "InnerService -> onDestroy");
 			super.onDestroy();
 		}
 	}

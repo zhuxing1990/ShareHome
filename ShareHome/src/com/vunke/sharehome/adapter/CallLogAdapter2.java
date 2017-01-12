@@ -23,6 +23,7 @@ import com.vunke.sharehome.activity.ContactDetailActivity;
 import com.vunke.sharehome.activity.SH_AttnDetailActivity;
 import com.vunke.sharehome.greendao.dao.bean.Contact;
 import com.vunke.sharehome.utils.UiUtils;
+import com.vunke.sharehome.utils.WorkLog;
 
 /**
  * 通话日志（ 已弃用）
@@ -91,7 +92,7 @@ public class CallLogAdapter2 extends BaseAdapter {
 
 		final CallLog callLog = callLogs.get(position);
 		final String number = callLog.getPeerInfo().getNumber();// 获取电话号码
-		// WorkLog.e("AttnFragment", "获取的号码"+number);
+		// WorkLog.i("AttnFragment", "获取的号码"+number);
 		if (number.contains(Config.CALL_BEFORE)) {// 判断号码是否包含 Callnum
 			if (number.length() > 8) {
 				phonenumber = number.substring(8, number.length());
@@ -165,8 +166,8 @@ public class CallLogAdapter2 extends BaseAdapter {
 				}
 			} else {
 				// for (int i = 0; i < contacts.size(); i++) {
-				// WorkLog.e("AttnFragment","联系人号码"+contacts.get(i).getDisplayName());
-				// WorkLog.e("AttnFragment",
+				// WorkLog.i("AttnFragment","联系人号码"+contacts.get(i).getDisplayName());
+				// WorkLog.i("AttnFragment",
 				// "联系人ID"+contacts.get(i).getContactId());
 				// }
 				String numberName = contacts.get(0).getDisplayName();
@@ -223,7 +224,7 @@ public class CallLogAdapter2 extends BaseAdapter {
 										ContactApi.LIST_FILTER_ALL);
 								if (contacts.size() != 0 && contacts != null) {
 									/*
-									 * WorkLog.e("AttnFragment", contacts.size()
+									 * WorkLog.i("AttnFragment", contacts.size()
 									 * + "contacts.size()");
 									 */
 									for (int i = 0; i < contacts.size(); i++) {

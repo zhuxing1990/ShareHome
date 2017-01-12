@@ -38,7 +38,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="4723张"
+            android:text="1张"
             android:textColor="#444"
             android:textSize="8sp" />
     </LinearLayout>

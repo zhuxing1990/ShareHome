@@ -10,6 +10,8 @@ import java.util.List;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import com.vunke.sharehome.utils.WorkLog;
+
 public class JsonGetAppsInfos {
 	/**
 	 * 解析Json数据 获取全部应用信息
@@ -69,7 +71,7 @@ public class JsonGetAppsInfos {
 		// 获取Jason数据，对应应用信息部分，存放在dataNode中
 		JSONObject dataNode = new JSONObject(new String(data))
 				.getJSONObject("data");
-//		System.out.println(dataNode.toString());   打印出地址
+//		WorkLog.a(dataNode.toString());   打印出地址
 		AppTVStoreUpdateInfo appUpdateInfo = new AppTVStoreUpdateInfo();
 		appUpdateInfo.setCreateTime(dataNode.getString("createTime"));
 		appUpdateInfo.setUpdateId(dataNode.getInt("updateId"));

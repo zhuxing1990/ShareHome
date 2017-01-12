@@ -1,11 +1,16 @@
 package com.vunke.sharehome.utils;
 
 import java.io.DataOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
@@ -13,6 +18,7 @@ import java.util.regex.PatternSyntaxException;
 import org.json.JSONObject;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.app.job.JobInfo;
 import android.app.job.JobScheduler;
 import android.content.ComponentName;
@@ -21,7 +27,22 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.Matrix;
+import android.graphics.Paint;
+import android.graphics.PorterDuffXfermode;
+import android.graphics.Rect;
+import android.graphics.RectF;
+import android.graphics.Typeface;
+import android.graphics.PorterDuff.Mode;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.hardware.Camera;
+import android.media.MediaMetadataRetriever;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Environment;
@@ -35,11 +56,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.view.inputmethod.InputMethodManager;
 import android.webkit.CookieManager;
 import android.webkit.CookieSyncManager;
+import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.huawei.rcs.contact.ContactApi;
@@ -49,6 +74,7 @@ import com.huawei.rcs.login.UserInfo;
 import com.vunke.sharehome.Config;
 import com.vunke.sharehome.R;
 import com.vunke.sharehome.activity.LoginActivity2;
+import com.vunke.sharehome.base.BaseApplication;
 import com.vunke.sharehome.base.HuaweiSDKApplication;
 import com.vunke.sharehome.greendao.dao.ContactDao.Properties;
 import com.vunke.sharehome.greendao.dao.bean.CallRecorders;
@@ -86,14 +112,14 @@ public class UiUtils {
 					Config.UPDATE_TOMORROW, Config.defaultValue);
 			boolean sameToday = UiUtils.isSameToday(theDate, isSameToday);
 			if (sameToday) {
-				WorkLog.e("UpdateManager", "theDate:" + theDate
+				WorkLog.i("UpdateManager", "theDate:" + theDate
 						+ "\n isSameToday:" + isSameToday);
-				WorkLog.e("UpdateManager", "暂不更新");
+				WorkLog.i("UpdateManager", "暂不更新");
 				return;
 			} else {
-				 WorkLog.e("UpdateManager", "theDate:" + theDate
-				 + "\n isSameToday:" + isSameToday);
-				 WorkLog.e("UpdateManager", "检测更新");
+				WorkLog.i("UpdateManager", "theDate:" + theDate
+						+ "\n isSameToday:" + isSameToday);
+				WorkLog.i("UpdateManager", "检测更新");
 				AppTVStoreUpdateManager updateManager = new AppTVStoreUpdateManager(
 						mcontext);
 				updateManager.GetAppTVStoreUpdateInfo();
@@ -168,7 +194,6 @@ public class UiUtils {
 		return b;
 	}
 
-	@SuppressLint("NewApi")
 	public static void StartJobScheduler(Context context) {
 		try {
 			JobScheduler scheduler = (JobScheduler) context
@@ -195,7 +220,7 @@ public class UiUtils {
 				 * JobInfo.NETWORK_TYPE_UNMETERED，这就要求设备在非蜂窝网络中
 				 */
 				.setRequiredNetworkType(JobInfo.NETWORK_TYPE_ANY).build();
-				WorkLog.e("schedule job ", i + " !\n");
+				WorkLog.i("schedule job ", i + " !\n");
 				scheduler.schedule(jobInfo);
 
 			}
@@ -227,7 +252,7 @@ public class UiUtils {
 		// .compile("^((1[358][0-9])|(14[57])|(17[0678]))\\d{8}$");
 		// .compile("^((1[35789][0-9])|(14[457]))\\d{8}$");
 		Matcher m = p.matcher(mobiles);
-		// System.out.println(m.matches() + "---");
+		// WorkLog.a(m.matches() + "---");
 		return m.matches();
 	}
 
@@ -238,7 +263,7 @@ public class UiUtils {
 		Pattern p = Pattern
 				.compile("^11831726[89](1(3[0-9]|4[0-9]|5[0-9]|7[0-9]|8[0-9])\\d{8}$)");
 		Matcher m = p.matcher(CallNumber);
-		// System.out.println(m.matches() + "isCallNumber");
+		// WorkLog.a(m.matches() + "isCallNumber");
 		return m.matches();
 	}
 
@@ -258,28 +283,7 @@ public class UiUtils {
 	 * */
 	public static boolean isCallCode(String CallCode) {
 		if (CallCode.startsWith("11831726")) {
-			// System.out.println(true);
-			return true;
-		}
-		return false;
-	}
-
-	/**
-	 * 正则表达式 判断密码
-	 */
-	public static boolean isPasswordStandard(String user_wd) {
-
-		// 不能包含中文
-		if (hasChinese(user_wd)) {
-			return false;
-		}
-
-		/**
-		 * 正则匹配 \\w{6,18}匹配所有字母、数字、字符串长度6
-		 */
-		// String format = "[0-9a-zA-Z]{6,}$";(@?+\\w){6,18}+
-		String format = "(@?+\\w){6,}+";
-		if (user_wd.matches(format)) {
+			// WorkLog.a(true);
 			return true;
 		}
 		return false;
@@ -332,9 +336,9 @@ public class UiUtils {
 	 * */
 	public static long InsertCallLog(String phone, String calType,
 			String call_time) {
-		// WorkLog.e("UiUtils", "开始插入通话记录");
+		// WorkLog.i("UiUtils", "开始插入通话记录");
 		String phone2;
-		// WorkLog.e("UiUtils", "call_time" + call_time + "calType" + calType +
+		// WorkLog.i("UiUtils", "call_time" + call_time + "calType" + calType +
 		// "phone"
 		// + phone);
 		// if (phone.startsWith("8") || phone.startsWith("9")) {
@@ -469,15 +473,15 @@ public class UiUtils {
 			if (phone.contains(Config.CALL_BEFORE + "8")
 					|| phone.contains(Config.CALL_BEFORE + "9")) {
 				phone2 = phone.substring(9, phone.length());
-				// WorkLog.e("UiUtils", "去前缀后:" + phone2);
+				// WorkLog.i("UiUtils", "去前缀后:" + phone2);
 				return phone2;
 			} else {
 				phone2 = phone.substring(8, phone.length());
-				// WorkLog.e("UiUtils", "去前缀后:" + phone2);
+				// WorkLog.i("UiUtils", "去前缀后:" + phone2);
 				return phone2;
 			}
 		} else {
-			// WorkLog.e("UiUtils", "去前缀后:" + phone);
+			// WorkLog.i("UiUtils", "去前缀后:" + phone);
 			return phone;
 		}
 	}
@@ -489,22 +493,22 @@ public class UiUtils {
 	 */
 	public static String initCallNumber2(String phone) {
 		String phone2;
-		// WorkLog.e("UiUtils", "拨号传过来的号码:" + phone);//11831726+ 8/9 + 手机号码
+		// WorkLog.i("UiUtils", "拨号传过来的号码:" + phone);//11831726+ 8/9 + 手机号码
 
 		if (phone.length() >= 9) {// 电话号码的长度值大于9
 			// 如果电话号码包含了 11831726加8或9
 			if (phone.contains(Config.CALL_BEFORE + "8")
 					|| phone.contains(Config.CALL_BEFORE + "9")) {
 				phone2 = phone.substring(8, phone.length());
-				// WorkLog.e("UiUtils", "包含去前缀后:" + phone2);
+				// WorkLog.i("UiUtils", "包含去前缀后:" + phone2);
 				return phone2;
 			} else {
 				phone2 = phone.substring(8, phone.length());
-				// WorkLog.e("UiUtils", "不包含去前缀后:" + phone2);
+				// WorkLog.i("UiUtils", "不包含去前缀后:" + phone2);
 				return phone2;
 			}
 		} else {
-			// WorkLog.e("UiUtils", "去前缀后:" + phone);
+			// WorkLog.i("UiUtils", "去前缀后:" + phone);
 			return phone;
 		}
 	}
@@ -542,15 +546,15 @@ public class UiUtils {
 	/**
 	 * 根据用户帐号获取TV帐号
 	 * */
-	public static String GetTVUserName() {
-		String tvUser = "8" + UiUtils.GetUserName().substring(1);// 根据登录帐号返回
+	public static String GetTVUserName(Context context) {
+		String tvUser = "8" + UiUtils.GetUserName(context).substring(1);// 根据登录帐号返回
 		return tvUser;
 	}
 
 	/**
 	 * 获取用户帐号
 	 * */
-	public static String GetUserName() {
+	public static String GetUserName(Context context) {
 		UserInfo mLastUserInfo = LoginApi.getUserInfo(LoginApi
 				.getLastUserName());
 		String Name = null;
@@ -583,6 +587,10 @@ public class UiUtils {
 					}
 				}
 			}
+		} else {
+			SharedPreferences sp = context.getSharedPreferences(Config.SP_NAME,
+					context.MODE_PRIVATE);
+			Name = "9" + sp.getString(Config.LOGIN_USER_NAME, "");
 		}
 		if (TextUtils.isEmpty(Name)) {
 			return "null";
@@ -597,7 +605,7 @@ public class UiUtils {
 	public static void setLookHome(Context context) {
 		SharedPreferences sp = context.getSharedPreferences(Config.UserName,
 				context.MODE_PRIVATE);
-		String TVUserName = GetTVUserName();// 登录的号码
+		String TVUserName = GetTVUserName(context);// 登录的号码
 		boolean HasUserName = sp.getBoolean(Config.HasUserName, true);
 		if (HasUserName) {
 			Contact addcontact = new Contact();
@@ -650,13 +658,37 @@ public class UiUtils {
 	public static String getVersionName(Context context) {
 		String versionName = "";
 		try {
-			versionName = context.getPackageManager().getPackageInfo(
-					"com.vunke.sharehome", 0).versionName;
+			String pkName = context.getPackageName();
+			versionName = context.getPackageManager().getPackageInfo(pkName, 0).versionName;
 		} catch (Exception e) {
 			e.printStackTrace();
 			return "0";
 		}
 		return versionName;
+	}
+
+	/**
+	 * 获取版本信息
+	 * 
+	 * @param context
+	 * @return packageName+versionName+versionCode
+	 */
+	public static String getVersionInfo(Context context) {
+		try {
+
+			String pkName = context.getPackageName();
+			String versionName = context.getPackageManager().getPackageInfo(
+					pkName, 0).versionName;
+
+			int versionCode = context.getPackageManager().getPackageInfo(
+					pkName, 0).versionCode;
+
+			return pkName + "   " + versionName + "  " + versionCode;
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
 	}
 
 	/**
@@ -666,8 +698,8 @@ public class UiUtils {
 	public static int getVersionCode(Context context) {
 		int versionCode = 0;
 		try {
-			versionCode = context.getPackageManager().getPackageInfo(
-					"com.vunke.sharehome", 0).versionCode;
+			String pkName = context.getPackageName();
+			versionCode = context.getPackageManager().getPackageInfo(pkName, 0).versionCode;
 		} catch (Exception e) {
 			e.printStackTrace();
 			return 0;
@@ -741,6 +773,19 @@ public class UiUtils {
 	}
 
 	/**
+	 * 获取当前时间
+	 * 
+	 * @return String 2016-6-12_10:53
+	 */
+	public static String getDateTime2() {
+		SimpleDateFormat dateFormat = new SimpleDateFormat(
+				"yyyy-MM-dd_HH:mm:ss:SS");
+		Date date = new Date(System.currentTimeMillis());
+		String time = dateFormat.format(date);
+		return time;
+	}
+
+	/**
 	 * 测试当前摄像头能否被使用
 	 * 
 	 * @return
@@ -759,7 +804,7 @@ public class UiUtils {
 			mCamera.release();
 			mCamera = null;
 		}
-		// WorkLog.e("UiUtils", "isCameraCanuse="+canUse);
+		// WorkLog.i("UiUtils", "isCameraCanuse="+canUse);
 		return canUse;
 	}
 
@@ -777,7 +822,7 @@ public class UiUtils {
 		}
 	}
 
-	private static long lastClickTime = 0;
+	private static long mLastClickTime = 0;
 
 	/**
 	 * 防止按钮重复点击
@@ -785,13 +830,16 @@ public class UiUtils {
 	 * @param ts
 	 * @return
 	 */
-	public static boolean isFastDoubleClick(float ts) {
-		long time = System.currentTimeMillis();
-		long timeD = time - lastClickTime;
-		lastClickTime = time;
-		if (0 < timeD && timeD < ts * 1000) {
+	public static boolean isFastDoubleClick(float atime) {
+		// 当前时间
+		long currentTime = System.currentTimeMillis();
+		// 两次点击的时间差
+		long time = currentTime - mLastClickTime;
+		if (0 < time && time < atime) {
 			return true;
 		}
+
+		mLastClickTime = currentTime;
 		return false;
 	}
 
@@ -838,6 +886,198 @@ public class UiUtils {
 	}
 
 	/**
+	 * 从视频中获取一帧图片
+	 * 
+	 * @param path
+	 * @return
+	 */
+	public static Bitmap createVideoImage(String path) {
+		if (TextUtils.isEmpty(path)) {
+			return null;
+		}
+		MediaMetadataRetriever media = new MediaMetadataRetriever();
+		media.setDataSource(path);
+		Bitmap bitmap = media.getFrameAtTime();
+		return bitmap;
+	}
+
+	// 缩放图片
+	public static Drawable zoomImg(Bitmap bm, int newWidth, int newHeight) {
+		// 获得图片的宽高
+		int width = bm.getWidth();
+		int height = bm.getHeight();
+		// 计算缩放比例
+		float scaleWidth = ((float) newWidth) / width;
+		float scaleHeight = ((float) newHeight) / height;
+		// 取得想要缩放的matrix参数
+		Matrix matrix = new Matrix();
+		matrix.postScale(scaleWidth, scaleHeight);
+		// 得到新的图片
+		Bitmap newbm = Bitmap.createBitmap(bm, 0, 0, width, height, matrix,
+				true);
+
+		BitmapDrawable bd = new BitmapDrawable(newbm);
+		return bd;
+	}
+
+	/**
+	 * dip转换px
+	 */
+	public static int dip2px(Context context, int dp) {
+		final float scale = context.getResources().getDisplayMetrics().density;
+		return (int) (dp * scale + 0.5f);
+	}
+
+	/** pxz转换dip */
+
+	public static int px2dip(Context context, int px) {
+		final float scale = context.getResources().getDisplayMetrics().density;
+		return (int) (px / scale + 0.5f);
+	}
+
+	/**
+	 * 正则表达式判断邮箱
+	 * */
+	public static boolean isValidEmail(String email) {
+		boolean flag = false;
+		try {
+			String check = "^([a-z0-9A-Z]+[-|_|\\.]?)+[a-z0-9A-Z]@([a-z0-9A-Z]+(-[a-z0-9A-Z]+)?\\.)+[a-zA-Z]{2,}$";
+			Pattern regex = Pattern.compile(check);
+			Matcher matcher = regex.matcher(email);
+			flag = matcher.matches();
+		} catch (Exception e) {
+			flag = false;
+		}
+		return flag;
+	}
+
+	/**
+	 * 正则表达式 判断账号
+	 */
+	public static boolean isAccountStandard(String username) {
+		// 不能包含中文
+		if (hasChinese(username)) {
+			return false;
+		}
+
+		/**
+		 * 正则匹配： [a-zA-Z]:字母开头 \\w :可包含大小写字母，数字，下划线,@ {5,17} 5到17位，加上开头字母
+		 * 字符串长度5到18 [a-zA-Z](@?+\\w){5,17}+
+		 */
+		String format = "(@?+\\w){5,17}+";
+		if (username.matches(format)) {
+			return true;
+		}
+		return false;
+	}
+
+	/**
+	 * 正则表达式 判断密码
+	 */
+	public static boolean isPasswordStandard(String user_wd) {
+
+		// 不能包含中文
+		if (hasChinese(user_wd)) {
+			return false;
+		}
+
+		/**
+		 * 正则匹配 \\w{6,18}匹配所有字母、数字、下划线 字符串长度6到18（不含空格）
+		 */
+		String format = "(@?+\\w){6,18}+";
+		if (user_wd.matches(format)) {
+			return true;
+		}
+		return false;
+	}
+
+	/**
+	 * 设置字体
+	 * */
+	public static void setTextStyle(View view) {
+		Typeface face = Typeface.createFromAsset(BaseApplication
+				.getApplication().getAssets(), "fonts/fzjt.ttf");
+		if (view instanceof TextView) {
+			TextView tv = (TextView) view;
+			tv.setTypeface(face);
+		} else if (view instanceof Button) {
+			Button btn = (Button) view;
+			btn.setTypeface(face);
+		} else if (view instanceof EditText) {
+			EditText et = (EditText) view;
+			et.setTypeface(face);
+
+		}
+
+	}
+
+	/**
+	 * 设置字体
+	 * */
+	public static void setTextStyle(View... v) {
+		for (int i = 0; i < v.length; i++) {
+			View view = v[i];
+			Typeface face = Typeface.createFromAsset(BaseApplication
+					.getApplication().getAssets(), "fonts/fzjt.ttf");
+			if (view instanceof TextView) {
+				TextView tv = (TextView) view;
+				tv.setTypeface(face);
+			} else if (view instanceof Button) {
+				Button btn = (Button) view;
+				btn.setTypeface(face);
+			} else if (view instanceof EditText) {
+				EditText et = (EditText) view;
+				et.setTypeface(face);
+			} else if (view instanceof CheckBox) {
+				CheckBox box = (CheckBox) view;
+				box.setTypeface(face);
+			}
+
+		}
+	}
+
+	/**
+	 * 转向另一个页面
+	 * 
+	 * @param poFrom
+	 *            当前activity
+	 * @param poTo
+	 *            跳转到这个activity
+	 * @param pbFinish
+	 *            是否finish当前页面
+	 * @param pmExtra
+	 *            携带数据，不带数据写null Map<String, String> lmExtra = null; String
+	 *            msRedirectPage = "登录成功"; if
+	 *            (!Utils.isStrEmpty(msRedirectPage)) { lmExtra = new
+	 *            HashMap<String, String>(); lmExtra.put("redirect",
+	 *            msRedirectPage); }
+	 */
+	public static void gotoActivity(Activity poFrom, Class<?> poTo,
+			boolean pbFinish, Map<String, String> pmExtra) {
+		Intent loIntent = new Intent(poFrom, poTo);
+		if (pmExtra != null && !pmExtra.isEmpty()) {
+			Iterator<String> loKeyIt = pmExtra.keySet().iterator();
+			while (loKeyIt.hasNext()) {
+				String lsKey = loKeyIt.next();
+				loIntent.putExtra(lsKey, pmExtra.get(lsKey));
+			}
+		}
+		if (pbFinish)
+			poFrom.finish();
+		poFrom.startActivity(loIntent);
+	}
+
+	/** 隐藏软键盘 */
+	public static void hideSoftInput(Context context) {
+
+		InputMethodManager inputMethodManager = (InputMethodManager) context
+				.getSystemService(Context.INPUT_METHOD_SERVICE);
+		if (inputMethodManager.isActive()) {
+			inputMethodManager.toggleSoftInput(0, 2); // 隐藏输入盘
+		}
+	}
+
+	/**
 	 * 使用系统工具类判断是否是今天 是今天就显示发送的小时分钟 不是今天就显示发送的那一天
 	 * */
 	public static String getDate(Context context, long when) {
@@ -846,6 +1086,53 @@ public class UiUtils {
 			date = DateFormat.getTimeFormat(context).format(when);
 		} else {
 			date = DateFormat.getDateFormat(context).format(when);
+		}
+		return date;
+	}
+
+	/**
+	 * 图片反转
+	 * 
+	 * @param img
+	 * @return
+	 */
+	public static Bitmap toturn(Bitmap img) {
+		Matrix matrix = new Matrix();
+		matrix.postRotate(90); /* 翻转90度 */
+		int width = img.getWidth();
+		int height = img.getHeight();
+		img = Bitmap.createBitmap(img, 0, 0, width, height, matrix, true);
+		return img;
+	}
+
+	/**
+	 * 如果你获取某个文件的时间的格式 是下面这样的
+	 * 那么你就使用这个类来进行时间转换 
+	 * 
+	 * 20161222T073126.000Z 或者类似的
+	 * 2016:12:22T07:31:26.000Z 
+	 * 
+	 * 传说中的UTC 
+	 * 通用标准是以Z来标识
+	 * T代表后面跟着时间
+	 * Z代表UTC统一时间
+	 */
+	public static String UTCtoLocalDate(String utcDate) {
+		String date = null;
+		// 该类获取的时间格式 20161222T073126.000Z
+		try {
+			//                             注意是空格+UTC
+			utcDate = utcDate.replace("Z", " UTC");
+			SimpleDateFormat format = new SimpleDateFormat(
+					"yyyyMMdd'T'HHmmss.SSS Z");// 注意格式化的表达式
+			// 20161222T073126.000 UTC 将时间转换成UTC时间
+			Date d = format.parse(utcDate);
+			// WorkLog.i("UiUtils", "date:" +date);
+			format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+			date = format.format(d);
+			WorkLog.i("VideoListActivity", "date:" + date);
+		} catch (ParseException e) {
+			e.printStackTrace();
 		}
 		return date;
 	}

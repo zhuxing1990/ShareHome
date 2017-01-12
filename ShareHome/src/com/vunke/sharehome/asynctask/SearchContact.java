@@ -99,7 +99,7 @@ public class SearchContact {
 			json3.put("shareContacts", jsonarr);
 
 		}
-		json3.put("userName", UiUtils.GetUserName().substring(1));
+		json3.put("userName", UiUtils.GetUserName(context).substring(1));
 		try {
 			getUrlRequest(json3.toString(), UrlClient.HttpUrl
 					+ UrlClient.GetUserFriend);
@@ -110,10 +110,10 @@ public class SearchContact {
 
 	private void getUrlRequest(String json, String url) {
 		if (!NetUtils.isNetConnected(context)) {
-			WorkLog.e("SearchContact","咦，貌似网络出了点问题");
+			WorkLog.i("SearchContact","咦，貌似网络出了点问题");
 			return;
 		}
-//		WorkLog.e("SerachContact", "Request URL:"+url+"\nRequest URL:"+json);
+//		WorkLog.i("SerachContact", "Request URL:"+url+"\nRequest URL:"+json);
 		OkHttpUtils.post(url).tag(this).params("json", json)
 				.execute(new StringCallback() {
 
@@ -121,7 +121,7 @@ public class SearchContact {
 					public void onResponse(boolean isFromCache, String t,
 							Request request, @Nullable Response response) {
 						try {
-//							WorkLog.e("SerachContact", "当前结果" + t);
+//							WorkLog.i("SerachContact", "当前结果" + t);
 							JSONObject js = new JSONObject(t);
 							int code = js.getInt("code");
 							String message = js.getString("message");
@@ -155,7 +155,7 @@ public class SearchContact {
 							@Nullable Response response, @Nullable Exception e) {
 						super.onError(isFromCache, call, response, e);
 						callback.onFail(504);
-						WorkLog.e("SearchContact", "获取新的朋友失败,发生异常");
+						WorkLog.i("SearchContact", "获取新的朋友失败,发生异常");
 					}
 				});
 

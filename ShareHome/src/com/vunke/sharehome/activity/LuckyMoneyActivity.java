@@ -186,10 +186,10 @@ public class LuckyMoneyActivity extends BaseActivity {
 		// }, 1000);
 
 		// luckymoney_webview.loadUrl("http://qllp4.free.natapp.cc/ShareHome/luckymoney/home.jsp");
-		String userDn = Config.CALL_BEFORE + UiUtils.GetUserName();
+		String userDn = Config.CALL_BEFORE + UiUtils.GetUserName(mcontext);
 
 		String activityId = "8";
-		String phone = UiUtils.GetUserName().substring(1);
+		String phone = UiUtils.GetUserName(mcontext).substring(1);
 		String payMessage = "想家红包";
 		String type = "android";
 		try {
@@ -207,7 +207,7 @@ public class LuckyMoneyActivity extends BaseActivity {
 					+ "phone=" + phone + "&" + "payMessage=" + payMessage + "&"
 					+ "extParam1=" + extParam1 + "&" + "type=" + type;
 
-			WorkLog.e("url", UrlClient.LuckyMoneyUrl + "?" + data);
+			WorkLog.i("url", UrlClient.LuckyMoneyUrl + "?" + data);
 			// luckymoney_webview.postUrl(UrlClient.LuckyMoneyUrl,
 			// EncodingUtils.getBytes(data, "BASE64"));
 			luckymoney_webview.loadUrl(UrlClient.LuckyMoneyUrl + "?" + data);
@@ -332,7 +332,7 @@ public class LuckyMoneyActivity extends BaseActivity {
 		@JavascriptInterface
 		public void clickOnAndroid(String data) {
 			try {
-				WorkLog.e("LuckyMoneyActivity", "data:" + data);
+				WorkLog.i("LuckyMoneyActivity", "data:" + data);
 				JSONObject jsonObject = new JSONObject(data);
 				if (jsonObject.has("code")) {
 					int code = jsonObject.getInt("code");

@@ -67,7 +67,7 @@ public class UpdateContactService extends IntentService {
 			JSONArray array = new JSONArray();
 			for (int i = 0; i < loadAll.size(); i++) {
 				String phone = loadAll.get(i).getHomePhone();
-				String tvuser = UiUtils.GetTVUserName();
+				String tvuser = UiUtils.GetTVUserName(getApplicationContext());
 				if (phone.equals(tvuser)) {
 					continue;
 				}
@@ -88,10 +88,10 @@ public class UpdateContactService extends IntentService {
 			
 			updateJsonAll = new JSONObject();
 			updateJsonAll.put("contacts", array);
-			updateJsonAll.put("userName", UiUtils.GetUserName().substring(1));
-//			WorkLog.e("UpdateContactService",  "Request URL:" + UrlClient.HttpUrl
+			updateJsonAll.put("userName", UiUtils.GetUserName(getApplicationContext()).substring(1));
+//			WorkLog.i("UpdateContactService",  "Request URL:" + UrlClient.HttpUrl
 //					 + UrlClient.UpdateContact );
-			 WorkLog.e("UpdateContactService",  "Request data:"
+			 WorkLog.i("UpdateContactService",  "Request data:"
 			 + updateJsonAll.toString());
 			OkHttpUtils.post(UrlClient.HttpUrl + UrlClient.UpdateContact)
 					.tag(this).params("json", updateJsonAll.toString())
@@ -101,12 +101,12 @@ public class UpdateContactService extends IntentService {
 						public void onResponse(boolean isFromCache, String t,
 								Request request, @Nullable Response response) {
 							try {
-//								WorkLog.e("UpdateContactService", "data:" + t);
+//								WorkLog.i("UpdateContactService", "data:" + t);
 								JSONObject json = new JSONObject(t);
 								int code = json.getInt("code");
 								switch (code) {
 								case 200:
-									WorkLog.e(
+									WorkLog.i(
 											"UpdateContactService",
 											"UpdateContact:"
 													+ json.getString("upcount")
@@ -114,11 +114,11 @@ public class UpdateContactService extends IntentService {
 													+ json.getString("incount"));
 									break;
 								case 400:
-									WorkLog.e("UpdateContactService", "code:"
+									WorkLog.i("UpdateContactService", "code:"
 											+ code);
 									break;
 								case 500:
-									WorkLog.e("UpdateContactService", "code:"
+									WorkLog.i("UpdateContactService", "code:"
 											+ code);
 									break;
 
@@ -136,7 +136,7 @@ public class UpdateContactService extends IntentService {
 								@Nullable Exception e) {
 							super.onError(isFromCache, call, response, e);
 							OkHttpUtils.getInstance().cancelTag(this);
-							WorkLog.e("UpdateContactService", "Request error");
+							WorkLog.i("UpdateContactService", "Request error");
 						}
 
 						@Override

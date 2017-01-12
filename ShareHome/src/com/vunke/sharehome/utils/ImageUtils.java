@@ -26,6 +26,11 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import android.util.Log;
 
+/**
+ * 图片工具类
+ * @author zhuxi
+ *
+ */
 public class ImageUtils {
 
 	public static final int GET_IMAGE_BY_CAMERA = 5001;
@@ -119,11 +124,11 @@ public class ImageUtils {
 	public static final String TAG = ImageUtils.class.getSimpleName();
 
 	/**
-	 * get scaled bitmap
+	 * get scaled bitmap 得到缩放位图 
 	 * 
-	 * @param filePath
-	 *            local file path
-	 * @param maxWidth
+	 * @param filePath 文件路径
+	 *            local file path 本地文件路径
+	 * @param maxWidth 
 	 *            scaled bitmap width you desired, if maxWidth < maxHeight, then
 	 *            scaled bitmap width is maxWidth while bitmap height is
 	 *            maxWidth * ratio
@@ -174,9 +179,9 @@ public class ImageUtils {
 	}
 
 	/**
-	 * get scaled bitmap
+	 * get scaled bitmap 得到缩放位图 
 	 * 
-	 * @param imageResId
+	 * @param imageResId   ImageView控件ID
 	 *            image resource id
 	 * @param maxWidth
 	 *            scaled bitmap width you desired, if maxWidth < maxHeight, then
@@ -232,6 +237,7 @@ public class ImageUtils {
 	}
 
 	/**
+	 * 寻找最佳样本大小 
 	 * Returns the largest power-of-two divisor for use in downscaling a bitmap
 	 * that will not result in the scaling past the desired dimensions.
 	 * 
@@ -260,7 +266,7 @@ public class ImageUtils {
 
 	/**
 	 * Scales one side of a rectangle to fit aspect ratio.
-	 * 
+	 * 得到大小尺寸 
 	 * @param maxPrimary
 	 *            Maximum size of the primary dimension (i.e. width for max
 	 *            width), or zero to maintain aspect ratio with secondary
@@ -301,7 +307,7 @@ public class ImageUtils {
 
 	/**
 	 * get actual image dimension
-	 * 
+	 * 获取实际的图像尺寸 
 	 * @param imagePath
 	 *            local file path
 	 * @return
@@ -321,7 +327,7 @@ public class ImageUtils {
 
 	/**
 	 * get actual image dimension
-	 * 
+	 * 获取实际的图像尺寸 
 	 * @param imageResId
 	 *            image resource id
 	 * @return
@@ -340,6 +346,13 @@ public class ImageUtils {
 		return imageSize;
 	}
 
+	/**
+	 * 获取所需的图像尺寸 
+	 * @param imagePath
+	 * @param maxWidth
+	 * @param maxHeight
+	 * @return
+	 */
 	private static int[] getDesiredImageDimension(String imagePath,
 			int maxWidth, int maxHeight) {
 		int[] desiredImageDimension = new int[2];
@@ -372,6 +385,14 @@ public class ImageUtils {
 		return desiredImageDimension;
 	}
 
+	/**
+	 * 获取所需的图像尺寸 
+	 * @param context
+	 * @param imageResId
+	 * @param maxWidth
+	 * @param maxHeight
+	 * @return
+	 */
 	private static int[] getDesiredImageDimension(Context context,
 			int imageResId, int maxWidth, int maxHeight) {
 		int[] desiredImageDimension = new int[2];
@@ -408,7 +429,7 @@ public class ImageUtils {
 	/**
 	 * compress the image file, create a scaled compressed image file, and
 	 * overwrite the origin one.
-	 * 
+	 * 压缩图像文件，创建缩放压缩图像文件，并覆盖原点。 
 	 * @param path
 	 *            origin image file path
 	 * @param maxWidth
@@ -437,7 +458,7 @@ public class ImageUtils {
 	/**
 	 * compress the image file, create a scaled compressed image file, and
 	 * overwrite the origin one.
-	 * 
+	 * 压缩图像文件，创建缩放压缩图像文件，并覆盖原点。 
 	 * @param path
 	 *            origin image file path
 	 * @param maxWidth
@@ -466,7 +487,7 @@ public class ImageUtils {
 
 	/**
 	 * add water mark at the left top of image.
-	 * 
+	 * 在图像左上方添加加水印。 
 	 * @param context
 	 * @param srcPath
 	 *            local image file path
@@ -514,7 +535,7 @@ public class ImageUtils {
 
 	/**
 	 * add watermark at the right bottom of the image
-	 * 
+	 * 在图像右下方添加水印 
 	 * @param context
 	 * @param srcPath
 	 *            local image file path
@@ -596,7 +617,7 @@ public class ImageUtils {
 
 	/**
 	 * rotate bitmap
-	 * 
+	 * 图 圆形图
 	 * @param angle
 	 *            rotate angle
 	 * @param bitmap
@@ -612,7 +633,7 @@ public class ImageUtils {
 
 	/**
 	 * create a copied image.
-	 * 
+	 * 拷贝文件
 	 * @param context
 	 * @param photoUri
 	 *            origin image uri
@@ -636,6 +657,11 @@ public class ImageUtils {
 		return bitmapOrigin.compress(Bitmap.CompressFormat.JPEG, 100, output);
 	}
 
+	/**
+	 * 获得圆形图
+	 * @param uri
+	 * @return
+	 */
 	private Bitmap getCircleBitmap(Uri uri) {
 		Bitmap src = BitmapFactory.decodeFile(uri.getPath());
 		Bitmap output = Bitmap.createBitmap(src.getWidth(), src.getHeight(),
@@ -654,4 +680,6 @@ public class ImageUtils {
 		canvas.drawBitmap(src, rect, rect, paint);
 		return output;
 	}
+	
+	
 }

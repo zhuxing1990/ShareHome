@@ -6,8 +6,12 @@ import java.util.Date;
 import android.util.Log;
 
 public class WorkLog {
-	public static void e(String className, String content) {
-		Log.e(className, "time:" + getDateTime() + ";" + "[e]" + ";"
+	public static void i(String className, String content) {
+		Log.i(className, "time:" + getDateTime() + ";" + "[e]" + ";"
+				+ "sharehome:\n" + content);
+	}
+	public static void a(String content) {
+		Log.d("System.out", "time:" + getDateTime() + ";" + "[e]" + ";"
 				+ "sharehome:\n" + content);
 	}
 
@@ -16,8 +20,8 @@ public class WorkLog {
 				+ "sharehome:\n" + content);
 	}
 
-	public static void i(String className, String content) {
-		Log.i(className, "time:" + getDateTime() + ";" + "[i]" + ";"
+	public static void e(String className, String content) {
+		Log.e(className, "time:" + getDateTime() + ";" + "[i]" + ";"
 				+ "sharehome:\n" + content);
 	}
 
@@ -30,22 +34,22 @@ public class WorkLog {
 		Log.v(className, "time:" + getDateTime() + ";" + "[v]" + ";"
 				+ "sharehome:\n" + content);
 	}
-
 	
-	
-	
-	public static void e(String className, String content, Throwable e) {
-		Log.e(className, "time:" + getDateTime() + ";" + "[e]" + ";"
+	public static void i(String className, String content, Throwable e) {
+		Log.i(className, "time:" + getDateTime() + ";" + "[e]" + ";"
 				+ "sharehome:\n" + content, e);
 	}
-
+	public static void a(String content, Throwable e) {
+		Log.d("System.out", "time:" + getDateTime() + ";" + "[e]" + ";"
+				+ "sharehome:\n" + content,e);
+	}
 	public static void d(String className, String content, Throwable e) {
 		Log.d(className, "time:" + getDateTime() + ";" + "[d]" + ";"
 				+ "sharehome:\n" + content, e);
 	}
 
-	public static void i(String className, String content, Throwable e) {
-		Log.i(className, "time:" + getDateTime() + ";" + "[i]" + ";"
+	public static void e(String className, String content, Throwable e) {
+		Log.e(className, "time:" + getDateTime() + ";" + "[i]" + ";"
 				+ "sharehome:\n" + content, e);
 	}
 
@@ -60,9 +64,9 @@ public class WorkLog {
 	}
 
 	/*
-	 * public static void main(String[] args) { System.out.println("class:" +
-	 * "worleLog"); System.out.println("time:" + getDateTime() + ";" + "[d]" +
-	 * ";"); System.out.println("content:"+"当前内容"); }
+	 * public static void main(String[] args) { WorkLog.a("class:" +
+	 * "worleLog"); WorkLog.a("time:" + getDateTime() + ";" + "[d]" +
+	 * ";"); WorkLog.a("content:"+"当前内容"); }
 	 */
 
 	/**

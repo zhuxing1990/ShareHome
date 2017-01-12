@@ -16,7 +16,7 @@ public class MyJobService extends JobService {
 
 	@Override
 	public boolean onStartJob(JobParameters params) {
-		WorkLog.e("MyJobService", "mylong:"+mylong++);
+		WorkLog.i("MyJobService", "mylong:"+mylong++);
 		if (isNetworkConnected()) {
 			Config.intent = new Intent(this,NetConnectService.class);
 			startService(Config.intent);

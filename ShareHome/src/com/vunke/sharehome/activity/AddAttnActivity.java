@@ -90,15 +90,15 @@ public class AddAttnActivity extends BaseActivity {
 		if (Config.intent.hasExtra("number")) {
 			addattn_number.setText(Config.intent.getStringExtra("number"));
 			String number = Config.intent.getStringExtra("number");
-//			WorkLog.e("AddAttnActivity", "获取当前号码" + number);
+//			WorkLog.i("AddAttnActivity", "获取当前号码" + number);
 			searchContact = ContactApi.searchContact(number,
 					ContactApi.LIST_FILTER_ALL);
 			if (searchContact != null && searchContact.size() != 0) {
 				for (int i = 0; i < searchContact.size(); i++) {
 					ContactSummary position = searchContact.get(i);
-//					WorkLog.e("AddAttnActivity",
+//					WorkLog.i("AddAttnActivity",
 //							"当前名字" + position.getDisplayName());
-//					WorkLog.e("AddAttnActivity",
+//					WorkLog.i("AddAttnActivity",
 //							"当前搜索的号码" + position.getSearchMatchContent());
 					if (number.equals(position.getSearchMatchContent())) {
 						addattn_name.setText(position.getDisplayName());
@@ -153,7 +153,7 @@ public class AddAttnActivity extends BaseActivity {
 				if (!TextUtils.isEmpty(s)) {
 					addattn_clearnumber.setVisibility(View.VISIBLE);// 显示 清除号码
 					if (UiUtils.isMobileNO(addattn_number.getText().toString())) {
-						// WorkLog.e("AddAttnActivity", "是手机号码");
+						// WorkLog.i("AddAttnActivity", "是手机号码");
 						if (TextUtils.isEmpty(addattn_name.getText())) {
 							List<ContactSummary> searchContact2 = ContactApi
 									.searchContact(addattn_number.getText()
@@ -164,9 +164,9 @@ public class AddAttnActivity extends BaseActivity {
 								for (int i = 0; i < searchContact2.size(); i++) {
 									ContactSummary position = searchContact2
 											.get(i);
-//									WorkLog.e("AddAttnActivity", "当前名字"
+//									WorkLog.i("AddAttnActivity", "当前名字"
 //											+ position.getDisplayName());
-//									WorkLog.e("AddAttnActivity", "当前搜索的号码"
+//									WorkLog.i("AddAttnActivity", "当前搜索的号码"
 //											+ position.getSearchMatchContent());
 									if (addattn_number
 											.getText()
@@ -180,7 +180,7 @@ public class AddAttnActivity extends BaseActivity {
 								}
 							}
 						} else {
-//							WorkLog.e("AddAttnActivity", "已经填写了姓名");
+//							WorkLog.i("AddAttnActivity", "已经填写了姓名");
 						}
 					}
 				} else {
@@ -284,7 +284,7 @@ public class AddAttnActivity extends BaseActivity {
 		}
 		try {
 			String getPinyin = PinyinUtils.getPinyin(name);
-			// WorkLog.e("AddAttnActivity", getPinyin+"getPinyin");
+			// WorkLog.i("AddAttnActivity", getPinyin+"getPinyin");
 		} catch (Exception e) {
 			e.printStackTrace();
 			showToast("您输入的姓名有误，请重新输入");
@@ -295,7 +295,7 @@ public class AddAttnActivity extends BaseActivity {
 			showToast("网络出现异常，请检测网络。");
 			return;
 		}
-		// WorkLog.e("AddAttnActivity", "name" + name);
+		// WorkLog.i("AddAttnActivity", "name" + name);
 		if (!TextUtils.isEmpty(name) && !TextUtils.isEmpty(number)) {
 			contact = new Contact();
 			contact.setContactName(name);
@@ -325,7 +325,7 @@ public class AddAttnActivity extends BaseActivity {
 			@Override
 			public void onSuccess(boolean b, String string, Request request,
 					@Nullable Response response) {
-//				WorkLog.e("AddAttn", "response:"+string);
+//				WorkLog.i("AddAttn", "response:"+string);
 				showToast("保存成功");
 				RxBus.getInstance().post(Config.Update_Contact);
 				finish();
@@ -334,7 +334,7 @@ public class AddAttnActivity extends BaseActivity {
 			@Override
 			public void onFail(boolean isFromCache, Call call,
 					@Nullable Response response, @Nullable Exception e) {
-				WorkLog.e("AddAttn", "onError");
+				WorkLog.i("AddAttn", "onError");
 				showToast("同步联系人失败");
 			}
 			

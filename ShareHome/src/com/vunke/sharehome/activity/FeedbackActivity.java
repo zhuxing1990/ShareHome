@@ -118,10 +118,10 @@ public class FeedbackActivity extends BaseActivity {
 			zipFile.delete();
 		}
 		File file = new File(Environment.getExternalStorageDirectory(), "/hrslog");
-		// WorkLog.e("FeedbackActivity", "文件路径" +
+		// WorkLog.i("FeedbackActivity", "文件路径" +
 		// file.getPath());
 		if (!file.exists()) {
-			WorkLog.e("FeedbackActivity", "getFlie is null");
+			WorkLog.i("FeedbackActivity", "getFlie is null");
 			return;
 		}
 		Collection<File> fileList = FileUtils.getFileListOnSys(file);
@@ -189,20 +189,20 @@ public class FeedbackActivity extends BaseActivity {
 							zipFile.delete();
 						}
 						File file = new File(Environment.getExternalStorageDirectory(), "/hrslog");
-						// WorkLog.e("FeedbackActivity", "文件路径" +
+						// WorkLog.i("FeedbackActivity", "文件路径" +
 						// file.getPath());
 						if (!file.exists()) {
-							WorkLog.e("FeedbackActivity", "getFlie is null");
+							WorkLog.i("FeedbackActivity", "getFlie is null");
 							return;
 						}
 						Collection<File> fileList = FileUtils.getFileListOnSys(file);
 						if (fileList.isEmpty()) {
-							WorkLog.e("FeedbackActivity", "getFlieList is null");
+							WorkLog.i("FeedbackActivity", "getFlieList is null");
 							return;
 						}
 						ZipUtils.zipFiles(fileList, zipFile);
 						if (!zipFile.exists()) {
-							WorkLog.e("FeedbackActivity", "getzipFlie is null");
+							WorkLog.i("FeedbackActivity", "getzipFlie is null");
 							return;
 						}
 						UploadLog(zipFile);
@@ -229,28 +229,28 @@ public class FeedbackActivity extends BaseActivity {
 			showToast("咦，貌似网络出了点问题");
 			return;
 		}
-		OkHttpUtils.post(UrlClient.HttpUrl + UrlClient.UploadFile).tag(this).params("userName", UiUtils.GetUserName())
+		OkHttpUtils.post(UrlClient.HttpUrl + UrlClient.UploadFile).tag(this).params("userName", UiUtils.GetUserName(mcontext))
 				.writeTimeOut(30000).params("txt", zipFile).execute(new StringCallback() {
 
 					@Override
 					public void onResponse(boolean isFromCache, String t, Request request,
 							@Nullable Response response) {
 						// isFromCache 表示当前回调是否来自于缓存
-						 WorkLog.e("FeedbackActivity", "结果" + t);
+						 WorkLog.i("FeedbackActivity", "结果" + t);
 						try {
 							JSONObject js = new JSONObject(t);
 							int code = js.getInt("code");
 							switch (code) {
 							case 200:
-								WorkLog.e("FeedbackActivity", "上传成功");
+								WorkLog.i("FeedbackActivity", "上传成功");
 								dialog.setMessage("上传成功啦");
 								break;
 							case 400:
-								WorkLog.e("FeedbackActivity", "上传错误" + js.getString("message"));
+								WorkLog.i("FeedbackActivity", "上传错误" + js.getString("message"));
 								dialog.setMessage("上传失败");
 								break;
 							case 500:
-								WorkLog.e("FeedbackActivity", "上传错误");
+								WorkLog.i("FeedbackActivity", "上传错误");
 								dialog.setMessage("上传失败" + js.getString("message"));
 								break;
 
@@ -270,7 +270,7 @@ public class FeedbackActivity extends BaseActivity {
 					public void onError(boolean isFromCache, Call call, @Nullable Response response,
 							@Nullable Exception e) {
 						super.onError(isFromCache, call, response, e);
-						WorkLog.e("FeedbackActivity", "上传错误,网络发送异常");
+						WorkLog.i("FeedbackActivity", "上传错误,网络发送异常");
 						dialog.setMessage("上传失败");
 						if (dialog != null) {
 							dialog.dismiss();
@@ -282,14 +282,16 @@ public class FeedbackActivity extends BaseActivity {
 						super.upProgress(currentSize, totalSize, progress, networkSpeed);
 						// dialog.setMessage(networkSpeed + "/s");
 						try {
-							NumberFormat nt = NumberFormat.getPercentInstance();
-							// 设置百分数精确度2即保留两位小数
-							nt.setMinimumFractionDigits(0);
-							dialog.setMessage(nt.format(progress));
+							if (progress>0) {
+								NumberFormat nt = NumberFormat.getPercentInstance();
+								// 设置百分数精确度2即保留两位小数
+								nt.setMinimumFractionDigits(0);
+								dialog.setMessage(nt.format(progress));
+							}
 						} catch (Exception e) {
 							e.printStackTrace();
 						}
-						// WorkLog.e("FeedbackActivity",nt.format(progress));
+						// WorkLog.i("FeedbackActivity",nt.format(progress));
 					}
 					@Override
 					public void onAfter(boolean isFromCache, String t, Call call, Response response, Exception e) {

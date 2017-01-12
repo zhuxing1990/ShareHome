@@ -32,6 +32,7 @@ import android.util.TypedValue;
 import android.view.View;
 
 import com.vunke.sharehome.R;
+import com.vunke.sharehome.utils.WorkLog;
 
 /*
  * Modified from version in AOSP.
@@ -268,7 +269,7 @@ class HighlightView {
             if (((GROW_TOP_EDGE | GROW_BOTTOM_EDGE) & edge) == 0) {
                 dy = 0;
             }
-            System.out.println(" handleMotion edge:"+edge+" ; dx:"+dx+" ; dy:"+dy);
+            WorkLog.a(" handleMotion edge:"+edge+" ; dx:"+dx+" ; dy:"+dy);
             // Convert to image space before sending to growBy()
             float xDelta = dx * (cropRect.width() / r.width());
             float yDelta = dy * (cropRect.height() / r.height());

@@ -49,7 +49,7 @@ public class HuaweiSDKApplication extends RCSApplication {
 		application = this;
 		DbCore.init(this, "sharehome.db");
 		OkHttpUtils.init(this);
-		UpgradeApi.init(getApplicationContext());// 初始化更新API
+		UpgradeApi.init(this);// 初始化更新API
 		// 初始化API
 		HmeAudio.setup(this);
 		HmeVideo.setup(this);
@@ -110,9 +110,9 @@ public class HuaweiSDKApplication extends RCSApplication {
 				return;
 			}
 			if (session.getType() == CallSession.TYPE_AUDIO) {
-				WorkLog.e("HuaweiSDKApplication", "语音来电");
+				WorkLog.i("HuaweiSDKApplication", "语音来电");
 			} else if (session.getType() == CallSession.TYPE_VIDEO) {
-				WorkLog.e("HuaweiSDKApplication", "视频来电");
+				WorkLog.i("HuaweiSDKApplication", "视频来电");
 			}
 			Intent newIntent = new Intent(context, CallIn_Activity.class);
 			newIntent.putExtra("session_id", session.getSessionId());
@@ -153,7 +153,7 @@ public class HuaweiSDKApplication extends RCSApplication {
 		String sip = "222.246.189.244";
 		String sport = "443";
 		if (TextUtils.isEmpty(sip) || TextUtils.isEmpty(sport)) {
-			//WorkLog.e("HuaweiSDKApplication", "DM地址错误");
+			//WorkLog.i("HuaweiSDKApplication", "DM地址错误");
 		} else {
 			LoginApi.setConfig(LoginApi.CONFIG_MAJOR_TYPE_DM_IP,
 					LoginApi.CONFIG_MINOR_TYPE_DEFAULT, sip);

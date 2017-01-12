@@ -84,7 +84,7 @@ public class CallAudio_Activity extends BaseActivity {
 				if (searchContact != null && searchContact.size() != 0) {
 					for (int i = 0; i < searchContact.size(); i++) {
 						ContactSummary position = searchContact.get(i);
-						// WorkLog.e("CallAudio_Activity","当前名字"+position.getDisplayName());
+						// WorkLog.i("CallAudio_Activity","当前名字"+position.getDisplayName());
 						if (CallNumbers.substring(1).equals(
 								position.getSearchMatchContent())) {
 							call_phoneNumber.setText(position
@@ -98,7 +98,7 @@ public class CallAudio_Activity extends BaseActivity {
 			case Config.SearchShareHomeContact2:
 				if (contact != null && contact.size() != 0) {
 					for (int i = 0; i < contact.size(); i++) {
-						// WorkLog.e("CallAudio_Activity",
+						// WorkLog.i("CallAudio_Activity",
 						// "CallOut_Activity本地数据查询成功");
 						call_phoneNumber.setText(contact.get(i)
 								.getContactName());
@@ -120,7 +120,7 @@ public class CallAudio_Activity extends BaseActivity {
 				} else {
 					CallNumbers = CallNumber.substring(8, CallNumber.length());
 				}
-				// WorkLog.e("CallAudio_Activity", "截取号码" + CallNumbers);
+				// WorkLog.i("CallAudio_Activity", "截取号码" + CallNumbers);
 				call_phoneNumber.setText(CallNumbers.substring(1));
 				searchContact = ContactApi.searchContact(
 						CallNumbers.substring(1), ContactApi.LIST_FILTER_ALL);
@@ -131,10 +131,10 @@ public class CallAudio_Activity extends BaseActivity {
 		}
 	}
 	public void selectSQL(String callnumber) {
-		WorkLog.e("CallAudio_Activity", "1:" + callnumber);
+		WorkLog.i("CallAudio_Activity", "1:" + callnumber);
 		callnumber = UiUtils.isMobileNO(callnumber) ? callnumber : callnumber
 				.substring(1);
-		WorkLog.e("CallAudio_Activity", "2:" + callnumber);
+		WorkLog.i("CallAudio_Activity", "2:" + callnumber);
 		contact = UiUtils.SearchContact(callnumber);
 		handler.sendEmptyMessage(Config.SearchShareHomeContact2);
 	}
@@ -395,7 +395,7 @@ public class CallAudio_Activity extends BaseActivity {
 				} else if (session.getType() == CallSession.TYPE_VIDEO) {
 					type = Config.CALLRECORDER_TYPE_VIDEO_RECEIVED;
 				}
-//				WorkLog.e("CallAudio_Activity", "通话记录语音"+CallNumber);
+//				WorkLog.i("CallAudio_Activity", "通话记录语音"+CallNumber);
 				UiUtils.InsertCallLog(UiUtils.initCallNumber2(CallNumber), type,
 						callout_time.getText().toString());
 				RxBus.getInstance().post(Config.Update_CallLog);

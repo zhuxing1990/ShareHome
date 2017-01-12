@@ -25,7 +25,7 @@ public class WakeReceiver extends BroadcastReceiver {
 	public void onReceive(Context context, Intent intent) {
 		String action = intent.getAction();
 		if (GRAY_WAKE_ACTION.equals(action)) {
-//			WorkLog.e(TAG, "wake !! wake !! ");
+			WorkLog.i(TAG, "wake !! wake !! ");
 
 			Intent wakeIntent = new Intent(context, WakeNotifyService.class);
 			context.startService(wakeIntent);
@@ -39,13 +39,13 @@ public class WakeReceiver extends BroadcastReceiver {
 
 		@Override
 		public void onCreate() {
-//			WorkLog.e(TAG, "WakeNotifyService->onCreate");
+			WorkLog.i(TAG, "WakeNotifyService->onCreate");
 			super.onCreate();
 		}
 
 		@Override
 		public int onStartCommand(Intent intent, int flags, int startId) {
-//			WorkLog.e(TAG, "WakeNotifyService->onStartCommand");
+			WorkLog.i(TAG, "WakeNotifyService->onStartCommand");
 			if (Build.VERSION.SDK_INT < 18) {
 				startForeground(WAKE_SERVICE_ID, new Notification());// API < 18
 																		// ，此方法能有效隐藏Notification上的图标
@@ -66,7 +66,7 @@ public class WakeReceiver extends BroadcastReceiver {
 
 		@Override
 		public void onDestroy() {
-//			WorkLog.e(TAG, "WakeNotifyService->onDestroy");
+			WorkLog.i(TAG, "WakeNotifyService->onDestroy");
 			super.onDestroy();
 		}
 	}
@@ -78,13 +78,13 @@ public class WakeReceiver extends BroadcastReceiver {
 
 		@Override
 		public void onCreate() {
-//			WorkLog.e(TAG, "InnerService -> onCreate");
+			WorkLog.i(TAG, "InnerService -> onCreate");
 			super.onCreate();
 		}
 
 		@Override
 		public int onStartCommand(Intent intent, int flags, int startId) {
-//			WorkLog.e(TAG, "InnerService -> onStartCommand");
+			WorkLog.i(TAG, "InnerService -> onStartCommand");
 			startForeground(WAKE_SERVICE_ID, new Notification());
 			// stopForeground(true);
 			stopSelf();
@@ -99,7 +99,7 @@ public class WakeReceiver extends BroadcastReceiver {
 
 		@Override
 		public void onDestroy() {
-//			WorkLog.e(TAG, "InnerService -> onDestroy");
+			WorkLog.i(TAG, "InnerService -> onDestroy");
 			super.onDestroy();
 		}
 	}

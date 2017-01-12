@@ -20,15 +20,15 @@ public class LoginStatusChangedReceiver extends BroadcastReceiver {
 	public void onReceive(Context context, Intent intent) {
 		if (intent.getAction().equals(LoginApi.EVENT_LOGIN_STATUS_CHANGED)) {
 			longTime++;
-			WorkLog.e("LoginStatusChangedReceiver", "检测登录状态次数:" + longTime);
+			WorkLog.i("LoginStatusChangedReceiver", "检测登录状态次数:" + longTime);
 			int new_status = intent.getIntExtra(LoginApi.PARAM_NEW_STATUS, -1);
 			LogApi.d("tag", "the status is " + new_status);
 			int reason = intent.getIntExtra(LoginApi.PARAM_REASON, -1);
-			WorkLog.e("HomeActivity", "reason:" + reason + "\n" + "new_status:"
+			WorkLog.i("HomeActivity", "reason:" + reason + "\n" + "new_status:"
 					+ new_status);
 			switch (new_status) {
 			case LoginApi.STATUS_DISCONNECTED:
-				WorkLog.e("reason",
+				WorkLog.i("reason",
 						mapReasonStringtoReasonCode(reason, context));
 				break;
 			case LoginApi.STATUS_CONNECTED:

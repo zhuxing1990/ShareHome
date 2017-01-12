@@ -69,17 +69,17 @@ public class CallLogAdapter extends DefaultAdapter<CallRecorders> {
 				final int position, ViewGroup parent) {
 			calllog_name.setText(data.getContactName());
 			String getNumber = data.getCallRecordersPhone();
-//			WorkLog.e("CallLogAdapter", "获取号码"+getNumber);
+//			WorkLog.i("CallLogAdapter", "获取号码"+getNumber);
 //			calllog_phoneNumber.setText(data.getCallRecordersPhone());
 			calllog_phoneNumber.setText(getNumber.substring(1));
 			if (getNumber.startsWith("8")) {
-//				WorkLog.e("CallLogAdapter", "截取为呼叫TV");
+//				WorkLog.i("CallLogAdapter", "截取为呼叫TV");
 				calllog_switch_type.setText("电视");
 			}else if (getNumber.startsWith("9")){
-//				WorkLog.e("CallLogAdapter", "截取为呼叫手机");
+//				WorkLog.i("CallLogAdapter", "截取为呼叫手机");
 				calllog_switch_type.setText("手机");
 			}else {
-				WorkLog.e("CallLogAdapter", "鬼知道是呼叫什么:"+getNumber);
+				WorkLog.i("CallLogAdapter", "鬼知道是呼叫什么:"+getNumber);
 			}
 			Date create_time = data.getCreateTime();
 			if (create_time != null) {
@@ -114,17 +114,17 @@ public class CallLogAdapter extends DefaultAdapter<CallRecorders> {
 							if (phone.startsWith("8") || phone.startsWith("9")) {
 //								phone = phone.substring(0);
 								searchPhone = phone.substring(1);
-//								WorkLog.e("CallLogAdapter", "截取后的号码" + phone);
+//								WorkLog.i("CallLogAdapter", "截取后的号码" + phone);
 							}
 						}else {
 							searchPhone = phone;
 						}
-//						WorkLog.e("CallLogAdapter", "当前号码"+searchPhone);
+//						WorkLog.i("CallLogAdapter", "当前号码"+searchPhone);
 						List<ContactSummary> contacts = ContactApi
 								.searchContact(searchPhone,
 										ContactApi.LIST_FILTER_ALL);
 						if (contacts.size() != 0 && contacts != null) {
-//							WorkLog.e("CallLogAdapter", "contacts");
+//							WorkLog.i("CallLogAdapter", "contacts");
 							for (int i = 0; i < contacts.size(); i++) {
 								if (contacts.get(i).getSearchMatchContent()
 										.equals(searchPhone)){
@@ -142,7 +142,7 @@ public class CallLogAdapter extends DefaultAdapter<CallRecorders> {
 						}
 						List<Contact> contact = UiUtils.SearchContact(searchPhone);
 						if (contact.size() != 0 && contact != null) {
-//							WorkLog.e("CallLogAdapter","contact");
+//							WorkLog.i("CallLogAdapter","contact");
 							Config.intent = new Intent(context,
 									SH_AttnDetailActivity.class);
 							Config.intent.putExtra("PhoneNumber", phone);

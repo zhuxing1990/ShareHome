@@ -70,12 +70,12 @@ public class UpdataContact {
 				array.put(updateJson);
 				updateJsonAll = new JSONObject();
 				updateJsonAll.put("contacts", array);
-				updateJsonAll.put("userName", UiUtils.GetUserName().substring(1));
+				updateJsonAll.put("userName", UiUtils.GetUserName(context).substring(1));
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		WorkLog.e("AddAttn", "request:" + updateJsonAll.toString());
+		WorkLog.i("AddAttn", "request:" + updateJsonAll.toString());
 		OkHttpUtils.post(UrlClient.HttpUrl + UrlClient.UpdateContact)
 				.tag(context).params("json", updateJsonAll.toString())
 				.execute(new StringCallback() {

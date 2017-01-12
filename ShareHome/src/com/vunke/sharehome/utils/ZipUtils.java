@@ -282,7 +282,7 @@ public class ZipUtils {
 				if (file[i].isDirectory())
 					list.add(file[i]);
 				else
-					System.out.println(file[i].getAbsolutePath());
+					WorkLog.a(file[i].getAbsolutePath());
 			}
 			File tmp;
 			while (!list.isEmpty()) {
@@ -295,10 +295,10 @@ public class ZipUtils {
 						if (file[i].isDirectory())
 							list.add(file[i]);
 						else
-							System.out.println(file[i].getAbsolutePath());
+							WorkLog.a(file[i].getAbsolutePath()); 
 					}
 				} else {
-					System.out.println(tmp.getAbsolutePath());
+					WorkLog.a(tmp.getAbsolutePath());
 				}
 			}
 			return list;

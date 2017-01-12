@@ -86,7 +86,7 @@ public class CallIn_Activity extends BaseActivity {
 				if (searchContact != null && searchContact.size() != 0) {
 					for (int i = 0; i < searchContact.size(); i++) {
 						ContactSummary position = searchContact.get(i);
-						// WorkLog.e("CallIn_Activity",
+						// WorkLog.i("CallIn_Activity",
 						// "当前名字"+position.getDisplayName());
 						if (CallNumbers.substring(1).equals(
 								position.getSearchMatchContent())) {
@@ -101,7 +101,7 @@ public class CallIn_Activity extends BaseActivity {
 			case Config.SearchShareHomeContact2:
 				if (contact != null && contact.size() != 0) {
 					for (int i = 0; i < contact.size(); i++) {
-						// WorkLog.e("CallIn_Activity",
+						// WorkLog.i("CallIn_Activity",
 						// "CallIn_Activity本地数据查询成功");
 						calllins_phoneName.setText(contact.get(i)
 								.getContactName());
@@ -126,7 +126,7 @@ public class CallIn_Activity extends BaseActivity {
 					CallNumbers = calleeNumber.substring(8,
 							calleeNumber.length());
 				}
-				// WorkLog.e("CallIn_Activity", "截取号码" + CallNumbers);
+				// WorkLog.i("CallIn_Activity", "截取号码" + CallNumbers);
 				callins_phoneNumber.setText(CallNumbers.substring(1));
 				searchContact = ContactApi.searchContact(
 						CallNumbers.substring(1), ContactApi.LIST_FILTER_ALL);
@@ -138,10 +138,10 @@ public class CallIn_Activity extends BaseActivity {
 	}
 
 	public void selectSQL(String callnumber) {
-		WorkLog.e("CallIn_Activity", "1:" + callnumber);
+		WorkLog.i("CallIn_Activity", "1:" + callnumber);
 		callnumber = UiUtils.isMobileNO(callnumber) ? callnumber : callnumber
 				.substring(1);
-		WorkLog.e("CallIn_Activity", "2:" + callnumber);
+		WorkLog.i("CallIn_Activity", "2:" + callnumber);
 		contact = UiUtils.SearchContact(callnumber);
 		handler.sendEmptyMessage(Config.SearchShareHomeContact2);
 	}
@@ -161,7 +161,7 @@ public class CallIn_Activity extends BaseActivity {
 		SetOnClickListener(callins_answer, callouts_end, switch_call);
 		if (callSession != null) {
 			calleeNumber = callSession.getPeer().getNumber();
-			// WorkLog.e("CallIn_Activity", "接电话" + calleeNumber);
+			// WorkLog.i("CallIn_Activity", "接电话" + calleeNumber);
 			if (calleeNumber.length() > 8 && calleeNumber.contains(Callnum)) {
 				String string = calleeNumber
 						.substring(8, calleeNumber.length());
@@ -191,7 +191,7 @@ public class CallIn_Activity extends BaseActivity {
 	public void OnClick(View v) {
 		switch (v.getId()) {
 		case R.id.callins_answer:
-			if (isCameraCanUse()) {
+			if (UiUtils.isCameraCanUse()) {
 				if (callSession.getType() == CallSession.TYPE_AUDIO) {
 					callSession.accept(CallSession.TYPE_AUDIO);
 				} else if (callSession.getType() == CallSession.TYPE_VIDEO) {
@@ -250,7 +250,7 @@ public class CallIn_Activity extends BaseActivity {
 					type = Config.CALLRECORDER_TYPE_VIDEO_MISSED;
 					AddNotification();
 				}
-				// WorkLog.e("CallIn_Activity", "通话记录接电话"+calleeNumber);
+				// WorkLog.i("CallIn_Activity", "通话记录接电话"+calleeNumber);
 				UiUtils.InsertCallLog(UiUtils.initCallNumber2(calleeNumber),
 						type, "");
 				RxBus.getInstance().post(Config.Update_CallLog);

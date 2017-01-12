@@ -166,15 +166,13 @@ public class HomeActivity extends BaseFragmentActivity {
 		super.onCreate(bundle);
 		Config.login_count = 1;
 		setContentView(R.layout.activity_home);
-		// int a[] ={1,2};
-		// System.out.println(a[2]);
 		initData();
 		registerReceivers();
 		init();
 		initView();
 		UiUtils.UpdateAPK(mcontext);
 //			String getProvidersName = NetUtils.getProvidersName(mcontext);
-//			WorkLog.e("HomeActivity", "当前SIM卡为:"+getProvidersName);
+//			WorkLog.i("HomeActivity", "当前SIM卡为:"+getProvidersName);
 //		 FirstDialog();
 	}
 
@@ -472,15 +470,15 @@ public class HomeActivity extends BaseFragmentActivity {
 			// -1);
 			longTime++;
 
-			WorkLog.e("HomeActivity", "检测登录状态次数:" + longTime);
+			WorkLog.i("HomeActivity", "检测登录状态次数:" + longTime);
 			int new_status = intent.getIntExtra(LoginApi.PARAM_NEW_STATUS, -1);
 			LogApi.d("tag", "the status is " + new_status);
 			int reason = intent.getIntExtra(LoginApi.PARAM_REASON, -1);
-			WorkLog.e("HomeActivity", "reason:" + reason + "\n" + "new_status:"
+			WorkLog.i("HomeActivity", "reason:" + reason + "\n" + "new_status:"
 					+ new_status);
 			switch (new_status) {
 			case LoginApi.STATUS_DISCONNECTED:
-				WorkLog.e("reason",
+				WorkLog.i("reason",
 						mapReasonStringtoReasonCode(reason, context));
 				break;
 			case LoginApi.STATUS_CONNECTED:
@@ -514,7 +512,7 @@ public class HomeActivity extends BaseFragmentActivity {
 		case LoginApi.REASON_CONNCET_ERR:// 连接错误
 			reasonStr = "connect error";
 			showToast("连接错误");
-			showAlderDialog("咦，好像网络出了点问题");
+			showAlderDialog("当前网络不可用，请检查网络设置");
 			RxBus.getInstance().post(reLogin);
 			break;
 		case LoginApi.REASON_NET_UNAVAILABLE:// 没有网络
@@ -581,11 +579,11 @@ public class HomeActivity extends BaseFragmentActivity {
 		@Override
 		public void onReceive(Context context, Intent intent) {
 			if (intent.getAction().equals(Config.NEW_FRIENDS_STATUS_CHAGED)) {
-				// WorkLog.e("HomeActivity", "收到广播了");
+				// WorkLog.i("HomeActivity", "收到广播了");
 				if (intent.hasExtra("extras")) {
-					// WorkLog.e("HomeActivity", "获取请求成功");
+					// WorkLog.i("HomeActivity", "获取请求成功");
 					int size = intent.getIntExtra("extras", 0);
-					WorkLog.e("HomeActivity", "newfriendsBroadcast>>new friends:"
+					WorkLog.i("HomeActivity", "newfriendsBroadcast>>new friends:"
 							+ size + " people");
 					if (fragment1 != null
 							&& fragment1.contacts_friendsSize != null) {
@@ -600,12 +598,12 @@ public class HomeActivity extends BaseFragmentActivity {
 						}
 					}
 				} else if (intent.hasExtra("extra")) {
-					// WorkLog.e("HomeActivity", "获取请求失败");
+					// WorkLog.i("HomeActivity", "获取请求失败");
 					int code = intent.getIntExtra("extra", 0);
-					WorkLog.e("HomeActivity", "newfriendsBroadcast>>code:"
+					WorkLog.i("HomeActivity", "newfriendsBroadcast>>code:"
 							+ code);
 				} else {
-					WorkLog.e("HomeActivity", "newfriendsBroadcast>>没拿到数据");
+					WorkLog.i("HomeActivity", "newfriendsBroadcast>>没拿到数据");
 				}
 			}
 		}
@@ -735,7 +733,7 @@ public class HomeActivity extends BaseFragmentActivity {
 			} else if (requestCode == Crop.REQUEST_CROP) {
 				handleCrop(resultCode, result);
 			} else if (requestCode == REQUEST_CODE_CAPTURE_CAMEIA) {
-				WorkLog.e("HomeActivity", " REQUEST_CODE_CAPTURE_CAMEIA "
+				WorkLog.i("HomeActivity", " REQUEST_CODE_CAPTURE_CAMEIA "
 						+ fragment3.mCurrentPhotoPath);
 				if (fragment3.mCurrentPhotoPath != null) {
 					beginCrop(Uri
@@ -747,7 +745,7 @@ public class HomeActivity extends BaseFragmentActivity {
 
 	private void handleCrop(int resultCode, Intent result) {
 		if (resultCode == Activity.RESULT_OK) {
-			WorkLog.e("HomeActivity", " handleCrop: Crop.getOutput(result) "
+			WorkLog.i("HomeActivity", " handleCrop: Crop.getOutput(result) "
 					+ Crop.getOutput(result));
 			Bitmap scaledBitmap = ImageUtils.getScaledBitmap(
 					(Crop.getOutput(result)).getPath(), 200, 200);

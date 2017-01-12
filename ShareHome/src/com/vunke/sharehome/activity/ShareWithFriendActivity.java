@@ -31,7 +31,6 @@ import com.lzy.okhttputils.OkHttpUtils;
 import com.lzy.okhttputils.callback.StringCallback;
 import com.vunke.sharehome.Config;
 import com.vunke.sharehome.R;
-import com.vunke.sharehome.asynctask.LuckyMoney;
 import com.vunke.sharehome.base.BaseActivity;
 import com.vunke.sharehome.updata.AppTVStoreUpdateInfo;
 import com.vunke.sharehome.url.UrlClient;
@@ -72,14 +71,14 @@ public class ShareWithFriendActivity extends BaseActivity {
 					public void onResponse(boolean isFromCache, String t,
 							Request request, @Nullable Response response) {
 						try {
-							// WorkLog.e("ShareWithFriendActivity", t);
+							// WorkLog.i("ShareWithFriendActivity", t);
 							JSONObject getjson = new JSONObject(t);
 							String metaJson = getjson.getString("meta");
 							JSONObject Json1 = new JSONObject(metaJson);
-							// WorkLog.e("ShareWithFriendActivity", metaJson);
+							// WorkLog.i("ShareWithFriendActivity", metaJson);
 
 							String dataJson = getjson.getString("data");
-							// WorkLog.e("ShareWithFriendActivity", dataJson);
+							// WorkLog.i("ShareWithFriendActivity", dataJson);
 							String message = Json1.getString("message");
 							int Code = Json1.getInt("code");
 							switch (Code) {
@@ -87,7 +86,7 @@ public class ShareWithFriendActivity extends BaseActivity {
 								Gson gson = new Gson();
 								AppTVStoreUpdateInfo fromJson = gson.fromJson(
 										dataJson, AppTVStoreUpdateInfo.class);
-								// WorkLog.e("ShareWithFriendActivity",
+								// WorkLog.i("ShareWithFriendActivity",
 								// fromJson.toString());
 								list = new ArrayList<AppTVStoreUpdateInfo>();
 								list.add(fromJson);
@@ -101,11 +100,11 @@ public class ShareWithFriendActivity extends BaseActivity {
 								}
 								break;
 							case 400:
-								WorkLog.e("ShareWithFriendActivity", "请求失败"
+								WorkLog.i("ShareWithFriendActivity", "请求失败"
 										+ message);
 								break;
 							case 500:
-								WorkLog.e("ShareWithFriendActivity", "请求超时"
+								WorkLog.i("ShareWithFriendActivity", "请求超时"
 										+ message);
 								break;
 
@@ -188,20 +187,20 @@ public class ShareWithFriendActivity extends BaseActivity {
 
 			@Override
 			public void onError(Platform arg0, int arg1, Throwable arg2) {
-				WorkLog.e(TAG, "分享失败");
+				WorkLog.i(TAG, "分享失败");
 			}
 
 			@Override
 			public void onComplete(Platform arg0, int arg1,
 					HashMap<String, Object> arg2) {
 
-				WorkLog.e(TAG, "分享成功");
+				WorkLog.i(TAG, "分享成功");
 				GetLuckyMoney();
 			}
 
 			@Override
 			public void onCancel(Platform arg0, int arg1) {
-				WorkLog.e(TAG, "分享取消");
+				WorkLog.i(TAG, "分享取消");
 
 			}
 		});
@@ -213,24 +212,24 @@ public class ShareWithFriendActivity extends BaseActivity {
 
 	protected void GetLuckyMoney() {
 		SharedPreferences sp = getSharedPreferences("shareFriend", MODE_PRIVATE);
-		String userName = sp.getString(UiUtils.GetUserName(), "");
+		String userName = sp.getString(UiUtils.GetUserName(mcontext), "");
 		if (TextUtils.isEmpty(userName)) {
-			WorkLog.e(TAG,"保存第一次分享信息");
+			WorkLog.i(TAG,"保存第一次分享信息");
 			Config.intent = new Intent(mcontext, LuckyMoneyActivity.class);
 			Config.intent.putExtra("luckyResource", "1");
 			Config.intent.putExtra("extParam1", "1");
 			startActivity(Config.intent);
-			sp.edit().putString(UiUtils.GetUserName(), UiUtils.GetUserName()).commit();
+			sp.edit().putString(UiUtils.GetUserName(mcontext), UiUtils.GetUserName(mcontext)).commit();
 		}else {
-			if (userName.equals( UiUtils.GetUserName())) {
-				WorkLog.e(TAG, "getuserName:"+userName +"\n userName:"+UiUtils.GetUserName());
+			if (userName.equals( UiUtils.GetUserName(mcontext))) {
+				WorkLog.i(TAG, "getuserName:"+userName +"\n userName:"+UiUtils.GetUserName(mcontext));
 			}else {
-				WorkLog.e(TAG, "保存分享信息");
+				WorkLog.i(TAG, "保存分享信息");
 				Config.intent = new Intent(mcontext, LuckyMoneyActivity.class);
 				Config.intent.putExtra("luckyResource", "1");
 				Config.intent.putExtra("extParam1", "1");
 				startActivity(Config.intent);
-				sp.edit().putString(UiUtils.GetUserName(), UiUtils.GetUserName()).commit();
+				sp.edit().putString(UiUtils.GetUserName(mcontext), UiUtils.GetUserName(mcontext)).commit();
 			}
 		}
 		

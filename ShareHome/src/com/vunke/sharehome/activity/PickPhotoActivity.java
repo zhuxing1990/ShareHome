@@ -40,8 +40,8 @@ import com.vunke.sharehome.model.ImageFloder;
 import com.vunke.sharehome.model.RX_Photo;
 import com.vunke.sharehome.rx.RxBus;
 import com.vunke.sharehome.utils.ImageUtils;
-import com.vunke.sharehome.utils.ListImageDirPopupWindow;
-import com.vunke.sharehome.utils.ListImageDirPopupWindow.OnImageDirSelected;
+import com.vunke.sharehome.view.ListImageDirPopupWindow;
+import com.vunke.sharehome.view.ListImageDirPopupWindow.OnImageDirSelected;
 
 public class PickPhotoActivity extends BaseActivity implements
 		OnImageDirSelected {

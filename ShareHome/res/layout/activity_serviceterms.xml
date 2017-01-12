@@ -28,7 +28,7 @@
             android:textSize="18sp" />
     </RelativeLayout>
 
-    <com.vunke.sharehome.utils.MyScrollView
+    <com.vunke.sharehome.view.MyScrollView
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:layout_marginTop="10dp"
@@ -162,6 +162,6 @@
 	    "
             android:textColor="@color/black"
             android:textSize="14sp" />
-    </com.vunke.sharehome.utils.MyScrollView>
+    </com.vunke.sharehome.view.MyScrollView>
 
 </LinearLayout>

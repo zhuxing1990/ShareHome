@@ -35,7 +35,7 @@
         android:scrollbars="none"
         android:layout_below="@+id/contacts_title" />
 
-    <com.vunke.sharehome.utils.QuickIndexBar
+    <com.vunke.sharehome.view.QuickIndexBar
         android:layout_marginTop="30dp"
         android:layout_marginBottom="30dp"
         android:id="@+id/contacts_bar"

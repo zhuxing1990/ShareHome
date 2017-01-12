@@ -30,13 +30,13 @@ import com.vunke.sharehome.adapter.DialogListViewAdapter;
 import com.vunke.sharehome.base.BaseActivity;
 import com.vunke.sharehome.greendao.util.DbCore;
 import com.vunke.sharehome.rx.RxBus;
-import com.vunke.sharehome.utils.ActionSheetDialog;
-import com.vunke.sharehome.utils.ActionSheetDialog.OnSheetItemClickListener;
-import com.vunke.sharehome.utils.MyScrollView;
-import com.vunke.sharehome.utils.MyScrollView.OnScrollListener;
 import com.vunke.sharehome.utils.NetUtils;
 import com.vunke.sharehome.utils.UiUtils;
 import com.vunke.sharehome.utils.WorkLog;
+import com.vunke.sharehome.view.ActionSheetDialog;
+import com.vunke.sharehome.view.MyScrollView;
+import com.vunke.sharehome.view.ActionSheetDialog.OnSheetItemClickListener;
+import com.vunke.sharehome.view.MyScrollView.OnScrollListener;
 
 /**
  * 联系人详情
@@ -69,7 +69,7 @@ public class SH_AttnDetailActivity extends BaseActivity implements
 	private void getExtras() {
 		intent = getIntent();
 		PhoneNumber = intent.getStringExtra("PhoneNumber");
-		// WorkLog.e("SH_AttnDetailActivity", "号码详情" + PhoneNumber);
+		// WorkLog.i("SH_AttnDetailActivity", "号码详情" + PhoneNumber);
 		Name = intent.getStringExtra("Name");
 		if (intent.hasExtra("Pid")) {
 			Pid = intent.getStringExtra("Pid");
@@ -105,7 +105,7 @@ public class SH_AttnDetailActivity extends BaseActivity implements
 			list.add(PhoneNumber);
 			sh_attndetail_number.setText("号码:" + PhoneNumber);
 		}
-		// WorkLog.e("SH_AttnDetailActivity", "号码简化" + PhoneNumber);
+		// WorkLog.i("SH_AttnDetailActivity", "号码简化" + PhoneNumber);
 		if (!TextUtils.isEmpty(Name)) {
 
 			sh_attndetail_name.setText(Name);
@@ -163,8 +163,8 @@ public class SH_AttnDetailActivity extends BaseActivity implements
 	}
 
 	private void CallNumber() {
-		WorkLog.e("SH_AttnDetailActivity", "准备拨号" + PhoneNumber);
-		if (isCameraCanUse()) {
+		WorkLog.i("SH_AttnDetailActivity", "准备拨号" + PhoneNumber);
+		if (UiUtils.isCameraCanUse()) {
 			if (NetUtils.isNetConnected(mcontext)) {
 				if (UiUtils.isMobileNO(PhoneNumber)) {
 					Call(PhoneNumber);
@@ -185,7 +185,7 @@ public class SH_AttnDetailActivity extends BaseActivity implements
 	}
 
 	private void Call(final String number) {
-		// WorkLog.e("SH_AttnDetailActivity", number);
+		// WorkLog.i("SH_AttnDetailActivity", number);
 		new ActionSheetDialog(mcontext)
 				.builder()
 				.setCancelable(true)
@@ -231,7 +231,7 @@ public class SH_AttnDetailActivity extends BaseActivity implements
 
 	private void CallOut2(String type) {
 		// PhoneNumber
-		if (isCameraCanUse()) {
+		if (UiUtils.isCameraCanUse()) {
 			if (NetUtils.isNetConnected(mcontext)) {
 				if (UiUtils.isMobileNO(PhoneNumber) == true) {
 					intent = new Intent(mcontext, CallOut_Activity.class);
@@ -364,7 +364,7 @@ public class SH_AttnDetailActivity extends BaseActivity implements
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
-				if (isCameraCanUse()) {
+				if (UiUtils.isCameraCanUse()) {
 					if (UiUtils.isMobileNO(list.get(position).toString().trim()) == true) {
 						intent = new Intent(mcontext, CallOut_Activity.class);
 						intent.putExtra("is_video_call", true);

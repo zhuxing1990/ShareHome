@@ -9,6 +9,12 @@ import java.util.List;
 
 import android.annotation.SuppressLint;
 import android.os.Environment;
+
+/**
+ * SD卡工具类
+ * @author zhuxi
+ *
+ */
 @SuppressLint("NewApi")
 public class SdCardUtils {
 	// 获取rom内存剩于的运行空间

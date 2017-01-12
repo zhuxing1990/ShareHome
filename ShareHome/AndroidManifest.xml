@@ -164,7 +164,7 @@
         <!-- 分享SDK -->
 
 
-        <!-- 登录界面 （已弃用）-->
+        <!-- 登录界面 （已弃用） -->
         <activity
             android:name="com.vunke.sharehome.activity.LoginActivity"
             android:configChanges="keyboardHidden|orientation" >
@@ -178,6 +178,7 @@
         <activity android:name="com.vunke.sharehome.activity.WelcomeActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -285,18 +286,30 @@
             android:configChanges="keyboardHidden|orientation" >
         </activity>
         <!-- 定向流量包 -->
-        <activity 
+        <activity
             android:name="com.vunke.sharehome.activity.BuyTrafficActivity"
-            android:configChanges="keyboardHidden|orientation">
+            android:configChanges="keyboardHidden|orientation" >
         </activity>
         <!-- 领取红包 -->
-		<activity android:name="com.vunke.sharehome.activity.LuckyMoneyActivity">
+        <activity android:name="com.vunke.sharehome.activity.LuckyMoneyActivity" >
+        </activity>
+        <!-- 我的红包 -->
+        <activity android:name="com.vunke.sharehome.activity.MyLuckyMoneyActivity" >
+        </activity>
+        <!-- 红包列表 -->
+        <activity android:name="com.vunke.sharehome.activity.LuckyMoneyListActivity" >
+        </activity>
+        
+        <!-- 视频录制 -->
+        <activity android:name="com.vunke.sharehome.activity.VideoRecordActivity">
+        </activity>
+        <!-- 视频列表 -->
+        <activity android:name="com.vunke.sharehome.activity.VideoListActivity">
+        </activity>
+        <!-- 视频播放 -->
+		<activity android:name="com.vunke.sharehome.activity.VideoViewActivity">
 		</activity>
-		<!-- 我的红包 -->
-		<activity android:name="com.vunke.sharehome.activity.MyLuckyMoneyActivity">
-		</activity>
-		<activity android:name="com.vunke.sharehome.activity.LuckyMoneyListActivity">
-		</activity>
+		
 		
         <!-- 网络改变 -->
         <receiver android:name=".receiver.NetChangeReceiver" >
@@ -362,8 +375,15 @@
             android:name="com.vunke.sharehome.service.MyJobService"
             android:permission="android.permission.BIND_JOB_SERVICE" >
         </service>
-        <service android:name="com.vunke.sharehome.service.RecordService">
+        <service android:name="com.vunke.sharehome.service.RecordService" >
         </service>
+		<!-- 视频文件 内容提供者 -->
+        <provider
+            android:name="com.vunke.sharehome.sql.VideoSqlite"
+            android:authorities="com.vunke.sharehome.provider"
+            android:exported="true"
+            android:multiprocess="true" >
+        </provider>
     </application>
 
 </manifest>

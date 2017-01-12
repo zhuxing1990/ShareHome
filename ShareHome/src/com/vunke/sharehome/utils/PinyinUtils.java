@@ -6,6 +6,12 @@ import net.sourceforge.pinyin4j.format.HanyuPinyinToneType;
 import net.sourceforge.pinyin4j.format.exception.BadHanyuPinyinOutputFormatCombination;
 
 
+/**
+ * 拼音工具类
+ * 汉字等字母转拼音
+ * @author zhuxi
+ *
+ */
 public class PinyinUtils {
 	public static String getPinyin(String inputString) {
 

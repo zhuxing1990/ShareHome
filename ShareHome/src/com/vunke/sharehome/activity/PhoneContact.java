@@ -81,11 +81,11 @@ import com.vunke.sharehome.base.BaseActivity;
 import com.vunke.sharehome.model.ContactBean;
 import com.vunke.sharehome.model.ShareContactsBean;
 import com.vunke.sharehome.url.UrlClient;
-import com.vunke.sharehome.utils.ActionSheetDialog;
-import com.vunke.sharehome.utils.ActionSheetDialog.OnSheetItemClickListener;
 import com.vunke.sharehome.utils.NetUtils;
 import com.vunke.sharehome.utils.UiUtils;
 import com.vunke.sharehome.utils.WorkLog;
+import com.vunke.sharehome.view.ActionSheetDialog;
+import com.vunke.sharehome.view.ActionSheetDialog.OnSheetItemClickListener;
 
 /**
  * 手机联系人
@@ -216,7 +216,7 @@ public class PhoneContact extends BaseActivity {
 					int position, long arg3) {
 				Config.intent = new Intent(mcontext,
 						ContactDetailActivity.class);
-				// WorkLog.e("PhoneContact",
+				// WorkLog.i("PhoneContact",
 				// "联系人Id>>"+clientContacts.get(position).getContactId());
 				Config.intent.putExtra("id", clientContacts.get(position)
 						.getContactId());
@@ -615,9 +615,9 @@ public class PhoneContact extends BaseActivity {
 	 * @param json
 	 */
 	private void getUrlRequest(String url, String json) {
-		// WorkLog.e("PhoneContact", "发送数据" + json);
+		// WorkLog.i("PhoneContact", "发送数据" + json);
 		if (!NetUtils.isNetConnected(mcontext)) {
-			WorkLog.e("PhoneContact", "咦，貌似网络出了点问题");
+			WorkLog.i("PhoneContact", "咦，貌似网络出了点问题");
 			return;
 		}
 		OkHttpUtils.post(url).tag(this).params("json", json)
@@ -626,7 +626,7 @@ public class PhoneContact extends BaseActivity {
 					public void onResponse(boolean isFromCache, String t,
 							Request request, @Nullable Response response) {
 						try {
-							WorkLog.e("PhoneContact", "data:" + t);
+							WorkLog.i("PhoneContact", "data:" + t);
 							JSONObject js = new JSONObject(t);
 							int code = js.getInt("code");
 							switch (code) {
@@ -657,11 +657,11 @@ public class PhoneContact extends BaseActivity {
 								}
 								break;
 							case 400:
-								WorkLog.e("PhoneContact",
+								WorkLog.i("PhoneContact",
 										"请求失败" + js.getString("message"));
 								break;
 							case 500:
-								WorkLog.e("PhoneContact",
+								WorkLog.i("PhoneContact",
 										"请求错误" + js.getString("message"));
 								break;
 
@@ -677,7 +677,7 @@ public class PhoneContact extends BaseActivity {
 					public void onError(boolean isFromCache, Call call,
 							@Nullable Response response, @Nullable Exception e) {
 						super.onError(isFromCache, call, response, e);
-						WorkLog.e("PhoneContacts", "获取想家用户失败，请求发生异常");
+						WorkLog.i("PhoneContacts", "获取想家用户失败，请求发生异常");
 					}
 				});
 

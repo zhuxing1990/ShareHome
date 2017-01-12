@@ -65,9 +65,9 @@ import com.vunke.sharehome.rx.RxBus;
 import com.vunke.sharehome.service.CaaSSdkService;
 import com.vunke.sharehome.service.HomeService;
 import com.vunke.sharehome.sql.ContactsSqlite;
-import com.vunke.sharehome.utils.MyOnTouch;
 import com.vunke.sharehome.utils.UiUtils;
 import com.vunke.sharehome.utils.WorkLog;
+import com.vunke.sharehome.view.MyOnTouch;
 
 /**
  * 视频通话
@@ -149,7 +149,7 @@ public class CallVideo_Activity extends BaseActivity implements OnTouchListener 
 				if (searchContact != null && searchContact.size() != 0) {
 					for (int i = 0; i < searchContact.size(); i++) {
 						ContactSummary position = searchContact.get(i);
-						// WorkLog.e("CallVideo_Activity","当前名字"+position.getDisplayName());
+						// WorkLog.i("CallVideo_Activity","当前名字"+position.getDisplayName());
 						if (CallNumbers.substring(1).equals(
 								position.getSearchMatchContent())) {
 							callvideo_PhoneNumber.setText(position
@@ -163,7 +163,7 @@ public class CallVideo_Activity extends BaseActivity implements OnTouchListener 
 			case Config.SearchShareHomeContact2:
 				if (contact != null && contact.size() != 0) {
 					for (int i = 0; i < contact.size(); i++) {
-						// WorkLog.e("CallVideo_Activity",
+						// WorkLog.i("CallVideo_Activity",
 						// "CallOut_Activity本地数据查询成功");
 						callvideo_PhoneNumber.setText(contact.get(i)
 								.getContactName());
@@ -186,7 +186,7 @@ public class CallVideo_Activity extends BaseActivity implements OnTouchListener 
 				} else {
 					CallNumbers = CallNumber.substring(8, CallNumber.length());
 				}
-				// WorkLog.e("CallVideo_Activity", "截取号码" + CallNumbers);
+				// WorkLog.i("CallVideo_Activity", "截取号码" + CallNumbers);
 				callvideo_PhoneNumber.setText(CallNumbers.substring(1));
 				searchContact = ContactApi.searchContact(
 						CallNumbers.substring(1), ContactApi.LIST_FILTER_ALL);
@@ -198,10 +198,10 @@ public class CallVideo_Activity extends BaseActivity implements OnTouchListener 
 	}
 
 	public void selectSQL(String callnumber) {
-		WorkLog.e("CallVideo_Activity", "1:" + callnumber);
+		WorkLog.i("CallVideo_Activity", "1:" + callnumber);
 		callnumber = UiUtils.isMobileNO(callnumber) ? callnumber : callnumber
 				.substring(1);
-		WorkLog.e("CallVideo_Activity", "2:" + callnumber);
+		WorkLog.i("CallVideo_Activity", "2:" + callnumber);
 		contact = UiUtils.SearchContact(callnumber);
 		handler.sendEmptyMessage(Config.SearchShareHomeContact2);
 	}
@@ -222,7 +222,7 @@ public class CallVideo_Activity extends BaseActivity implements OnTouchListener 
 	private void initViews() {
 		callvideo_phoneName = (TextView) findViewById(R.id.callvideo_PhoneName);
 		callvideo_PhoneNumber = (TextView) findViewById(R.id.callvideo_phoneNumber);
-		// WorkLog.e("CallVideo_Activity", "视频通话:" +
+		// WorkLog.i("CallVideo_Activity", "视频通话:" +
 		// callSession.getPeer().getNumber());
 
 		callvideo_status = (TextView) findViewById(R.id.callvideo_status);
@@ -543,7 +543,7 @@ public class CallVideo_Activity extends BaseActivity implements OnTouchListener 
 				} else if (session.getType() == CallSession.TYPE_VIDEO) {
 					type = Config.CALLRECORDER_TYPE_VIDEO_RECEIVED;
 				}
-				// WorkLog.e("CallVideo_Activity", "通话记录视频"+CallNumber);
+				// WorkLog.i("CallVideo_Activity", "通话记录视频"+CallNumber);
 				UiUtils.InsertCallLog(UiUtils.initCallNumber2(CallNumber),
 						type, callvideo_time.getText().toString());
 				RxBus.getInstance().post(Config.Update_CallLog);
@@ -700,7 +700,17 @@ public class CallVideo_Activity extends BaseActivity implements OnTouchListener 
 		}
 	};
 	private List<Contact> contact;
-
+	private void initCallSession() {
+		intent = new Intent(mcontext, HomeService.class);
+		intent.putExtra("className", mcontext.getClass().getName());
+		startService(intent);
+		callSession = CallApi.getForegroudCallSession();
+		if (null == callSession) {
+			LogApi.d("V2OIP", "视频onCreate:没有电话交谈.");
+			finish();
+			return;
+		}
+	}
 	private void OnListener() {
 		OrientationEventListener listener = new OrientationEventListener(this,
 				SensorManager.SENSOR_DELAY_NORMAL) {
@@ -715,11 +725,11 @@ public class CallVideo_Activity extends BaseActivity implements OnTouchListener 
 		if (listener.canDetectOrientation()) {
 			listener.enable();
 		} else {
-			WorkLog.e("CallVideo", "定位事件监听器启用失败! !");
+			WorkLog.i("CallVideo", "定位事件监听器启用失败! !");
 			LogApi.e("V2OIP", "OrientationEventListener enable failed!!");
 		}
 	}
-
+	
 	private void orientationChanged(int orientation) {
 		int cameraRotate = 270;
 		int displayRotation = Surface.ROTATION_0;
@@ -744,7 +754,7 @@ public class CallVideo_Activity extends BaseActivity implements OnTouchListener 
 					+ orientation
 					+ ", getCameraOrientation with default displayRotation "
 					+ Surface.ROTATION_0);
-			WorkLog.e(
+			WorkLog.i(
 					"CallVideo_Activity",
 					"orientationChanged get wrong orientation:"
 							+ orientation
@@ -762,17 +772,7 @@ public class CallVideo_Activity extends BaseActivity implements OnTouchListener 
 		CallApi.setCameraRotate(cameraRotate);
 	}
 
-	private void initCallSession() {
-		intent = new Intent(mcontext, HomeService.class);
-		intent.putExtra("className", mcontext.getClass().getName());
-		startService(intent);
-		callSession = CallApi.getForegroudCallSession();
-		if (null == callSession) {
-			LogApi.d("V2OIP", "视频onCreate:没有电话交谈.");
-			finish();
-			return;
-		}
-	}
+	
 
 	/**
 	 * get orientation to set camera orientation in this situation
@@ -824,7 +824,7 @@ public class CallVideo_Activity extends BaseActivity implements OnTouchListener 
 		default:
 			LogApi.e("V2OIP", "getCameraOrientation wrong displayRotation "
 					+ displayRotation);
-			WorkLog.e("CallVideo_Activity",
+			WorkLog.i("CallVideo_Activity",
 					"getCameraOrientation wrong displayRotation "
 							+ displayRotation);
 			break;
@@ -868,7 +868,7 @@ public class CallVideo_Activity extends BaseActivity implements OnTouchListener 
 	// 显示通话视频
 	private void showVideo() {
 		if (remoteVideoView == null) {
-			// WorkLog.e("CallVideo_Activity", "remoteVideoView==null");
+			// WorkLog.i("CallVideo_Activity", "remoteVideoView==null");
 		}
 		if ((null != localVideoView || null != remoteVideoView)
 				&& CallSession.INVALID_ID != callSession.getSessionId()) {
@@ -880,7 +880,7 @@ public class CallVideo_Activity extends BaseActivity implements OnTouchListener 
 				videoFrame.bringChildToFront(localVideoView);
 			}
 		} else {
-			// WorkLog.e("CallVideo_Activity", "aaaa");
+			// WorkLog.i("CallVideo_Activity", "aaaa");
 		}
 
 	}

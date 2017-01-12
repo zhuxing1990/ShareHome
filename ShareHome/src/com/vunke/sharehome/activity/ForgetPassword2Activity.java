@@ -224,10 +224,10 @@ public class ForgetPassword2Activity extends BaseActivity {
 					public void onResponse(boolean isFromCache, String t,
 							Request request, @Nullable Response response) {
 						// isFromCache 表示当前回调是否来自于缓存
-						 WorkLog.e("ForgetPassword2Activity", "data:" + t);
+						 WorkLog.i("ForgetPassword2Activity", "data:" + t);
 						try {
 							JSONObject jsonObject = new JSONObject(t);
-//							WorkLog.e("ForgetPassword2Activity", "解析" + jsonObject.toString());
+//							WorkLog.i("ForgetPassword2Activity", "解析" + jsonObject.toString());
 							int code = jsonObject.getInt("code");
 							switch (code) {
 							case 200:
@@ -275,7 +275,7 @@ public class ForgetPassword2Activity extends BaseActivity {
 							@Nullable Response response, @Nullable Exception e) {
 						super.onError(isFromCache, call, response, e);
 						showToast("请求错误,网络发送异常");
-						WorkLog.e("ForgetPassword2Activity", "修改密码网络错误");
+						WorkLog.i("ForgetPassword2Activity", "修改密码网络错误");
 						if (popupWindow != null) {
 							popupWindow.dismiss();
 							popupWindow = null;

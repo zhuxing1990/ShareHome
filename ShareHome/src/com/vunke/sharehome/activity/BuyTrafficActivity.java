@@ -52,10 +52,10 @@ import com.vunke.sharehome.base.BaseActivity;
 import com.vunke.sharehome.model.BuyTrafficBean;
 import com.vunke.sharehome.model.DnwSmsOrderBean;
 import com.vunke.sharehome.url.UrlClient;
-import com.vunke.sharehome.utils.InputDataDialog;
 import com.vunke.sharehome.utils.NetUtils;
 import com.vunke.sharehome.utils.UiUtils;
 import com.vunke.sharehome.utils.WorkLog;
+import com.vunke.sharehome.view.InputDataDialog;
 
 /**
  * 
@@ -115,7 +115,7 @@ public class BuyTrafficActivity extends BaseActivity {
 	 * 初始化监听事件
 	 */
 	private void initListener() {
-		username = UiUtils.GetUserName().substring(1);
+		username = UiUtils.GetUserName(mcontext).substring(1);
 		SetOnClickListener(BuyTraffic_back, BuyTraffic_commit);
 	}
 
@@ -158,14 +158,14 @@ public class BuyTrafficActivity extends BaseActivity {
 					@Override
 					public void onResponse(boolean isFromCache, String t,
 							Request request, @Nullable Response response) {
-						 WorkLog.e("GetDnwSmsCodeActivity", "data:" + t);
+						 WorkLog.i("GetDnwSmsCodeActivity", "data:" + t);
 						try {
 							JSONObject jsonObject = new JSONObject(t);
 							int Code = jsonObject.getInt("code");
 							switch (Code) {
 							case 200:
 								String result = jsonObject.getString("result");
-								WorkLog.e("GetDnwSmsCodeActivity", "result"
+								WorkLog.i("GetDnwSmsCodeActivity", "result"
 										+ result);
 								try {
 									Gson gson = new Gson();
@@ -196,7 +196,7 @@ public class BuyTrafficActivity extends BaseActivity {
 							@Nullable Response response, @Nullable Exception e) {
 						super.onError(isFromCache, call, response, e);
 						showToast("请求错误,网络发送异常");
-						WorkLog.e("GetDnwSmsCodeActivity", "获取短信验证码发生异常");
+						WorkLog.i("GetDnwSmsCodeActivity", "获取短信验证码发生异常");
 					}
 
 					@Override
@@ -217,7 +217,7 @@ public class BuyTrafficActivity extends BaseActivity {
 				.builder()
 				.setTitle(
 						"本次交易需要短信确认,验证码已经发送到您的手机："
-								+ UiUtils.GetUserName().substring(1))
+								+ UiUtils.GetUserName(mcontext).substring(1))
 				.setHint(R.string.pleaseInput_verificationCode)
 				.setCancelable(false).setCanceledOnTouchOutside(false)
 				.SetCommitOnClickListener(new OnClickListener() {
@@ -268,19 +268,19 @@ public class BuyTrafficActivity extends BaseActivity {
 					@Override
 					public void onResponse(boolean isFromCache, String t,
 							Request request, @Nullable Response response) {
-						 WorkLog.e("GetDnwSmsCodeActivity", "data:" + t);
+						 WorkLog.i("GetDnwSmsCodeActivity", "data:" + t);
 						try {
 							JSONObject jsonObject = new JSONObject(t);
 							int Code = jsonObject.getInt("code");
 							switch (Code) {
 							case 200:
-								WorkLog.e("GetDnwSmsCodeActivity", "订购成功");
+								WorkLog.i("GetDnwSmsCodeActivity", "订购成功");
 								showToast("订购成功");
 								orderSuccess();
 								finish();
 								break;
 							case 400:
-								WorkLog.e("GetDnwSmsCodeActivity", "订购失败400");
+								WorkLog.i("GetDnwSmsCodeActivity", "订购失败400");
 								try {
 									Gson gson = new Gson();
 									buyTrafficBean = gson.fromJson(t,
@@ -308,7 +308,7 @@ public class BuyTrafficActivity extends BaseActivity {
 								break;
 							case 500:
 								showToast("连接服务器失败");
-								WorkLog.e("GetDnwSmsCodeActivity", "订购失败500");
+								WorkLog.i("GetDnwSmsCodeActivity", "订购失败500");
 								break;
 
 							default:
@@ -324,7 +324,7 @@ public class BuyTrafficActivity extends BaseActivity {
 							@Nullable Response response, @Nullable Exception e) {
 						super.onError(isFromCache, call, response, e);
 						showToast("请求错误,网络发送异常");
-						WorkLog.e("GetDnwSmsCodeActivity", "获取短信验证码发生异常");
+						WorkLog.i("GetDnwSmsCodeActivity", "获取短信验证码发生异常");
 					}
 
 					@Override
@@ -332,7 +332,7 @@ public class BuyTrafficActivity extends BaseActivity {
 							@Nullable String t, Call call,
 							@Nullable Response response, @Nullable Exception e) {
 						super.onAfter(isFromCache, t, call, response, e);
-						WorkLog.e("BuyTrafficActivity", "codeErr:"+codeErr);
+						WorkLog.i("BuyTrafficActivity", "codeErr:"+codeErr);
 						DialogBut.setText("确定");
 						DialogBut.setEnabled(true);
 						DialogBut.setBackgroundResource(R.drawable.button_login_shape);

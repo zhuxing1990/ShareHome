@@ -1,66 +1,47 @@
 package com.vunke.sharehome.fragment;
 
-import java.io.PrintWriter;
-import java.io.StringWriter;
-import java.lang.Thread.UncaughtExceptionHandler;
 import java.util.List;
-import java.util.Map;
 
 import rx.Observable;
 import rx.Observable.OnSubscribe;
 import rx.Observer;
-import rx.Scheduler;
 import rx.Subscriber;
 import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Func1;
 import rx.schedulers.Schedulers;
-import android.R.integer;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
-import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.Editable;
 import android.text.InputType;
 import android.text.TextUtils;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.View.OnLongClickListener;
 import android.view.View.OnTouchListener;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.huawei.rcs.call.CallApi;
 import com.huawei.rcs.call.CallLog;
 import com.huawei.rcs.call.CallSession;
 import com.huawei.rcs.contact.ContactApi;
 import com.huawei.rcs.contact.ContactSummary;
 import com.vunke.sharehome.Config;
 import com.vunke.sharehome.R;
-import com.vunke.sharehome.R.drawable;
 import com.vunke.sharehome.Call.CallOut_Activity;
-import com.vunke.sharehome.activity.ContactDetailActivity;
-import com.vunke.sharehome.activity.SH_AttnDetailActivity;
 import com.vunke.sharehome.adapter.CallLogAdapter;
 import com.vunke.sharehome.adapter.SearchContactAdapter;
 import com.vunke.sharehome.base.BaseFragment;
@@ -70,15 +51,11 @@ import com.vunke.sharehome.greendao.dao.bean.Contact;
 import com.vunke.sharehome.greendao.util.DbCore;
 import com.vunke.sharehome.model.Rx_ReLogin;
 import com.vunke.sharehome.rx.RxBus;
-import com.vunke.sharehome.service.NetConnectService;
-import com.vunke.sharehome.sql.ContactsSqlite;
-import com.vunke.sharehome.utils.ActionSheetDialog;
-import com.vunke.sharehome.utils.ActionSheetDialog.OnSheetItemClickListener;
-import com.vunke.sharehome.utils.MyOnTouch;
 import com.vunke.sharehome.utils.NetUtils;
-import com.vunke.sharehome.utils.SharedPreferencesUtils;
 import com.vunke.sharehome.utils.UiUtils;
 import com.vunke.sharehome.utils.WorkLog;
+import com.vunke.sharehome.view.ActionSheetDialog;
+import com.vunke.sharehome.view.ActionSheetDialog.OnSheetItemClickListener;
 
 /**
  * 拨号界面
@@ -543,7 +520,7 @@ public class AttnFragment extends BaseFragment {
 	 * */
 	public void StartCall2(final int position) {
 		callNumber = callRecorders.get(position).getCallRecordersPhone();
-		WorkLog.e("AttnFragment", "列表中的号码:" + callNumber);
+		WorkLog.i("AttnFragment", "列表中的号码:" + callNumber);
 		if (callNumber.length() >= 11) {
 			callNumber = UiUtils.isMobileNO(callNumber.substring(1)) ? callNumber
 					.substring(1) : callNumber;
@@ -553,7 +530,7 @@ public class AttnFragment extends BaseFragment {
 		if (TextUtils.isEmpty(callNumber)) {
 			return;
 		}
-		WorkLog.e("AttnFragment", "过滤是不是手机号码:" + callNumber);
+		WorkLog.i("AttnFragment", "过滤是不是手机号码:" + callNumber);
 		new ActionSheetDialog(getActivity())
 				.builder()
 				.setTitle(callNumber)
@@ -867,7 +844,7 @@ public class AttnFragment extends BaseFragment {
 	 * 拨号 开始呼叫
 	 * */
 	public void CallOut() {
-		WorkLog.e("AttnFragment", "开始通话");
+		WorkLog.i("AttnFragment", "开始通话");
 		if (UiUtils.isCameraCanUse()) {// 判断摄像头能否被使用
 			if (NetUtils.isNetConnected(getActivity())) {// 判断当前网络是否连接
 
@@ -951,14 +928,14 @@ public class AttnFragment extends BaseFragment {
 	 * 拨号 开始呼叫
 	 * */
 	public void CallOut2() {
-		WorkLog.e("AttnFragment", "开始通话");
+		WorkLog.i("AttnFragment", "开始通话");
 		if (callRecorders != null && callRecorders.size() != 0) {
 
 			callNumber = callRecorders.get(0).getCallRecordersPhone();
 			if (TextUtils.isEmpty(callNumber)) {
 				return;
 			}
-			WorkLog.e("AttnFragment", "列表中的号码:" + callNumber);
+			WorkLog.i("AttnFragment", "列表中的号码:" + callNumber);
 			if (callNumber.length() >= 11) {
 				callNumber = UiUtils.isMobileNO(callNumber.substring(1)) ? callNumber
 						.substring(1) : callNumber;
@@ -968,7 +945,7 @@ public class AttnFragment extends BaseFragment {
 			if (TextUtils.isEmpty(callNumber)) {
 				return;
 			}
-			WorkLog.e("AttnFragment", "过滤是不是手机号码:" + callNumber);
+			WorkLog.i("AttnFragment", "过滤是不是手机号码:" + callNumber);
 			Config.CallSize++;
 			if (Config.CallSize == 1) {
 				Number.setText(callNumber);

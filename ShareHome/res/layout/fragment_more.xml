@@ -35,7 +35,7 @@
         android:background="@drawable/horizontal_lines" >
     </LinearLayout>
 
-    <com.vunke.sharehome.utils.MyScrollView
+    <com.vunke.sharehome.view.MyScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
@@ -137,7 +137,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/layout_pressed_selector"
-                android:visibility="gone">
+                >
 
                 <ImageView
                     android:id="@+id/videotape_img"
@@ -170,7 +170,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/horizontal_lines" 
                 android:orientation="horizontal"
-                android:visibility="gone">
+                >
             </LinearLayout>
             
             <RelativeLayout
@@ -371,6 +371,6 @@
                 android:background="@color/color_25" >
             </LinearLayout>
         </LinearLayout>
-    </com.vunke.sharehome.utils.MyScrollView>
+    </com.vunke.sharehome.view.MyScrollView>
 
 </LinearLayout>

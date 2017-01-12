@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.vunke.sharehome"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/videorecord_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/light_black" >
+
+        <Button
+            android:id="@+id/videorecord_filish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_search_deltet_selector"
+            android:padding="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/videotape"
+            android:textColor="@color/red"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/videorecord_switch_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:drawableLeft="@drawable/button_switch_camera_selector"
+            android:padding="10dp" />
+    </RelativeLayout>
+
+    <com.vunke.sharehome.view.MovieRecorderView
+        android:id="@+id/videorecord_movie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/videorecord_title" />
+
+    <com.vunke.sharehome.view.FullScreenVideoView
+        android:id="@+id/videorecord_full"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/videorecord_title"
+        android:visibility="gone" />
+    <RelativeLayout
+        android:id="@+id/videorecord_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_black"
+        android:padding="5dp" >
+
+        <Button
+            android:id="@+id/videorecord_startrecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/startrecord1" />
+
+        <com.vunke.sharehome.view.RoundProgressBar
+            android:id="@+id/videorecord_progress"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android_custom:max="15"
+            android_custom:roundColor="#FFFFFF"
+            android_custom:roundProgressColor="#6010a8ab"
+            android_custom:roundWidth="5dip"
+            android_custom:textIsDisplayable="false" />
+
+        <Button
+            android:id="@+id/videorecord_resume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="20dp"
+            android:text="@string/video_resume"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/videorecord_upload_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="20dp"
+            android:text="@string/upload_video"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

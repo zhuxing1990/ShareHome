@@ -17,13 +17,21 @@ import android.content.ContentUris;
 import android.content.Context;
 import android.database.Cursor;
 import android.graphics.Bitmap;
+import android.media.MediaMetadataRetriever;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Environment;
+import android.os.StatFs;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 import android.util.Log;
 
+/**
+ * 文件工具类
+ * 
+ * @author zhuxi
+ * 
+ */
 @TargetApi(Build.VERSION_CODES.KITKAT)
 @SuppressLint("NewApi")
 public class FileUtils {
@@ -32,10 +40,10 @@ public class FileUtils {
 			+ "/DCIM/Camera/";
 
 	// public static void saveBitmap(Bitmap bm, String picName) {
-	// System.out.println("-----------------------------");
+	// WorkLog.a("-----------------------------");
 	// try {
 	// if (!isFileExist("")) {
-	// System.out.println("创建文件");
+	// WorkLog.a("创建文件");
 	// File tempf = createSDDir("");
 	// }
 	// File f = new File(SDPATH, picName + ".JPEG");
@@ -58,8 +66,8 @@ public class FileUtils {
 		if (Environment.getExternalStorageState().equals(
 				Environment.MEDIA_MOUNTED)) {
 
-			System.out.println("createSDDir:" + dir.getAbsolutePath());
-			System.out.println("createSDDir:" + dir.mkdir());
+			WorkLog.a("createSDDir:" + dir.getAbsolutePath());
+			WorkLog.a("createSDDir:" + dir.mkdir());
 		}
 		return dir;
 	}
@@ -83,7 +91,7 @@ public class FileUtils {
 	// public static boolean isFileExist(String fileName) {
 	// File file = new File(SDPATH + fileName);
 	// file.isFile();
-	// System.out.println(file.exists());
+	// WorkLog.a(file.exists());
 	// return file.exists();
 	// }
 	public static boolean isFileExist(String fileName) {
@@ -349,6 +357,42 @@ public class FileUtils {
 			String fileName = filePath.substring(filePath.lastIndexOf("/") + 1);
 			// 添加
 			fileList.add(path);
+		}
+	}
+
+	/**
+	 * 获取sd卡剩余大小 (MB)
+	 * 
+	 * @return
+	 */
+	public static long getSDFreeSize() {
+		// 取得SD卡文件路径
+		File path = Environment.getExternalStorageDirectory();
+		StatFs sf = new StatFs(path.getPath());
+		// 获取单个数据块的大小(Byte)
+		long blockSize = sf.getBlockSize();
+		// 空闲的数据块的数量
+		long freeBlocks = sf.getAvailableBlocks();
+		// 返回SD卡空闲大小
+		// return freeBlocks * blockSize; //单位Byte
+		// return (freeBlocks * blockSize)/1024; //单位KB
+		WorkLog.i("FileUtils", "当前内存空间:" + (freeBlocks * blockSize) / 1024
+				/ 1024);
+		return (freeBlocks * blockSize) / 1024 / 1024; // 单位MB
+	}
+
+	public static File[] getVideoFile(File file) {
+		if (!file.exists()) {
+			WorkLog.i("FileUtils", "文件不存在");
+			return null;
+		} else {
+			File[] files = file.listFiles();
+			if (files == null && files.length == 0) {
+				WorkLog.i("FileUtils", "文件夹无任何文件");
+				return null;
+			} else {
+				return files;
+			}
 		}
 	}
 }

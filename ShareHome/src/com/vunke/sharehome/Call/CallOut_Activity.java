@@ -129,7 +129,7 @@ import com.vunke.sharehome.utils.WorkLog;
 	@Override
 	public void OnCreate() {
 		setContentView(R.layout.activity_callaudio);
-		// WorkLog.e("CallOutActivity", "OnCreate" + UiUtils.isCameraCanUse());
+		// WorkLog.i("CallOutActivity", "OnCreate" + UiUtils.isCameraCanUse());
 		getExtras();
 		initViews();
 		
@@ -145,7 +145,7 @@ import com.vunke.sharehome.utils.WorkLog;
 		if (intent != null) {
 			stopService(intent);
 		}
-		WorkLog.e("CallOut_Activity", "onDestroy");
+		WorkLog.i("CallOut_Activity", "onDestroy");
 		// if (!subscribe.isUnsubscribed()) {
 		// subscribe.unsubscribe();
 		// }
@@ -164,14 +164,14 @@ import com.vunke.sharehome.utils.WorkLog;
 		/* You had to finish the program when you received an error code. */
 		switch (callSession.getErrCode()) {
 		case CallSession.ERRCODE_OK:// 没问题
-			WorkLog.e("CallOut_Activity", "CallSession.ERRCODE_OK");
+			WorkLog.i("CallOut_Activity", "CallSession.ERRCODE_OK");
 			break;
 		case CallSession.ERRCODE_FAILED:
-			WorkLog.e("CallOut_Activity", "CallSession.ERRCODE_FAILED");
+			WorkLog.i("CallOut_Activity", "CallSession.ERRCODE_FAILED");
 			showToast("发起呼叫失败。");
 			break;
 		case CallSession.ERRCODE_SERVER_DISCONNECTED:
-			WorkLog.e("CallOut_Activity", "CallSession.ERRCODE_SERVER_DISCONNECTED");
+			WorkLog.i("CallOut_Activity", "CallSession.ERRCODE_SERVER_DISCONNECTED");
 			showToast("连接服务器失败，请检查网络。");
 			Config.intent = new Intent(mcontext, NetConnectService.class);
 			startService(Config.intent);
@@ -181,12 +181,12 @@ import com.vunke.sharehome.utils.WorkLog;
 			RxBus.getInstance().post(reLogin);
 			break;
 		case CallSession.ERRCODE_EXIST_CS_CALL:
-			WorkLog.e("CallOut_Activity", "CallSession.ERRCODE_EXIST_CS_CALL");
+			WorkLog.i("CallOut_Activity", "CallSession.ERRCODE_EXIST_CS_CALL");
 			showToast("通话已存在。");
 			break;
 
 		default:
-			WorkLog.e("CallOut_Activity", "未知的错误");
+			WorkLog.i("CallOut_Activity", "未知的错误");
 			showToast("未知的错误");
 			break;
 		}
@@ -213,7 +213,7 @@ import com.vunke.sharehome.utils.WorkLog;
 					@Override
 					public void onError(Throwable throwable) {
 						this.unsubscribe();
-						WorkLog.e("CallOut_Activity", "错误" + throwable.getMessage());
+						WorkLog.i("CallOut_Activity", "错误" + throwable.getMessage());
 					}
 
 					@Override
@@ -232,7 +232,7 @@ import com.vunke.sharehome.utils.WorkLog;
 		new Handler().postDelayed(new Runnable() {
 			@Override
 			public void run() {
-				WorkLog.e("CallOutActivity", "结束通话");
+				WorkLog.i("CallOutActivity", "结束通话");
 				finish();
 			}
 		}, 3000);
@@ -248,7 +248,7 @@ import com.vunke.sharehome.utils.WorkLog;
 				if (searchContact != null && searchContact.size() != 0) {
 					for (int i = 0; i < searchContact.size(); i++) {
 						ContactSummary position = searchContact.get(i);
-						// WorkLog.e("CallOut_Activity","当前名字"+position.getDisplayName());
+						// WorkLog.i("CallOut_Activity","当前名字"+position.getDisplayName());
 						if (CallNumbers.substring(1).equals(position.getSearchMatchContent())) {
 							call_phoneName.setText(position.getDisplayName());
 						}
@@ -260,7 +260,7 @@ import com.vunke.sharehome.utils.WorkLog;
 			case Config.SearchShareHomeContact2:
 				if (contact != null && contact.size() != 0) {
 					for (int i = 0; i < contact.size(); i++) {
-						// WorkLog.e("CallOut_Activity",
+						// WorkLog.i("CallOut_Activity",
 						// "CallOut_Activity本地数据查询成功");
 						call_phoneName.setText(contact.get(i).getContactName());
 					}
@@ -285,7 +285,7 @@ import com.vunke.sharehome.utils.WorkLog;
 				} else {
 					CallNumbers = CallNumber.substring(8, CallNumber.length());
 				}
-				// WorkLog.e("CallOut_Activity", "截取号码" + CallNumbers);
+				// WorkLog.i("CallOut_Activity", "截取号码" + CallNumbers);
 				call_phoneNumber.setText(CallNumbers.substring(1));
 				searchContact = ContactApi.searchContact(CallNumbers.substring(1), ContactApi.LIST_FILTER_ALL);
 				handler.sendEmptyMessage(Config.SearchContactApi1);
@@ -296,9 +296,9 @@ import com.vunke.sharehome.utils.WorkLog;
 	}
 
 	public void selectSQL(String callnumber) {
-		// WorkLog.e("CallOut_Activity", "1:" + callnumber);
+		// WorkLog.i("CallOut_Activity", "1:" + callnumber);
 		callnumber = UiUtils.isMobileNO(callnumber) ? callnumber : callnumber.substring(1);
-		// WorkLog.e("CallOut_Activity", "2:" + callnumber);
+		// WorkLog.i("CallOut_Activity", "2:" + callnumber);
 		contact = UiUtils.SearchContact(callnumber);
 		handler.sendEmptyMessage(Config.SearchShareHomeContact2);
 	}
@@ -383,7 +383,7 @@ import com.vunke.sharehome.utils.WorkLog;
 				finish();
 				return;
 			}
-			WorkLog.e("CallOut_Activity", "点击结束通话");
+			WorkLog.i("CallOut_Activity", "点击结束通话");
 			 if (!mcontext.isDestroyed()) {
 				 mcontext.finish();
 			 }

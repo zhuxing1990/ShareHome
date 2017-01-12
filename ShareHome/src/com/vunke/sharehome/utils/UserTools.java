@@ -204,9 +204,9 @@ public class UserTools {
         String userID = "0551ht";
         String key = UserTools.getKey(userID);
         String jiamiUserID = UserTools.encodeInfo(userID, key);
-        System.out.println(jiamiUserID);
+        WorkLog.a(jiamiUserID);
         
-        System.out.println(UserTools.getOriginalInfo(key,
+        WorkLog.a(UserTools.getOriginalInfo(key,
                 jiamiUserID));
     }
 }

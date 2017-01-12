@@ -24,7 +24,6 @@ import android.support.v4.content.LocalBroadcastManager;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
-import android.text.format.DateFormat;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
@@ -49,7 +48,6 @@ import com.vunke.sharehome.updata.AppTVStoreUpdateManager;
 import com.vunke.sharehome.url.UrlClient;
 import com.vunke.sharehome.utils.CommonUtil;
 import com.vunke.sharehome.utils.NetUtils;
-import com.vunke.sharehome.utils.SharedPreferencesUtils;
 import com.vunke.sharehome.utils.UiUtils;
 import com.vunke.sharehome.utils.WorkLog;
 
@@ -66,7 +64,7 @@ public class LoginActivity extends BaseActivity {
 	private ProgressDialog mypDialog;// 弹窗
 	public static final String SP_NAME = Config.SP_NAME;
 	public static final String LOGIN_PASSWORD = Config.LOGIN_PASSWORD;
-	private boolean bIsAutoLogin = false;
+//	private boolean bIsAutoLogin = false;
 	private SharedPreferences sp;
 	private String login_password;
 	protected String Callnum = "11831726";
@@ -390,11 +388,11 @@ public class LoginActivity extends BaseActivity {
 					}
 				}
 
-				WorkLog.e("LoginActivity", mapReasonStringtoReasonCode(reason)
+				WorkLog.i("LoginActivity", mapReasonStringtoReasonCode(reason)
 						+ "");
 				break;
 			case LoginApi.STATUS_DISCONNECTED:// 断开连接
-				WorkLog.e("LoginActivity", mapReasonStringtoReasonCode(reason)
+				WorkLog.i("LoginActivity", mapReasonStringtoReasonCode(reason)
 						+ "");
 				if (mypDialog != null) {
 					mypDialog.setMessage("登录失败");
@@ -564,7 +562,7 @@ public class LoginActivity extends BaseActivity {
 			json.put("appVesionName", appVesionName);
 			json.put("appVesionCode", appVesionCode);
 			json.put("appMotifyTime", Config.appMotifyTime);
-			// WorkLog.e("LoginActivity", "发送数据" + json.toString());
+			// WorkLog.i("LoginActivity", "发送数据" + json.toString());
 			if (!NetUtils.isNetConnected(mcontext)) {
 				showToast("咦，貌似网络出了点问题");
 				return;
@@ -576,7 +574,7 @@ public class LoginActivity extends BaseActivity {
 						@Override
 						public void onResponse(boolean isFromCache, String t,
 								Request request, @Nullable Response response) {
-							WorkLog.e("LoginActivity", "data:" + t);
+							WorkLog.i("LoginActivity", "data:" + t);
 							try {
 								JSONObject jsonObject = new JSONObject(t);
 								String message = jsonObject
@@ -584,13 +582,13 @@ public class LoginActivity extends BaseActivity {
 								int code = jsonObject.getInt("code");
 								switch (code) {
 								case 200:
-									WorkLog.e("LoginActivity", "登录上传成功");
+									WorkLog.i("LoginActivity", "登录上传成功");
 									break;
 								case 400:
-									WorkLog.e("LoginActivity", "网络发送失败");
+									WorkLog.i("LoginActivity", "网络发送失败");
 									break;
 								case 500:
-									WorkLog.e("LoginActivity", "网络发送异常");
+									WorkLog.i("LoginActivity", "网络发送异常");
 									break;
 
 								default:
@@ -606,7 +604,7 @@ public class LoginActivity extends BaseActivity {
 								@Nullable Response response,
 								@Nullable Exception e) {
 							super.onError(isFromCache, call, response, e);
-							WorkLog.e("LoginActivity", "登录数据没有上传,网络发送异常");
+							WorkLog.i("LoginActivity", "登录数据没有上传,网络发送异常");
 						}
 
 						@Override

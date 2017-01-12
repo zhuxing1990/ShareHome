@@ -127,7 +127,7 @@ public class ForgetPasswordActivity extends BaseActivity {
 				forgetPW_commit
 						.setBackgroundResource(status1 + status2 == 2 ? drawable.button_login_shape
 								: drawable.button_login_shape2);
-				// WorkLog.e("ForgetPasswordActivity", "status1" + status1);
+				// WorkLog.i("ForgetPasswordActivity", "status1" + status1);
 				if (status1 + status2 == 2) {
 					forgetPW_commit.setEnabled(true);
 				} else {
@@ -157,7 +157,7 @@ public class ForgetPasswordActivity extends BaseActivity {
 				forgetPW_commit
 						.setBackgroundResource(status1 + status2 == 2 ? drawable.button_login_shape
 								: drawable.button_login_shape2);
-				// WorkLog.e("ForgetPasswordActivity", "status2" + status2);
+				// WorkLog.i("ForgetPasswordActivity", "status2" + status2);
 				if (status1 + status2 == 2) {
 					forgetPW_commit.setEnabled(true);
 				} else {
@@ -238,7 +238,7 @@ public class ForgetPasswordActivity extends BaseActivity {
 					JSONObject jsonObject = new JSONObject();
 					jsonObject.put("userName", username);
 					jsonObject.put("smsCode", code);
-//					WorkLog.e("ForgetPasswordActivity", "发送数据" + jsonObject.toString());
+//					WorkLog.i("ForgetPasswordActivity", "发送数据" + jsonObject.toString());
 					getUrlRequest2(UrlClient.HttpUrl
 							+ UrlClient.VaildateSmsCode, jsonObject.toString());
 				} catch (Exception e) {
@@ -263,7 +263,7 @@ public class ForgetPasswordActivity extends BaseActivity {
 
 	private void getUrlRequest(String url, String json) {// username_code =
 															// username;
-		// WorkLog.e("ForgetPasswordActivity", "设置帐号验证"+username_code);
+		// WorkLog.i("ForgetPasswordActivity", "设置帐号验证"+username_code);
 		if (!NetUtils.isNetConnected(mcontext)) {
 			showToast("咦，貌似网络出了点问题");
 			return;
@@ -274,7 +274,7 @@ public class ForgetPasswordActivity extends BaseActivity {
 					@Override
 					public void onResponse(boolean isFromCache, String t,
 							Request request, @Nullable Response response) {
-						 WorkLog.e("ForgetPasswordActivity", "data:" + t);
+						 WorkLog.i("ForgetPasswordActivity", "data:" + t);
 						try {
 							JSONObject jsonObject = new JSONObject(t);
 							int Code = jsonObject.getInt("code");
@@ -313,7 +313,7 @@ public class ForgetPasswordActivity extends BaseActivity {
 							@Nullable Response response, @Nullable Exception e) {
 						super.onError(isFromCache, call, response, e);
 						showToast("请求错误,网络发送异常");
-						WorkLog.e("ForgetPasswordActivity", "获取短信失败,发生异常");
+						WorkLog.i("ForgetPasswordActivity", "获取短信失败,发生异常");
 					}
 				});
 	}
@@ -329,8 +329,8 @@ public class ForgetPasswordActivity extends BaseActivity {
 					@Override
 					public void onResponse(boolean isFromCache, String t,
 							Request request, @Nullable Response response) {
-						// WorkLog.e("ForgetPasswordActivity", "json=" + t);
-						 WorkLog.e("ForgetPasswordActivity", "data:" + t);
+						// WorkLog.i("ForgetPasswordActivity", "json=" + t);
+						 WorkLog.i("ForgetPasswordActivity", "data:" + t);
 						try {
 							JSONObject json = new JSONObject(t);
 							int Code = json.getInt("code");
@@ -376,7 +376,7 @@ public class ForgetPasswordActivity extends BaseActivity {
 							@Nullable Response response, @Nullable Exception e) {
 						super.onError(isFromCache, call, response, e);
 						showToast("请求错误,网络发送异常");
-						WorkLog.e("ForgetPasswordActivity", "验证短信验证码失败，发生异常");
+						WorkLog.i("ForgetPasswordActivity", "验证短信验证码失败，发生异常");
 						if (popupWindow != null) {
 							popupWindow.dismiss();
 							popupWindow = null;
@@ -415,7 +415,7 @@ public class ForgetPasswordActivity extends BaseActivity {
 					@Override
 					public void onNext(Long aLong) {
 						if (aLong != 0) {
-							// WorkLog.e("ForgetPasswordActivity",aLong + "");
+							// WorkLog.i("ForgetPasswordActivity",aLong + "");
 
 							forgetPW_getcode.setText("请等待" + aLong + "秒");
 						} else {
@@ -512,7 +512,7 @@ public class ForgetPasswordActivity extends BaseActivity {
 				String address = cursor.getString(cursor
 						.getColumnIndex("address"));
 				String body = cursor.getString(cursor.getColumnIndex("body"));
-				// WorkLog.e("ForgetPasswordActivity", address + ";" + body);
+				// WorkLog.i("ForgetPasswordActivity", address + ";" + body);
 				// if (!address.equals("073184203359")) { //
 				// 判断发送验证码的号码，去除其它应用的验证码影响
 				// return;
@@ -522,10 +522,10 @@ public class ForgetPasswordActivity extends BaseActivity {
 				Matcher matcher = pattern.matcher(body);
 				if (matcher.find()) {
 					String code = matcher.group(0);// 获取匹配的数字
-					// WorkLog.e("ForgetPasswordActivity", code);
+					// WorkLog.i("ForgetPasswordActivity", code);
 					forgetPW_verificationCode.setText(code);
 					// verification_code2 = code;
-					// WorkLog.e("ForgetPasswordActivity",
+					// WorkLog.i("ForgetPasswordActivity",
 					// "设置短信验证"+verification_code2);
 				}
 			}

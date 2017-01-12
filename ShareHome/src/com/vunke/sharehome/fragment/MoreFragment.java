@@ -20,7 +20,6 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.annotation.Nullable;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,26 +32,23 @@ import com.huawei.rcs.login.LoginApi;
 import com.lzy.okhttputils.OkHttpUtils;
 import com.lzy.okhttputils.callback.StringCallback;
 import com.vunke.sharehome.Config;
-import com.vunke.sharehome.MainActivity;
 import com.vunke.sharehome.R;
 import com.vunke.sharehome.activity.AboutActivity;
 import com.vunke.sharehome.activity.BuyTrafficActivity;
 import com.vunke.sharehome.activity.LoginActivity2;
-import com.vunke.sharehome.activity.LuckyMoneyActivity;
 import com.vunke.sharehome.activity.LuckyMoneyListActivity;
 import com.vunke.sharehome.activity.MoreSurprisActivity;
-import com.vunke.sharehome.activity.SendContactsActivity;
 import com.vunke.sharehome.activity.ShareWithFriendActivity;
-import com.vunke.sharehome.asynctask.LuckyMoney;
+import com.vunke.sharehome.activity.VideoListActivity;
 import com.vunke.sharehome.base.BaseFragment;
 import com.vunke.sharehome.crop.Crop;
 import com.vunke.sharehome.greendao.util.DbCore;
 import com.vunke.sharehome.url.UrlClient;
-import com.vunke.sharehome.utils.ActionSheetDialog;
 import com.vunke.sharehome.utils.FileUtils;
 import com.vunke.sharehome.utils.ImageUtils;
 import com.vunke.sharehome.utils.UiUtils;
 import com.vunke.sharehome.utils.WorkLog;
+import com.vunke.sharehome.view.ActionSheetDialog;
 
 /**
  * 更多界面
@@ -144,12 +140,11 @@ public class MoreFragment extends BaseFragment {
 	 * 初始化用户的帐号
 	 */
 	private void initName() {
-		if (!TextUtils.isEmpty(UiUtils.GetUserName())) {
-			String username = UiUtils.GetUserName();
-			if (!TextUtils.isEmpty(username)) {
-				more_name.setText(username.substring(1));
-			}
-		} else {
+		String userName = UiUtils.GetUserName(getActivity());
+		if (!TextUtils.isEmpty(userName)) {
+			more_name.setText(userName.substring(1));
+			
+		}else {
 			more_name.setText("获取用户信息失败");
 		}
 	}
@@ -175,7 +170,7 @@ public class MoreFragment extends BaseFragment {
 							public void onResponse(boolean isFromCache,
 									String t, Request request,
 									@Nullable Response response) {
-								WorkLog.e("GetLuckyMoney", "获取数据" + t);
+								WorkLog.i("GetLuckyMoney", "获取数据" + t);
 								try {
 									JSONObject jsonobject = new JSONObject(t);
 									if (jsonobject.has("code")) {
@@ -213,7 +208,7 @@ public class MoreFragment extends BaseFragment {
 							@Override
 							public void onError(boolean isFromCache, Call call,
 									Response response, Exception e) {
-								WorkLog.e("GetLuckyMoney", "OnError");
+								WorkLog.i("GetLuckyMoney", "OnError");
 							};
 
 							@Override
@@ -248,7 +243,7 @@ public class MoreFragment extends BaseFragment {
 				getActivity().MODE_PRIVATE);
 		String HasPhoto = sp.getString(Config.HasPhoto, null);
 		if (!TextUtils.isEmpty(HasPhoto)) {
-			// WorkLog.e("MoreFragment", "保存的路径" + HasPhoto);
+			// WorkLog.i("MoreFragment", "保存的路径" + HasPhoto);
 			Uri uri = Uri.parse(HasPhoto);
 			String path = uri.getPath();
 			if (FileUtils.isFileExist(path)) {
@@ -256,7 +251,7 @@ public class MoreFragment extends BaseFragment {
 						200, 200);
 				more_icon.setImageBitmap(scaledBitmap);
 			} else {
-				// WorkLog.e("MoreFragment", "图片不存在");
+				// WorkLog.i("MoreFragment", "图片不存在");
 			}
 		}
 	}
@@ -302,7 +297,7 @@ public class MoreFragment extends BaseFragment {
 			startActivity(Config.intent);
 			break;
 		case R.id.videotape_layout:
-			Config.intent = new Intent(getActivity(), MainActivity.class);
+			Config.intent = new Intent(getActivity(), VideoListActivity.class);
 			startActivity(Config.intent);
 			break;
 		default:

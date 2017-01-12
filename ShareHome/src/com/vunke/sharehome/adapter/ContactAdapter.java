@@ -14,6 +14,7 @@ import com.vunke.sharehome.R;
 import com.vunke.sharehome.greendao.dao.bean.Contact;
 import com.vunke.sharehome.utils.PinyinUtils;
 import com.vunke.sharehome.utils.UiUtils;
+import com.vunke.sharehome.utils.WorkLog;
 
 public class ContactAdapter extends DefaultAdapter<Contact> {
 	private Context context;
@@ -51,15 +52,15 @@ public class ContactAdapter extends DefaultAdapter<Contact> {
 			if (UiUtils.hasChinese(data.getContactName())) {
 				currentLetter = PinyinUtils.getPinyin(data.getContactName())
 						.charAt(0) + "";
-//				WorkLog.e("ContactHolder", "中文" + currentLetter);
+//				WorkLog.i("ContactHolder", "中文" + currentLetter);
 			} else {
 				try {
 					currentLetter = PinyinUtils
 							.getPinyin(data.getContactName());
-//					WorkLog.e("ContactHolder",  "非中文" + currentLetter);
+//					WorkLog.i("ContactHolder",  "非中文" + currentLetter);
 				} catch (Exception e) {
 					currentLetter = "#";
-//					WorkLog.e("ContactHolder",  "非中文报错" + currentLetter);
+//					WorkLog.i("ContactHolder",  "非中文报错" + currentLetter);
 					e.printStackTrace();
 				}
 			}

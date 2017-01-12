@@ -36,7 +36,7 @@
         android:divider="@drawable/horizontal_lines" >
     </ListView>
 
-    <com.vunke.sharehome.utils.CircularProgress
+    <com.vunke.sharehome.view.CircularProgress
         android:id="@+id/newfriends_progress"
         android:layout_width="60dp"
         android:layout_height="60dp"

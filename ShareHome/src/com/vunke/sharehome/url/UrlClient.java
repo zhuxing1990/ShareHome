@@ -114,7 +114,7 @@ public class UrlClient {
 	/**
 	 * Android 下载地址
 	 */
-	public static final String AppDownLoadURL = "http://124.232.135.225:8083/apkup/ShareHome_AND_V1.0.0.1-20160311.apk";
+//	public static final String AppDownLoadURL = "http://124.232.135.225:8083/apkup/ShareHome_AND_V1.0.0.1-20160311.apk";	
 	/**
 	 * IOS 下载地址
 	 */
@@ -163,6 +163,22 @@ public class UrlClient {
 	 * 活动信息
 	 */
 	public static final String ActivityInfo = "/activityInfo.do";
+	/**
+	 * 上传视频
+	 */
+	public static final String VIDEO_UPLOAD_URL = "http://124.232.136.236:8099/fileupload/uploadFile.do";
+	
+	/**
+	 * 视频播放
+	 */
+//	public static final String VideoPlayerURL2 = "http://124.232.136.236:8099/htmlviedo/service/queryOrderInfo.do";
+	public static final String VideoPlayerURL = "http://124.232.135.222:8080/htmlvideo/service/queryOrderInfo.do";
+	/**
+	 * 视频分享
+	 */
+	public static final String VidepUploadURL = "http://124.232.136.236:8099/uploadFile/";
+
+	
 	public static String ActivityName =  "";
 	public static void GetLuckyMoney() {
 		try {
@@ -178,7 +194,7 @@ public class UrlClient {
 						public void onResponse(boolean isFromCache,
 								String t, Request request,
 								@Nullable Response response) {
-							WorkLog.e("GetLuckyMoney", "获取数据" + t);
+							WorkLog.i("GetLuckyMoney", "获取数据" + t);
 							try {
 								JSONObject jsonobject = new JSONObject(t);
 								if (jsonobject.has("code")) {
@@ -216,7 +232,7 @@ public class UrlClient {
 						@Override
 						public void onError(boolean isFromCache, Call call,
 								Response response, Exception e) {
-							WorkLog.e("GetLuckyMoney", "OnError");
+							WorkLog.i("GetLuckyMoney", "OnError");
 						};
 					});
 		} catch (Exception e) {

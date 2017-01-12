@@ -26,13 +26,13 @@ public class Retrofit_RxJava {
 
 			@Override
 			public void onResponse(Call<MissedCallBean> call, Response<MissedCallBean> response) {
-				WorkLog.e("Retrofit_RxJava", "相应成功:" + response);
+				WorkLog.i("Retrofit_RxJava", "相应成功:" + response);
 
 			}
 
 			@Override
 			public void onFailure(Call<MissedCallBean> call, Throwable e) {
-				WorkLog.e("Retrofit_RxJava", "请求错误:" + e.getMessage());
+				WorkLog.i("Retrofit_RxJava", "请求错误:" + e.getMessage());
 			}
 		});
 
