@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="uspmqtt">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/uspmqtt.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

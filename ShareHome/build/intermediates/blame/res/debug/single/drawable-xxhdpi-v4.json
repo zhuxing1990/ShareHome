@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\home_icon.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-xxhdpi\\home_icon.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_launcher.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-xxhdpi\\ic_launcher.png"
+    }
+]

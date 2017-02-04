@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="sci_hme_audio">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/sci_hme_audio.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

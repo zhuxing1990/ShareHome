@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="sa_default_tls">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/sa_default_tls.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

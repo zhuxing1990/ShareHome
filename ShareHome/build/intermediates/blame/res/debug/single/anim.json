@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\anim\\slide_out.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\anim\\slide_out.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\anim\\actionsheet_dialog_out.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\anim\\actionsheet_dialog_out.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\anim\\actionsheet_dialog_in.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\anim\\actionsheet_dialog_in.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\anim\\push_bottom_out.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\anim\\push_bottom_out.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\anim\\push_bottom_in.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\anim\\push_bottom_in.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\anim\\anim.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\anim\\anim.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\anim\\slide_in.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\anim\\slide_in.xml"
+    }
+]

@@ -1,0 +1,274 @@
+[
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_moresurpris.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_moresurpris.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_more.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\fragment_more.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_luckymoneylist.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_luckymoneylist.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\listview_dir.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\listview_dir.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_sharewithfriend.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_sharewithfriend.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_contactdetail.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_contactdetail.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_pickhead.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_pickhead.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login2.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_login2.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_videorecord.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_videorecord.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_buytraffic.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_buytraffic.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\listview_calllog.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\listview_calllog.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\listview_newfriends_item.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\listview_newfriends_item.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_photo.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_photo.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_userdetails.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_userdetails.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_callvideo.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_callvideo.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\listview_contactdetail.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\listview_contactdetail.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_style1.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\dialog_style1.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\listview_contacts.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\listview_contacts.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_newfriends.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_newfriends.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_modifycontact.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_modifycontact.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_contact_item1.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\fragment_contact_item1.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_about.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_about.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_callaudio.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_callaudio.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\crop__activity_crop.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\crop__activity_crop.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_myluckymoney.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_myluckymoney.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_videoview.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_videoview.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_welcome.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_welcome.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_guide.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_guide.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_videolist.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_videolist.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_progress.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\dialog_progress.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\gridview_item.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\gridview_item.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_luckymoney.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_luckymoney.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\softupdate_progress.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\softupdate_progress.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\view_actionsheet.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\view_actionsheet.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_contactdetail.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\dialog_contactdetail.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_callouts.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_callouts.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_forgetpassword.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_forgetpassword.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_contacts.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\fragment_contacts.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_serviceterms.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_serviceterms.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\popupwindow_search.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\popupwindow_search.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\crop__layout_done_cancel.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\crop__layout_done_cancel.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\view_alertdialog.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\view_alertdialog.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\listview_dir_item.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\listview_dir_item.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_forgetpassword2.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_forgetpassword2.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_home.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_contact_item2.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\fragment_contact_item2.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_addattn.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_addattn.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_sendcontacts.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_sendcontacts.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_contact.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\fragment_contact.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\video_recoder.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\video_recoder.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_callout.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_callout.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\listview_calllog2.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\listview_calllog2.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\listview_letter_item.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\listview_letter_item.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_hide.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_hide.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\listview_videolist.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\listview_videolist.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_feedback.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_feedback.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_buytraffic.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\dialog_buytraffic.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_list_item.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\dialog_list_item.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_callins.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_callins.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\listview_item_header.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\listview_item_header.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_sh_attndatail2.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_sh_attndatail2.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_attn.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\fragment_attn.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_calllog.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_calllog.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_sh_attndatail.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_sh_attndatail.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\layout\\activity_phonecontacts.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\layout\\activity_phonecontacts.xml"
+    }
+]

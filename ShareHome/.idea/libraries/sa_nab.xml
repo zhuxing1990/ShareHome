@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="sa_nab">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/sa_nab.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

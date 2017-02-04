@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="sa_stun">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/sa_stun.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

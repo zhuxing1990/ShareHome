@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="HME_Video">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/HME_Video.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

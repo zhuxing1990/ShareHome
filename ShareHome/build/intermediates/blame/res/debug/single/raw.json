@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\raw\\ring.mp3",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\raw\\ring.mp3"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\raw\\callwait.mp3",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\raw\\callwait.mp3"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\raw\\term.mp3",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\raw\\term.mp3"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\raw\\busy.mp3",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\raw\\busy.mp3"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\raw\\ringback.mp3",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\raw\\ringback.mp3"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\raw\\call_failed.mp3",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\raw\\call_failed.mp3"
+    }
+]

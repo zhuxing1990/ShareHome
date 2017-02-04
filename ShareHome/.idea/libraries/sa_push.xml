@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="sa_push">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/sa_push.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

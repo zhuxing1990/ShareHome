@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="uspimb">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/uspimb.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

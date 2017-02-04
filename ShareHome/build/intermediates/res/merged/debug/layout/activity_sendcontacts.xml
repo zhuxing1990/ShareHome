@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroup_back"
+    android:orientation="vertical" >
+     <RelativeLayout
+        android:id="@+id/sendcontact_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/LightSeaGreen" >
+
+        <Button
+            android:id="@+id/sendcontacts_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_arrowback_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:text="@string/choice_STB"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+	<LinearLayout
+	    android:id="@+id/sendcontact_notcontact"
+	    android:layout_width="match_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_below="@+id/sendcontact_title"
+	    android:gravity="center"
+	     >
+
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/coming_ssoon"
+	        android:textSize="20sp"
+	        android:textColor="@color/black"/>
+	</LinearLayout>
+</RelativeLayout>

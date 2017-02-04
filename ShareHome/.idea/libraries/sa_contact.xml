@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="sa_contact">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/sa_contact.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

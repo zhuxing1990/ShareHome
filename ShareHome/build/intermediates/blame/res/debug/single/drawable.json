@@ -1,0 +1,266 @@
+[
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_attn_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_attn_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_three_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_three_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\alertdialog_left_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\alertdialog_left_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\alertdialog_single_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\alertdialog_single_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_login_shape.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_login_shape.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_arrowback_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_arrowback_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_headphoto_shape2.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_headphoto_shape2.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_nine_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_nine_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_five_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_five_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\textview_share_user_shape2.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\textview_share_user_shape2.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_callphone2_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_callphone2_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_zero_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_zero_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_null_shape.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_null_shape.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\actionsheet_single_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\actionsheet_single_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_six_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_six_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_handsfree_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_handsfree_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_call_phone_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_call_phone_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_jing_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_jing_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_headphoto_shape1.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_headphoto_shape1.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_mute_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_mute_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_callswitch_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_callswitch_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_xing_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_xing_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_shape_share.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_shape_share.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_getcode_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_getcode_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\layout_pressed_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\layout_pressed_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_one_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_one_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_four_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_four_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\layout_buytraffic.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\layout_buytraffic.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_two_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_two_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\textview_share_user_shape.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\textview_share_user_shape.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\crop__texture.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\crop__texture.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_calldate.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_calldate.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_ok_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_ok_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_answer_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_answer_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_dial1_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_dial1_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_videorecord_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_videorecord_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_callend_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_callend_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\edittext_buytraffic.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\edittext_buytraffic.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\alertdialog_right_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\alertdialog_right_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_more_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_more_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\ssdk_oks_classic_platform_cell_back.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\ssdk_oks_classic_platform_cell_back.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\actionsheet_top_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\actionsheet_top_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_videolist_share_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_videolist_share_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\textview_newfriends_shape.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\textview_newfriends_shape.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_contactdetails.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_contactdetails.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\actionsheet_bottom_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\actionsheet_bottom_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_eight_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_eight_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_dial2_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_dial2_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_switch_camera_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_switch_camera_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_videolist_delete_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_videolist_delete_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\dic_background.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\dic_background.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_addattn_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_addattn_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\actionsheet_middle_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\actionsheet_middle_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_cameraswitch_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_cameraswitch_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_login_shape2.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_login_shape2.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\ssdk_oks_classic_progressbar.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\ssdk_oks_classic_progressbar.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_seven_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_seven_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_search_deltet_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_search_deltet_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\layout_background_gray.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\layout_background_gray.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_callcancel_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_callcancel_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_videolist_sharevideo_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_videolist_sharevideo_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_videolist_upload_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_videolist_upload_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_contactsandshare_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_contactsandshare_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\crop__selectable_background.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\crop__selectable_background.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\button_callphone_selector.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\button_callphone_selector.xml"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable\\points_map.xml",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable\\points_map.xml"
+    }
+]

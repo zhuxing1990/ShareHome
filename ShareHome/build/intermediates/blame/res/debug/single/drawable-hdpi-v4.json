@@ -1,0 +1,650 @@
+[
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\call_keyboard.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\call_keyboard.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\call_phone4.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\call_phone4.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\dial2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\dial2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\clear.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\clear.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\two.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\two.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\welcome3.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\welcome3.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\login_username.PNG",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\login_username.PNG"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\four2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\four2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\five2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\five2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\register_invitationcode.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\register_invitationcode.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\jing.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\jing.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\crop__ic_done.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\crop__ic_done.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\dial1.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\dial1.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\login_out.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\login_out.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\login_password2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\login_password2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\welcome4.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\welcome4.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\trans_bg.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\trans_bg.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\switch_video2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\switch_video2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\im_item_receive_normal.9.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\im_item_receive_normal.9.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\alert_bg.9.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\alert_bg.9.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ssdk_oks_ptr_ptr.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\ssdk_oks_ptr_ptr.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\call_handsfree2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\call_handsfree2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\dir_choose.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\dir_choose.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\arrow.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\arrow.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\nothing_found.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\nothing_found.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\actionsheet_top_pressed.9.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\actionsheet_top_pressed.9.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\welcome2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\welcome2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\register_password.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\register_password.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\one2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\one2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\pressed_selector.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\pressed_selector.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\upload_video2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\upload_video2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\startrecord2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\startrecord2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\actionsheet_middle_pressed.9.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\actionsheet_middle_pressed.9.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\alert_btn_left_pressed.9.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\alert_btn_left_pressed.9.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\call_phone2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\call_phone2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\call_end.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\call_end.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\login_username2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\login_username2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\videotape.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\videotape.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\crop__ic_cancel.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\crop__ic_cancel.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\startrecord1.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\startrecord1.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\type_missing.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\type_missing.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\load_fail.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\load_fail.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\crop__divider.9.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\crop__divider.9.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\delete_video2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\delete_video2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\call_end2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\call_end2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\about.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\about.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\seven.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\seven.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\swtich_camera2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\swtich_camera2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\seven2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\seven2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\listarrow.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\listarrow.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\xing2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\xing2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\two2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\two2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\luckymoney.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\luckymoney.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\six.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\six.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\separator.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\separator.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\share_video2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\share_video2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\video_time.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\video_time.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\jing2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\jing2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\four.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\four.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\videorecord4.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\videorecord4.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\horizontal_background.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\horizontal_background.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\alert_btn_single_pressed.9.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\alert_btn_single_pressed.9.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\about2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\about2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\send_contact.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\send_contact.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\videorecord.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\videorecord.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\call_phone3.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\call_phone3.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_search.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\common_search.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\actionsheet_bottom_pressed.9.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\actionsheet_bottom_pressed.9.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\actionsheet_top_normal.9.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\actionsheet_top_normal.9.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\nothing_log.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\nothing_log.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\delete.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\delete.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\qr_code.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\qr_code.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\switch_camera1.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\switch_camera1.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\call_answer2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\call_answer2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\call_date1.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\call_date1.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\attn2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\attn2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\dial3.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\dial3.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\green.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\green.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\type_video.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\type_video.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\switch_call.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\switch_call.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\new_friends.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\new_friends.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\type_missing2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\type_missing2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_search.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\ic_search.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\banners.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\banners.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\actionsheet_bottom_normal.9.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\actionsheet_bottom_normal.9.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\switch_call2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\switch_call2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\call_cancel.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\call_cancel.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\more_wonderful_bg.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\more_wonderful_bg.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_search_delete_normal.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\common_search_delete_normal.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\share.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\share.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\sort_icon_bg_click.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\sort_icon_bg_click.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\cutting_line1.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\cutting_line1.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\guide2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\guide2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\phone_contacts.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\phone_contacts.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\contact_detail2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\contact_detail2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\press.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\press.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\more1.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\more1.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ok.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\ok.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_launcher.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\call_handsfree.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\call_handsfree.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\type_outgoing2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\type_outgoing2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\call_icon3.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\call_icon3.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\cutting_line2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\cutting_line2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_search_delete_press.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\common_search_delete_press.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\xing.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\xing.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\call_cancel2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\call_cancel2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\three.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\three.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\call_date2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\call_date2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_action_search.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\ic_action_search.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\zero2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\zero2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\call_answer.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\call_answer.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\pictures_no.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\pictures_no.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\three2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\three2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\gray.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\gray.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\call_keyboard2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\call_keyboard2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\guide3.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\guide3.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\call_phone1.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\call_phone1.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\play_video.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\play_video.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\eight.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\eight.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\type_incoming.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\type_incoming.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\type_audio.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\type_audio.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\welcome.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\welcome.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\one.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\one.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\im_item_send_im_normal.9.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\im_item_send_im_normal.9.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\attn1.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\attn1.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\actionsheet_single_normal.9.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\actionsheet_single_normal.9.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\nine2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\nine2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\nine.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\nine.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\more2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\more2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\alert_btn_right_pressed.9.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\alert_btn_right_pressed.9.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\register_username.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\register_username.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\call_mute2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\call_mute2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\home_icon.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\home_icon.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\switch_video.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\switch_video.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\actionsheet_single_pressed.9.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\actionsheet_single_pressed.9.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\actionsheet_middle_normal.9.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\actionsheet_middle_normal.9.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\picture_unselected.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\picture_unselected.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\login_password.PNG",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\login_password.PNG"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\call_mute.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\call_mute.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\delete_video1.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\delete_video1.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\upload_video1.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\upload_video1.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\five.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\five.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\type_outgoing.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\type_outgoing.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\arrow_back.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\arrow_back.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\zero.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\zero.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\guide1.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\guide1.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\contact_background1.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\contact_background1.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\add_attn.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\add_attn.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\arrow_right.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\arrow_right.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\icon.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\icon.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\loading.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\loading.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\share_video1.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\share_video1.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\pictures_selected.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\pictures_selected.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\black_bg.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\black_bg.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\horizontal_lines.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\horizontal_lines.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\no_internet.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\no_internet.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\pic_dir.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\pic_dir.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\type_incoming2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\type_incoming2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\register_verificationcode.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\register_verificationcode.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\contact_detail1.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\contact_detail1.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\six2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\six2.png"
+    },
+    {
+        "merged": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\eight2.png",
+        "source": "D:\\Android\\Project\\trunk\\AndroidApp\\ShareHome\\res\\drawable-hdpi\\eight2.png"
+    }
+]

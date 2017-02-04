@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="uspstg">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/uspstg.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

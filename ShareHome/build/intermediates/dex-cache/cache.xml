@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sa_hme_audio.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="a5abe656cb136cf23c25c4a1dc64a34be5ef04cb">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sa_hme_audio_06af19d763d611df08820695ae3cb6f19627a0e3.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sci_pres.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="ae017432618eceaa3c36ea07d8dc5edcbb8db165">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sci_pres_a9df0a5d4b2dfe9b3db755007c1e54c15393b840.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sa_call.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="b91e1b6c7108ace50145a0d070d10e26008e5247">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sa_call_b949de0949229d16fad870e06ac7eb905e695d2a.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-Foursquare-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="c1b8b1e840370d209a526c1f644f2aa9446eab86">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-Foursquare-2.7.2_f5b69140905c6832469b248b6ef925af7f8a390a.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\support-annotations-21.0.0-rc1.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="57c343f05b73b923bf2502b05851dbfe12193dcb">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\support-annotations-21.0.0-rc1_c1d00ea018f6c0ac781a347c5a16f115968c2ec1.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-Dropbox-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="bd1c3d552849fc25a28478f8a2749b163e08ed90">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-Dropbox-2.7.2_00699f784b37338ac845f142794c62924b19b571.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sci_nab.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="dd8f400b79f47102cb26e65091034f935b8929bc">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sci_nab_d1ea418230e3a9a9c0e1d880722681cf1a205c1d.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\uspimb.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="bb303a7e098d3bfca2ce8c69e457547a6e0db0f0">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\uspimb_9600f999907f7785f76f5a923dce42ca3b460e93.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\uspdma.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="9d9082c824c5a82ca8f0f5afa386a7dab58b2686">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\uspdma_1094d646c4121937aabf875657f98268934f676f.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-Facebook-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="21f20693cb1f5526552c6b6dd506905af7594239">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-Facebook-2.7.2_f76d5356813f5ae3ffac6b3793fe5671f785315f.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sa_stun.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="30259f5acfa2e805a1472cdfc1029afdb09e47ca">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sa_stun_2132b0a1f656bfef87fc72db5db855613dff2b96.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-KaiXin-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="18f5f0d662babf7f1b751bb0f9d9cbd6fa844645">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-KaiXin-2.7.2_c63474f12cd16b124d667444ffbeec387f493e29.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\usplogin.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="7f98ffb0da512a13e32bf62f81dac39269b9463c">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\usplogin_ae9f4695cc90f0f14fe8381abe41963fd5a70758.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-Linkedin-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="dae0353d9aaebb458c195bd4782c1cfec02fab4a">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-Linkedin-2.7.2_1be327f210b568906c494e95d826743a38fb2493.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sci_eab.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="2f0ead02b6a8a61364b3754d67a01957b6c58793">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sci_eab_4c9e66e721c26748820a1f33a499c90089ecdd56.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sunjce_provider.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="2357317d1e1f14937b3bda942c58791ee1dba581">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sunjce_provider_b558420a24279cb5352c788c77ccf44f47d2377a.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\gson-2.7.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\gson-2.7_0a1aa044bf1ac9a4678e1ce5f603699a984e43f9.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sa_omp.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="e2ca19fd6cdf697e8b59b8d490a8f5472a2659f0">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sa_omp_984a63577e83ef96a66a5760b51ef8fddf2a970b.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sa_base.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="c71a4e4c94a70bb3620dd95867f93504185e3368">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sa_base_af7034637d4a66a3438c74c23d88d6f0b1362a57.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\okio-1.6.0.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\okio-1.6.0_adb55cc4e72debe7a71f25bdb3e737f957313be0.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\okhttputils-1.5.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="114099d49670ebc2c1d73ed1e9b31a174d32ffb8">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\okhttputils-1.5.2_eaa1fb2f00b0e5e93ed3021df88ff64f1e493447.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\uspmqtt.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="dd2adccac445646191655f57aef7bbb106d8343b">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\uspmqtt_14f1c94c1182c4ca59005dffd96028132235c36b.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sa_media_rmt.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="b6d01e1c0e93c641f36e0eb4ea04fbfd32a936bf">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sa_media_rmt_f0222d9fb2a7644419478cc362bc93196cb841d4.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sci_imb.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="c850fbd389f8a0d3e73e159c341e3ea95b7e6715">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sci_imb_e737ec513589b83d36716f620ce454191cf01e7c.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\uspwatcher.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="c6d18bde101e9f6919522a46058d631ff6477cf6">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\uspwatcher_9c8b1df298850a975c38b523e5c35d618886dd1b.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-Instagram-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="72c3baf7eff02716063a9e82b9903c56261b6912">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-Instagram-2.7.2_b17662e963879295522819fd0a87c8e95e9985ce.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-Yixin-Moments-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="742593044c8a498ba60874d01d108d1f5f17fc35">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-Yixin-Moments-2.7.2_c1451a0f58dfdac70c5313b4b83ac940f82789be.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\converter-gson-2.1.0.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\converter-gson-2.1.0_49ea52fa3ada8cd16b7511ff6667faab78bb3c51.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-Wechat-Core-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="8d2e75c7f5b644b69198a6c89deffab067fa5e88">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-Wechat-Core-2.7.2_119236536354c610cdf78e187153cbfa0f2d57e9.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\rxandroid-0.24.0.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="42dab493b8f74b164e082f281480c9d493ff89da">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\rxandroid-0.24.0_c7cff2c344fa175c5482f97a2ebb877979bd2f68.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\uspstg.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="81c547e883d75dd99a6ef923a473d2d62ea4fd03">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\uspstg_afff8a0f607864ddc710267cba82ccf32318ea31.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-Email-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="0372364f0f21bcba6f5113d2ecd14f286ae21a2c">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-Email-2.7.2_211ac77be17b3c0e4e9a4ceff234600526e32034.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\HME_Audio.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="f5126619482454dca3652df8d87c47c1fad74665">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\HME_Audio_c4dc301b6a48c0285c828bc8e425722a14bc91f7.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\HME_Video.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="04f9316d7d9a24fe67cc49052f95f0e235ca5300">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\HME_Video_ff45eadad1a8610af8050747bf67ef2117fdbf76.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="42a28190c8173772587e3d317e55e565c8532252">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\instant-run_058765e8231f1c320659954250625efb3b40b1bc.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-Core-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="484d87cb8abd3c6d05eeca5abfac1cdd1aa1dc2e">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-Core-2.7.2_2f02cb304b0603aa513735c8230774e25c2e1c46.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-Wechat-Favorite-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="d195548d5cba02c925eb418118ac129322e209dd">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-Wechat-Favorite-2.7.2_0d2c4557c5af12e28211e2f250734d1984260b13.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-Renren-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="3c07694c6ca639cf66b4a30dc31d983215c1ad8e">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-Renren-2.7.2_40377b29a68fb6edd8cae90b6a6681aafdc213b7.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-QZone-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="ab780cc4d045859b20a2177b7045e6ac6ec44be3">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-QZone-2.7.2_53b9c1ea4079d12947311afad2106c2cba0ac3e1.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-SinaWeibo-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="7d038932c1902316f542e2ca7b7d73c16265185a">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-SinaWeibo-2.7.2_41eb3b39df52066d6d00b3ffc21210055808ab6e.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sci_default_tls.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="e1ff5ac7f37b536416b91b930dd0ed922fec6616">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sci_default_tls_dc8d6c72020b873e8cf9dc7dfe3d4ecba99c61e0.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-Pocket-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="14f15152e412ff450316d68b801071b2457afe65">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-Pocket-2.7.2_10cfe9031561d2ce5f8c7eff93f9c06b9e01f408.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sa_imbs.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="a9322cd2767d5fbcda90611cb80ef20c1d38dfbb">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sa_imbs_e1b6ea1909731bcec0b9ed3db94dab370c870dfe.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-Pinterest-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="43e7abb9fea7149909e89cefd967501103a1d1e7">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-Pinterest-2.7.2_0e8475ef55125df25d60ff49700b0da0043ba5e6.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sa_contact.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="e13f1d0030ccfd3eb8b7badf1356ac052e59dae0">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sa_contact_8190eba2d13c5fb3b890be9bf3e03cb8c2738a6f.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-YouDao-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="56e62a270bf1a8b2f3830b2e58debd0ac8dda642">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-YouDao-2.7.2_c7a6706036f98e84ab6161e2065b4bd0128387dc.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-ShortMessage-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="ab3c5ecdf37204d0466bdb15668753362618f861">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-ShortMessage-2.7.2_0d615b1ebae021febe9f09e7e87d4f434e7ca6e5.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\dagger-2.6.1.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="e9fd4b4d9cf7d3f93793413dd94722740d2f2a26">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\dagger-2.6.1_c51515fc8b3e2a5f82a7c6910b05256b99223245.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sa_im.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="2065552d72b766c77810492fe37963d94bf25f84">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sa_im_e373da11b0c3de0dac34a5933fc2848cd5b3c107.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-KakaoStory-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="06b5cb9917a91929915fc14cf8cece03a5abd485">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-KakaoStory-2.7.2_814be00411203cdb8b2c60f39ca7876cce7ec246.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-QQ-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="c3717539454ca4b61bf8323a6f307c248a1bd0ef">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-QQ-2.7.2_f2178ab6a4cac911358dac91bafb3c5972efbef9.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sa_meeting.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="348957a5a2f8a45fb39f1fed65961c37f07d2057">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sa_meeting_cabe391183500fd648e96c99ae9c344a74285594.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sci_meeting.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="a2cbbd9852e1c485832940f66cea3ff74c93ac9e">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sci_meeting_e95c94bb2f8e3c4a478bea9b7d8a4ae806c7b477.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\picasso-2.5.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\picasso-2.5.2_02607ef3c25f894071bdb061c4e96b6b980830fc.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-Yixin-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="69250b63cfbb45106d837c1ac4ed5f29d126443e">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-Yixin-2.7.2_1354fac39f52520a80cb35930610ef2c3b42288a.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-VKontakte-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="0c40329fec5df630e44e97266f4eb283af8946d2">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-VKontakte-2.7.2_f0d7b741b2b56df8e3b5b204b0ced1d5ee938060.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-Wechat-Moments-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="e77e9127a0d9dadf0cf4963f14a6449a4e1dbe37">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-Wechat-Moments-2.7.2_8db2f22fc823180a16d8192242b1c04fdcc49a83.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sci_push.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="ef9d54b95ea8b0f30ee4d6b9c80e89667332631e">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sci_push_288fd0a7085392b322313c7b596ee7e366bfe435.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sci_base.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="e81aefc52551accb75a298fdf572ca94e6eacae1">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sci_base_229504794884fffd720e629ec72c1f28fa3e012e.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\uspmediarmt.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="b4a0825f9df06318f111200454d559e2921129fe">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\uspmediarmt_270653aab7694f63b98bb038f1085c079d766ea8.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-Mingdao-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="9943af0bfaa3d6f76c4c092fbdc0581221c58ee9">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-Mingdao-2.7.2_96c7d3009446bf184ddaec25c1bb0dace444b4f8.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-Twitter-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="52021b53ffa0195ec82b2ecc021422becb22d842">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-Twitter-2.7.2_17ed687ed92e8517a3a32f985b27e45f2b39b524.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-Line-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="697de455dc652d87f36cdca1bc271f23a01ba850">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-Line-2.7.2_899c067e83f44b0ad7d012680a0804afdbdcf0fc.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sa_aidl.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="32abb263c60c8d150386dd37bf4fd2be34b5c788">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sa_aidl_68ee9375fd2532fcec1c373eb4c36670c3feae1a.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\MobCommons-2016.0426.1819.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="5fce3a96cadb15dd2980863f403d7d1ab8732989">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\MobCommons-2016.0426.1819_e0956f5a65202ff25f948e8b1eed2c6a77ab724e.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-SohuSuishenkan-2.7.0.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="0731b21fcac65312a0e60a6cce9119c417e616c8">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-SohuSuishenkan-2.7.0_1286f1b5765700ee0d554e99e2fb975dcc674f1d.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sa_nat_stg.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="a84d351f6ba62aacada817524f2577038443b64f">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sa_nat_stg_6e8be2a2a9113980e169010406db46e0b3ae4617.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-WhatsApp-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="ac2a1bc9c83ebe7ed523844a53c3937b7df74c64">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-WhatsApp-2.7.2_47f6d93dd0464765b93374a7f4bfdb0f48c3e542.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-Douban-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="6797f5de562d6dee4ca3de97ea10b03dbac1fa03">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-Douban-2.7.2_1635a33caf531b7931117541594364f8992d4270.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\uspsocks5.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="0f870c8f11b22ff947500153db8f97005cbd95ba">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\uspsocks5_11f78ab80823366ddfd76d537a8751ea34360083.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sa_eab.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="030996225861b8eeb70764f9e1a268dff259b778">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sa_eab_c41a7416642ad42b3e6f9f4b334c56faba08bdd2.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sci_hme_audio.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="83a873de74a389b594ec534581763c5ca32aa1b1">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sci_hme_audio_6664a97e5365e9924e5b16821de04e9d42323329.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\MobTools-2016.0426.1819.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="e2c5ab92b762c42cd30e6787cc401ae01e002512">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\MobTools-2016.0426.1819_b08d33068a93b0bbd802bb3a6c7b30b231649395.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sa_push.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="8ded8da347e358178012f88ef6ecfbfe30941e73">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sa_push_f76fc7ca65a9a9c630ddb439f4e4257f9612c3c0.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sa_epipe.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="cee2ccface12c20a446b920e93551d5e32b83870">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sa_epipe_65737e164ee076e45f15fa6c85a73e574bb5eb6f.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-Yixin-Core-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="11da8be2a263639a0785d179bdda5bab95ce2b05">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-Yixin-Core-2.7.2_a7d9b23fba90962d53a15859d2479f4a66eb293b.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sa_hme_video.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="e5e76ef6a950d5dd7b9b6ba7dadaae47e6057002">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sa_hme_video_922a515d4b1358010bddc1f24fc3032c2f00a9db.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-Instapaper-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="ce6e019fcb28408ded82f546d3d9006949ae420f">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-Instapaper-2.7.2_3cd94db11f05891a2e6895bd4620c2857cb297bc.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\KJFrameForAndroid_v2.223.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="316711f83463099d8adb44113cfd6d8b3cc7c614">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\KJFrameForAndroid_v2.223_66bf080a3ebfbbbda3a914b819f1c964f0b76256.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sci_im.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="ece67a199acd6d19ea38d814d9e598364b8fe70a">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sci_im_2541413c4e3f40ad70b8d9f0e77015c19838174b.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-KakaoTalk-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="13df68f79b38337ce4b1416afe6aea123246ea64">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-KakaoTalk-2.7.2_00aa288a91d36869d195570768991aa6ccb74904.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="4dfa54bf88258bd43fa7bd533a6812a2d12a08f7">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\instant-run-bootstrap_2b1bd587f44842e084b00f383e9ba3cf0f2854ba.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\retrofit-2.1.0.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\retrofit-2.1.0_6a2896ed17daf62794f9bdd83b9c43383067b904.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sa_tsc_stg.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="e9e3d845e19eb0ea338346a3e441fb503c620841">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sa_tsc_stg_51d77cc781a1f0439262964ae4a2fbd6f1a06831.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sci_uportal.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="1c785ac6d14482365d90c1361c80510fb022d0fa">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sci_uportal_badc6265eb5175d4b03705d6b20964b978b5e500.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sa_analysis.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="3bb2507c4e8d6bce5c4bf4267971038e837534a4">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sa_analysis_3f275d62a6096cc3d4beda01b3757381b842b61f.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\uspuportal.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="4f7840b434c65c89eadfac86e9347a3834e3d652">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\uspuportal_c94a73fab1ff7ce497db2d9f6b5f60bc352fe2ed.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sci_call.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="43b1e2e7a1d4c6e2908f4d866e3201bce5990b27">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sci_call_276a3df0a4684eed611fc9c1244eaecd3493d7f5.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sa_http.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="cab7cf214556dcf434922b0c37fd973bd34d1d2b">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sa_http_d0694fa5cf4c2186e3ee52f8a2a6fdfba8dba61f.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-Bluetooth-2.7.0.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="90abf4f514e4ae5ac4e67bbc65ade08eca8d9b50">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-Bluetooth-2.7.0_4f1923e92c4e7c4e432f2dd3b34624d78f0a18b4.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-Alipay-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="6bc02c47d0befd2861eeddce93a951f3f7b09bb6">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-Alipay-2.7.2_8bb5cc471522b34136c08a4a63bc56daa407165a.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\uspimbs.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="f2c1be2fa8082ef43d2d8ab9b49e3571d1fe5604">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\uspimbs_122e1c85b480dc8f0bf011ce392a400640cac254.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\rxjava-1.1.0.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="748f0546d5c3c27f1aef07270ffea0c45f0c42a4">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\rxjava-1.1.0_f048146c5d0afc5070e293570d495ad3044ace8b.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sa_nab.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="6fcf217bc2a50bb2c32f27e7c45b749a6374b3d4">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sa_nab_fee3d798daf7b8bca9412b63cb30ed9d1d9af719.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sa_uportal.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="4350e3afdb8ed38d616a85a5d1f84f4e832a5f0c">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sa_uportal_6606095bee3e1c323d180fb000f9f0821455dc4d.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-Evernote-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="0a81c601520e0babe5923b96854cfc4e7ae1369f">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-Evernote-2.7.2_a4bbab5085b8e19ad787d1136241c7dbe434da73.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sa_svn_stg.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="fe18a4738631424265414cde8d89b4327b8cf77f">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sa_svn_stg_74dfee761b6983725d5c5c4b64b07733a99585c2.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sci_hme_video.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="e6ad85a5f72999a09272e9fe8dd96495235679fa">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sci_hme_video_757d3a3b514af7d2ba2c981ba39046a73ab97ea5.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\uspomp.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="748deb36f354546539e21763958225606f631e37">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\uspomp_9c9ddb0c3f4a9c4e03db3ae3d6f1f047864f0a6f.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sa_group.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="955d6b24bdd536972bf572d7f97c1ebcfa14f6c9">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sa_group_0b09578e111be0be857051005d49dda703a65b24.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\gradle-wrapper.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="d5f2cff8bfce6bd848ee3dceb06393502f78ca7c">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\gradle-wrapper_38c8a5aa84a5820bacac4cd6e222c2539864f986.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sci_group.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="603fce3c24f47c59eb406aeeb9489f57d4b03e1d">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sci_group_397a13b79b58c2a369e4b6776030a1b46c808bdf.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\uspbase.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="1bffe01c9512ffc369eb756d723e10f8abf0c4dc">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\uspbase_859fe21b038e6704bb1bafd5ab32fad1825a9096.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-Kakao-Core-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="9039a27bf3b829389c12d36d5b890a8a2db8afd1">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-Kakao-Core-2.7.2_281cdb02f75151523dbdf1ce10e27c53cfd940bb.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-FacebookMessenger-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="c5c87013cacd3183b4bd6b4848d21ce5d81099c7">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-FacebookMessenger-2.7.2_0816b85a23afa1a2717be401243e7cba7d4fd7d9.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\greendao-2.0.0.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="5f49dd477c1621dfaf0f7fe5d755fe4f07526af2">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\greendao-2.0.0_bcd75ee34e5edfaf0307728e3013b1b7d080e55b.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\uspepipe.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="d205d7aa8f24c94736a194dc7d1a8fcda3698099">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\uspepipe_ce2da2c0b595f8b8cc76adf43fd0f0ce0cdfa2b5.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-Wechat-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="6d87b1916e872678665a0d06c873c7712ed91457">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-Wechat-2.7.2_2b87a7d826a26759c83733a5f521e4f00e13d913.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sa_default_tls.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="e023f4b331bff176e71ff2680d0cb7636c571843">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sa_default_tls_785919fe89dbcb4895091fd3bb48d70179621225.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-GooglePlus-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="885edd0f53dbba330a0f24317ebe7b0ace453384">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-GooglePlus-2.7.2_09a78808a6de581b14533f08311a43dc3900a71b.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-Flickr-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="97e56065c19b535b60e5c9b9b91c063cecec7fcc">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-Flickr-2.7.2_f11f3810ad7a2d8833598d8e16d652ca35e78a37.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\android-support-v4.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="4a6be13368bb64c5a0b0460632d228a1a915f58f">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\android-support-v4_32e38d269377b030bcf14092edf1c6428851a475.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sa_socks5.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="e032019bc03e62dc363607d3e96b1f3c82dc3a80">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sa_socks5_076b1e68630fcbf2537a220ecf123af7aa54767d.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\okhttp-3.2.0.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\okhttp-3.2.0_b937a1e736fecf9272bee581510be0e8b438303e.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\sa_imb.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="c0509c82018a30e157e7a2c609f00b943752ce1e">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\sa_imb_efe0b690f9dc427006e8d08482ec6163fd105ce7.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-TencentWeibo-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="7123d46dfb2b6473dbe295bc6510393706f89a2a">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-TencentWeibo-2.7.2_08178a2105147048f7b36b74c2c5f13c7ce44b2d.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\pinyin4j-2.5.1.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="ea23babfc45a078af5b73cd9f3401caad1f1b2a9">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\pinyin4j-2.5.1_3d2315b1cb3b2074aca39873bbfe60abb5ebd4ba.jar" />
+    </item>
+    <item
+        jar="D:\Android\Project\trunk\AndroidApp\ShareHome\libs\ShareSDK-Tumblr-2.7.2.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="5ffa334d3f5982b9cc3a6b56b97a3debf5c56bb0">
+        <dex dex="D:\Android\Project\trunk\AndroidApp\ShareHome\build\intermediates\pre-dexed\debug\ShareSDK-Tumblr-2.7.2_9901eb58bf6b972a325558a200286a1804ea1bdb.jar" />
+    </item>
+
+</items>

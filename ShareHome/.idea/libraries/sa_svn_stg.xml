@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="sa_svn_stg">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/sa_svn_stg.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="sa_media_rmt">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/sa_media_rmt.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="sa_meeting">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/sa_meeting.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -9,7 +9,6 @@ import android.widget.TextView;
 import com.vunke.sharehome.Config;
 import com.vunke.sharehome.R;
 import com.vunke.sharehome.base.BaseActivity;
-import com.vunke.sharehome.rx.RxBus;
 import com.vunke.sharehome.updata.AppTVStoreUpdateManager;
 import com.vunke.sharehome.utils.UiUtils;
 

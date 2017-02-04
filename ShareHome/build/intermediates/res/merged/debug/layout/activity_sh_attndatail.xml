@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroup_back" >
+
+    <com.vunke.sharehome.view.MyScrollView
+        android:id="@+id/sh_attnmyScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/sh_attnrlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/sh_attndetail_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/LightSeaGreen" >
+
+                    <Button
+                        android:id="@+id/sh_attndetail_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_arrowback_selector" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/detail"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/sh_attndetail_addcontact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/button_addattn_selector" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/sh_attndetail_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sh_attndetail_title"
+                    android:background="@drawable/contact_background1" >
+
+                    <ImageView
+                        android:id="@+id/sh_attndetailicon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/call_icon3" />
+
+                    <TextView
+                        android:id="@+id/sh_attndetail_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/sh_attnsearch02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/backgroup_back"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/sh_attndetail_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/button_contactdetails" />
+
+                <ImageView
+                    android:id="@+id/sh_attndetail_calldate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/button_calldate" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/sh_attndetail_number"
+                android:layout_width="match_parent"
+                android:layout_height="800dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </com.vunke.sharehome.view.MyScrollView>
+
+    <LinearLayout
+        android:id="@+id/sh_attnsearch01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroup_back"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/sh_attncall_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_callphone2_selector" />
+    </LinearLayout>
+
+</RelativeLayout>

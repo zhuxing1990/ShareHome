@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="uspomp">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/uspomp.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
