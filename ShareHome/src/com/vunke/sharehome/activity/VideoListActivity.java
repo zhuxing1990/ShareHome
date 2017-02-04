@@ -83,7 +83,7 @@ public class VideoListActivity extends BaseActivity {
 	}
 	private int itemPosition = -1;
 	private void initListener() {
-		SetOnClickListener(videolist_back, videolist_startrecorder);
+		SetOnClickListener(videolist_back, videolist_startrecorder,videolist_loading);
 		videolist_listview.setOnItemClickListener(new OnItemClickListener() {
 
 			@Override
@@ -131,8 +131,8 @@ public class VideoListActivity extends BaseActivity {
 								subscriber.onNext(videoBean);
 							}	
 						}
-						subscriber.onCompleted();
 					}
+					subscriber.onCompleted();
 				} catch (IllegalArgumentException e) {
 					e.printStackTrace();
 				}
@@ -158,13 +158,14 @@ public class VideoListActivity extends BaseActivity {
 					 videolist_listview.setAdapter(adapter);
 					 videolist_loading.setVisibility(View.GONE);
 				}else {
-					videolist_loading.setText("您还没有录制视频，请点击右上角开始录制来录制您的视频吧");
+					videolist_loading.setText("您还没有录制视频\n请点击右上角录制您的视频吧");
 				}
 			}
 
 			@Override
 			public void onError(Throwable arg0) {
 				WorkLog.e("VideoListActivity", "获取文件信息失败");
+				videolist_loading.setText("获取文件列表失败，请点击屏幕刷新");
 				subscribe.isUnsubscribed();
 			}
 
@@ -195,27 +196,13 @@ public class VideoListActivity extends BaseActivity {
 					VideoRecordActivity.class);
 			startActivity(Config.intent);
 			break;
-		// case R.id.videolist_delete:
-		// if (itemPosition!=-1&& adapter.getCount()>itemPosition) {
-		// list.remove(itemPosition);
-		// adapter.notifyDataSetChanged();
-		// File file = new File(list.get(itemPosition).getFilePath());
-		// if (file.exists()) {
-		// file.delete();
-		// }
-		// }
-		// break;
-		// case R.id.videolist_share:
-		// if (itemPosition!=-1&& adapter.getCount()>itemPosition) {
-		// File file = new File(list.get(itemPosition).getFilePath());
-		// if (file.exists()) {
-		//
-		// }
-		// }
-		// break;
-		// case R.id.videolist_loading:
-		//
-		// break;
+		case R.id.videolist_loading:
+			if (UiUtils.isFastDoubleClick(3000)) {
+				return;
+			}
+			videolist_loading.setText(R.string.loading);
+			initRX();
+			break;
 		default:
 			break;
 		}

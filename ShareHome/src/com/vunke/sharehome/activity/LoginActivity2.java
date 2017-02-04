@@ -280,8 +280,8 @@ public class LoginActivity2 extends BaseActivity {
 			Login();
 			break;
 		case R.id.longin_versionName:
-			Config.intent = new Intent(mcontext, VideoListActivity.class);
-			startActivity(Config.intent);
+//			Config.intent = new Intent(mcontext, VideoListActivity.class);
+//			startActivity(Config.intent);
 			break;
 		default:
 			break;

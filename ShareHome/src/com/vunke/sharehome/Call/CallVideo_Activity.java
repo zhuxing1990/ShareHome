@@ -52,7 +52,6 @@ import android.widget.Toast;
 
 import com.huawei.rcs.call.CallApi;
 import com.huawei.rcs.call.CallSession;
-import com.huawei.rcs.call_recording.CallSessionRecording;
 import com.huawei.rcs.contact.ContactApi;
 import com.huawei.rcs.contact.ContactSummary;
 import com.huawei.rcs.log.LogApi;

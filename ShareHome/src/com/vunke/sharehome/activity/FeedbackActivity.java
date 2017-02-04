@@ -4,14 +4,37 @@ import java.io.File;
 import java.text.NumberFormat;
 import java.util.Collection;
 
+import okhttp3.Call;
+import okhttp3.Request;
+import okhttp3.Response;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import rx.Observable;
+import rx.android.schedulers.AndroidSchedulers;
+import rx.functions.Action1;
+import rx.functions.Func1;
+import rx.schedulers.Schedulers;
+import android.app.ProgressDialog;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.graphics.Bitmap;
+import android.os.Environment;
+import android.support.annotation.Nullable;
+import android.support.v4.content.LocalBroadcastManager;
+import android.view.View;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.CompoundButton.OnCheckedChangeListener;
+import android.widget.Toast;
+
 import com.huawei.rcs.log.LogApi;
-import com.huawei.rcs.message.T;
 import com.lzy.okhttputils.OkHttpUtils;
 import com.lzy.okhttputils.callback.StringCallback;
-import com.vunke.sharehome.Config;
 import com.vunke.sharehome.R;
 import com.vunke.sharehome.base.BaseActivity;
 import com.vunke.sharehome.url.UrlClient;
@@ -20,32 +43,6 @@ import com.vunke.sharehome.utils.NetUtils;
 import com.vunke.sharehome.utils.UiUtils;
 import com.vunke.sharehome.utils.WorkLog;
 import com.vunke.sharehome.utils.ZipUtils;
-
-import android.app.ProgressDialog;
-import android.content.BroadcastReceiver;
-import android.content.Context;
-import android.content.Intent;
-import android.content.IntentFilter;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.os.Environment;
-import android.support.annotation.Nullable;
-import android.support.v4.content.LocalBroadcastManager;
-import android.text.AndroidCharacter;
-import android.view.View;
-import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.CompoundButton;
-import android.widget.CompoundButton.OnCheckedChangeListener;
-import android.widget.Toast;
-import okhttp3.Call;
-import okhttp3.Request;
-import okhttp3.Response;
-import rx.Observable;
-import rx.android.schedulers.AndroidSchedulers;
-import rx.functions.Action1;
-import rx.functions.Func1;
-import rx.schedulers.Schedulers;
 
 /**
  * 反馈Activity

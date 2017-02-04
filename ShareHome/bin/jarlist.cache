@@ -1,7 +1,3 @@
 # cache for current jar dependency. DO NOT EDIT.
 # format is <lastModified> <length> <SHA-1> <path>
 # Encoding is UTF-8
-1473037858008 556198 4a6be13368bb64c5a0b0460632d228a1a915f58f D:\Android\Project\trunk\AndroidApp\ShareHome\libs\android-support-v4.jar
-1473037453040 556198 4a6be13368bb64c5a0b0460632d228a1a915f58f D:\Android\Project\trunk\AndroidApp\appcompat_v7\libs\android-support-v4.jar
-1473037841145 339845 b2d9f83181635731db297fd7c59a9049c5ccbffd D:\Android\Project\trunk\AndroidApp\ShareHome\libs\android-support-v7-appcompat.jar
-1473037453040 339845 b2d9f83181635731db297fd7c59a9049c5ccbffd D:\Android\Project\trunk\AndroidApp\appcompat_v7\libs\android-support-v7-appcompat.jar
