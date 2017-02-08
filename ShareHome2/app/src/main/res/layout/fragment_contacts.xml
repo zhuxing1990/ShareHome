@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/contacts_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/LightSeaGreen" >
+
+        <TextView
+            android:id="@+id/contacts_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/contacts_addattn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_addattn_selector" />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/contacts_listview"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:divider="@drawable/horizontal_lines"
+        android:scrollbars="none"
+        android:layout_below="@+id/contacts_title" />
+
+    <com.vunke.sharehome2.view.QuickIndexBar
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/contacts_bar"
+        android:layout_width="25dp"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/contacts_title" />
+
+    <TextView
+        android:id="@+id/contacts_centerText"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:background="@color/translucent_background"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="#ffffff"
+        android:textSize="32sp"
+        android:visibility="gone" />
+
+</RelativeLayout>
