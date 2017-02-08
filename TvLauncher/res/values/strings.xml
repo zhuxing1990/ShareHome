@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <string name="app_name">TvLauncher</string>
-    <string name="empty_username_tip">用户名为空</string>
-    <string name="empty_pwd_tip">密码为空</string>
-    
-</resources>
