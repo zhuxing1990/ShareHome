@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="sa_tsc_stg">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/libs/sa_tsc_stg.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

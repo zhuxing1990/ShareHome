@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="sa_uportal">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/libs/sa_uportal.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

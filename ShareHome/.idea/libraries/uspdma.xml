@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="uspdma">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/libs/uspdma.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

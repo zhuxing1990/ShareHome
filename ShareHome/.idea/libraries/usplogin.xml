@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="usplogin">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/libs/usplogin.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

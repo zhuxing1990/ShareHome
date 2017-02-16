@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="sci_imb">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/libs/sci_imb.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

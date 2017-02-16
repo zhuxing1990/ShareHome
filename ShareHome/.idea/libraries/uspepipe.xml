@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="uspepipe">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/libs/uspepipe.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

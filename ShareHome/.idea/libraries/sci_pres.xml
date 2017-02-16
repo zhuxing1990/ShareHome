@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="sci_pres">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/libs/sci_pres.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

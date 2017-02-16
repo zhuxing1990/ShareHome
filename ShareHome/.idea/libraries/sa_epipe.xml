@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="sa_epipe">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/libs/sa_epipe.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

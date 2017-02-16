@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="sa_hme_video">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/libs/sa_hme_video.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

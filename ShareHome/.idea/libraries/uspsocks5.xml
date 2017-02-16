@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="uspsocks5">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/libs/uspsocks5.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

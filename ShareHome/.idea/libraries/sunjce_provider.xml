@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="sunjce_provider">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/libs/sunjce_provider.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

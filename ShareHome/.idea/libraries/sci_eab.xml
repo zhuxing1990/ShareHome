@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="sci_eab">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/libs/sci_eab.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

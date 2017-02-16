@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="sa_imbs">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/libs/sa_imbs.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
